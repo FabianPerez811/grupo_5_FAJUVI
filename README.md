@@ -1,4 +1,4 @@
-FAJUVI ACCESORIOS 
+**FAJUVI ACCESORIOS** 
 - Acerca del proyecto: 
 El sitio se diseña para la venta de accesorios femeninos.  
 
@@ -7,10 +7,10 @@ El sitio se diseña para la venta de accesorios femeninos.
 - Publico objetivo: Abarca principalmente al publico femenino. 
 
 - Integrantes del equipo: 
-Maria Victoria Barrionuevo: Licenciada en psicologia y estudiante de programacion en la UTN FRC.
-Juan Seco: Estudiante de programacion web fullstack en DIGITAL HOUSE.
-Maria Virginia Ascarate: Licenciada en psicopedagogia y docente de escuela primaria.
-Fabian Perez Borello: Estudiante de programacion web fullstack en DIGITAL HOUSE.
+   - Maria Victoria Barrionuevo: Licenciada en psicologia y estudiante de programacion en la UTN FRC.
+   - Juan Seco: Estudiante de programacion web fullstack en DIGITAL HOUSE.
+   - Maria Virginia Ascarate: Licenciada en psicopedagogia y docente de escuela primaria.
+   - Fabian Perez Borello: Estudiante de programacion web fullstack en DIGITAL HOUSE.
 
 - **Wireframe** 
 (AGREGAR LINK)
