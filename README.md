@@ -15,6 +15,9 @@ El sitio se diseña para la venta de accesorios femeninos.
 - **Wireframe** 
 (AGREGAR LINK)
 - Paginas de referencia:
+   - Home: 
+      - https://www.apatheia.com.ar/ Nos gusto la disposición del Header en cuanto al menú de navegación, la ubicación del logo y el carrusel de imágenes.
+      - https://topacia2.mitiendanube.com/ Tomamos como referencia la forma en que muestran los productos destacados.
 -
 
 -
