@@ -18,13 +18,7 @@ El sitio se diseña para la venta de accesorios femeninos.
    - Home: 
       - https://www.apatheia.com.ar/ Nos gusto la disposición del Header en cuanto al menú de navegación, la ubicación del logo y el carrusel de imágenes.
       - https://topacia2.mitiendanube.com/ Tomamos como referencia la forma en que muestran los productos destacados.
--
+   - Detalle de producto:
+      - https://danvico.com/productos/plato-de-sitio-individual/?variant=310055488 nos gustó la distribución de la pantalla, mostrando del lado izquierdo, una foto principal del producto y del lado derecho toda la descripción del producto junto con las modalidades de compra y envío. 
 
--
-
--
-
--
-
-- 
 
