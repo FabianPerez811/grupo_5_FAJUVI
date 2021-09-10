@@ -20,7 +20,12 @@ El sitio se diseña para la venta de accesorios femeninos.
       - https://www.apatheia.com.ar/ Nos gusto la disposición del Header en cuanto al menú de navegación, la ubicación del logo y el carrusel de imágenes.
       - https://topacia2.mitiendanube.com/ Tomamos como referencia la forma en que muestran los productos destacados.
    - Detalle de producto:
-      - https://danvico.com/productos/plato-de-sitio-individual/?variant=310055488 nos gustó la distribución de la pantalla, mostrando del lado izquierdo, una foto principal del         producto y del lado derecho toda la descripción del producto junto con las modalidades de compra y envío. 
+      - https://danvico.com/productos/plato-de-sitio-individual/?variant=310055488/ Nos gustó la distribución de la pantalla, mostrando del lado izquierdo, una foto principal del producto y del lado derecho toda la descripción del producto junto con las modalidades de compra y envío. 
    - Carrito de compras: 
       - https://www.mercadolibre.com.ar/gz/cart --> nos gusto la forma de guardar y mostrar los productos seleccionads para el carrito.
+   - Formulario de registro:
+      -  https://doloresiguacel.com/account/register/  
+      -  https://www.zara.com/ar/es/signup  / De las dos opciones nos gustaron la manera de organizar los pedidos de información.
 
+- Paleta de colores:
+      - https://coolors.co/2a2c25-6d6f74-d6d6d6-71a2ae-83aeb8-9fbfc8
