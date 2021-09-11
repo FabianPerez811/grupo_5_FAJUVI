@@ -26,6 +26,8 @@ El sitio se diseña para la venta de accesorios femeninos.
    - Formulario de registro:
       -  https://doloresiguacel.com/account/register/  
       -  https://www.zara.com/ar/es/signup  / De las dos opciones nos gustaron la manera de organizar los pedidos de información.
+   -  Log in:
+      -  https://store.steampowered.com/login/?redir=%3Fl%3Dspanish&redir_ssl=1&snr=1_4_4__global-header / Nos gusto la distribucion del formulario.
 
 - Paleta de colores:
       - https://coolors.co/2a2c25-6d6f74-d6d6d6-71a2ae-83aeb8-9fbfc8
