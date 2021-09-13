@@ -1,18 +1,18 @@
 # FAJUVI ACCESORIOS
 
-- #### Acerca del proyecto:
+- ### Acerca del proyecto:
 
   El sitio se diseña para la venta de accesorios femeninos.
 
-- #### Acerca del nombre del proyecto:
+- ### Acerca del nombre del proyecto:
 
   Combina las primeras sílabas de los nombres de los integrantes del proyecto.
 
-- #### Público objetivo:
+- ### Público objetivo:
 
   Abarca principalmente al publico femenino.
 
-- #### Integrantes del equipo:
+- ### Integrantes del equipo:
 
   - **Maria Victoria Barrionuevo:** Licenciada en psicología y estudiante de programación en la UTN FRC.
   - **Juan Seco:** Estudiante de programación web fullstack en DIGITAL HOUSE.
@@ -23,7 +23,7 @@
 
 - [Nuestro Tablero de Trello.](https://trello.com/b/fQ6DKRLh/grupo05)
 
-- ##### Paginas de referencia:
+- ### Paginas de referencia:
 
   - **Home:**
     - [Referencia 1](https://www.apatheia.com.ar/) Nos gustó la disposición del Header en cuanto al menú de navegación, la ubicación del logo y el carrusel de imágenes.
@@ -42,6 +42,6 @@
 
 - [Tipografía elegida.](https://fonts.google.com/share?selection.family=Lato:ital,wght@0,300;0,400;0,700;1,100|Roboto:ital,wght@0,400;0,700;1,300)
 
-- ##### Logo:
+- ### Logo:
 
   ![FAJUVI Logo](/Logo-Fajuvi.png)
