@@ -44,4 +44,4 @@
 
 - ### Logo:
 
-  ![FAJUVI Logo](/Logo-Fajuvi.png)
+  ![FAJUVI Logo](img/Logo-Fajuvi.png)
