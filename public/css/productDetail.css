@@ -1,0 +1,17 @@
+/* Escribir acá css que impacta en todos los dispositivos aplicando la técnica de mobile first 
+
+
+
+
+
+
+
+*/
+
+
+@media (min-width: 768px) { /* Escribir acá css que impacta solamente en TABLET y DESKTOP*/
+}
+
+@media (min-width: 1280px) { /* Escribir acá css que impacta solamente en DESKTOP */
+
+}
