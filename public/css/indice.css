@@ -1,23 +1,23 @@
 /* #region ----------- HOME----------- */
-.carousel {
+.carrusel {
   position: relative;
   margin: auto;
   max-width: 100%;
 }
 
-.carousel-img {
+.carrusel-img {
   text-align: center;
 }
 
-.carousel-img img {
+.carrusel-img img {
   width: 100%;
 }
 
-.carousel-arrows {
+.carrusel-flechas {
   display: none;
 }
 
-.carousel-circulo {
+.carrusel-circulo {
   text-align: center;
   margin: 5px;
 }
@@ -78,7 +78,7 @@
   margin: 5px;
 }
 
-.button-more {
+.boton-ver-mas {
   text-transform: uppercase;
   background-color: #9fbfc8;
   color: white;
@@ -88,7 +88,7 @@
   max-width: 80%;
 }
 
-.button-more-product {
+.boton-mas-productos {
   text-align: center;
 }
 
@@ -96,10 +96,10 @@
 
 @media (min-width: 768px) {
   /* #region ----------- HOME----------- */
-  .carousel {
+  .carrusel {
     max-width: 80%;
   }
-  .carousel-arrows {
+  .carrusel-flechas {
     display: block;
   }
 
