@@ -54,29 +54,29 @@
         <nav class= "register-form">
             <p class="form-título"> CREÁ TU CUENTA </p>
             <form class= "box-form"> 
-                <div> E-MAIL </div> 
-                <input type="text" name="email"/>;
-                <div> CONTRASEÑA </div>
-                <input type="password" name="contraseña"/>
-                <div> REETÍ TU CONTRASEÑA </div>
-                <input type="password" name="contraseña2"/>
-                <div> NOMBRE </div>
-                <input type="text" name="nombre"/>;
-                <div> APELLIDO </div>
-                <input type="text" name="apellido"/>;
+                <label> E-MAIL </label> 
+                <input type="email" name="email" required />;
+                <label> CONTRASEÑA </label>
+                <input type="password" name="contraseña" required/>
+                <label> REETÍ TU CONTRASEÑA </label>
+                <input type="password" name="contraseña2" required/>
+                <label> NOMBRE </label>
+                <input type="text" name="nombre" required/>;
+                <label> APELLIDO </label>
+                <input type="text" name="apellido" required/>;
             </form>
         </nav>
      
-        <div class="register-priv"> 
-            <input type="checkbox" id="checkbox" value="first_checkbox"/>  
+        <label class="register-priv"> 
+            <input type="radio" name="politicadePrivacidad" value="checkbox"/>  
             Acepto y entiendo la política de privacidad y uso de cookies. 
-        </div>
+        </label>
      
-        <p class= "register-crear"> <button> CREAR CUENTA </button> </p>
+        <p class= "register-crear"> <button type="submit"> CREAR CUENTA </button> </p>
      
         <div class="register-initsesion"> 
             <p> ¿Ya tenés una cuenta? </p>
-            <button> INICIÁ SESIÓN  </button> 
+            <button type="submit"> INICIÁ SESIÓN  </button> 
         </div>
      
     </main>
