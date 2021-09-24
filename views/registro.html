@@ -50,31 +50,39 @@
       </nav>
     </header>
     
-    <main class="register-main">
-        <nav class= "register-form">
+    <main class="registro-main">
+        <nav class= "registro-form">
             <p class="form-título"> CREÁ TU CUENTA </p>
+
             <form class= "box-form"> 
-                <label> E-MAIL </label> 
-                <input type="email" name="email" required />;
-                <label> CONTRASEÑA </label>
-                <input type="password" name="contraseña" required/>
-                <label> REETÍ TU CONTRASEÑA </label>
-                <input type="password" name="contraseña2" required/>
-                <label> NOMBRE </label>
-                <input type="text" name="nombre" required/>;
-                <label> APELLIDO </label>
-                <input type="text" name="apellido" required/>;
+
+              <label for="email"> EMAIL </label>
+              <input type="email" name="email" id="email" required>
+              <br>
+              <br>
+              <label for="password"> CONTRASEÑA </label>
+              <input type="password" name="password" id="password" minlength="8">
+              <br>
+              <br>
+              <label for="password"> REPETÍ CONTRASEÑA </label>
+              <input type="password" name="password" id="password" minlength="8">
+              <br>
+              <br>
+              <label for="nombre"> NOMBRE </label>
+              <input type="text" name="nombre" id="nombre" required>
+              <br>
+              <br>
+              <label for="nombre"> APELLIDO </label>
+              <input type="text" name="nombre" id="nombre" required>
             </form>
         </nav>
-     
-        <label class="register-priv"> 
-            <input type="radio" name="politicadePrivacidad" value="checkbox"/>  
+
+        <input type="checkbox" value= "politica-privacidad" name="politica-privacidad" id="politica-privacidad"> 
             Acepto y entiendo la política de privacidad y uso de cookies. 
-        </label>
+       
+        <button class= "boton-crear" type="submit"> CREAR CUENTA </button> 
      
-        <p class= "register-crear"> <button type="submit"> CREAR CUENTA </button> </p>
-     
-        <div class="register-initsesion"> 
+        <div class="registro-initsesion"> 
             <p> ¿Ya tenés una cuenta? </p>
             <button type="submit"> INICIÁ SESIÓN  </button> 
         </div>
