@@ -1,0 +1,60 @@
+/* Escribir acá css que impacta en todos los dispositivos aplicando la técnica de mobile first */
+
+/*-------- MAIN SECTION---------------*/
+#carrito_titulo{
+    margin: 5px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.articulo{
+    font-family: 'Lato', sans-serif;
+    border-top: solid 1px gray;
+    margin: 0 10px;
+}
+
+.carrito_producto{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    color: #6d6f74;
+}
+
+.carrito_img{
+    max-width: 80px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+.carrito_img img{
+    max-width: 100%;
+}
+
+.carrito_descripcion{
+    flex-grow: 6;
+}
+
+.btn_borrar_prod{
+    display: flex;
+    justify-content: right;
+    border: none;
+    position: relative;
+    bottom: 20px;
+}
+
+.total{
+    display: flex;
+    justify-content: right;
+    margin: 0 10px;
+    border-top: solid 1px gray;
+}
+
+
+
+
+@media (min-width: 768px) { /* Escribir acá css que impacta solamente en TABLET y DESKTOP*/
+}
+
+@media (min-width: 1280px) { /* Escribir acá css que impacta solamente en DESKTOP */
+
+}
