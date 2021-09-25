@@ -14,25 +14,28 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    
+    <link rel="stylesheet" href="/css/registro.css" />
+    <link rel="stylesheet" href="/css/normalizador.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/indice.css" />
     <title>FAJUVI</title>
   </head>
   <body>
     <header>
-      <div class="cabecera-nav">
+      <div class="cabecera-promo">
         <p>10% off transferencia bancaria - 3 cuotas sin interés</p>
       </div>
-      <div class="menu">
+      <div class="cabecera-principal">
         <i class="fas fa-bars"></i>
-        <div class="button-search">
+        <div class="caja-busqueda">
           <input type="text" placeholder="Buscar..." />
           <button><i class="fas fa-search"></i></button>
         </div>
-        <div class="logo">
+        <div class="cabecera-logo">
           <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
         </div>
-        <div class="menu-items">
+        <div class="cabecera-items">
           <i class="fas fa-search"></i>
           <i class="fas fa-user"></i>
           <a href="">Iniciar Sesión</a>
@@ -41,7 +44,7 @@
         </div>
       </div>
       <nav>
-        <div class="nav-desktop">
+        <div class="barra-nav">
           <a href="#" class="seleccionado">Inicio</a>
           <a href="#">Productos</a>
           <a href="#">Quiénes Somos</a>
@@ -49,42 +52,55 @@
         </div>
       </nav>
     </header>
-    
+
     <main class="registro-main">
         <nav class= "registro-form">
-            <p class="form-título"> CREÁ TU CUENTA </p>
-
-            <form class= "box-form"> 
-
-              <label for="email"> EMAIL </label>
-              <input type="email" name="email" id="email" required>
+            <div class="form-titulo"> CREÁ TU CUENTA </div>
+            
+        
+            <div class= "box-form">
+              <form > 
+                <label for="nombre"> NOMBRE </label>
+                <div><input type="text" name="nombre" id="nombre" required> </div>
+                <br>
+                <label class="textos" for="nombre"> APELLIDO </label>
+                <div><input type="text" name="nombre" id="nombre" required></div>
+                <br>
+                <label for="email"> EMAIL </label>
+              <div class="barra"><input type="email" name="email" id="email"  required></div>
               <br>
+                <div class="contraseña">
+                  <div class="contraseña1">
+                    <label for="password"> CONTRASEÑA </label>
+                    <div ><input type="password" name="password" id="password"  minlength="8"></div>
+                  </div>
+                  <br>
+                  <div class="contraseña2">
+                    <label for="password"> REPETÍ CONTRASEÑA </label> 
+                    <div ><input type="password" name="password" id="password" minlength="8"></div>
+                  </div>
+              </div>
               <br>
-              <label for="password"> CONTRASEÑA </label>
-              <input type="password" name="password" id="password" minlength="8">
+              
+              
               <br>
-              <br>
-              <label for="password"> REPETÍ CONTRASEÑA </label>
-              <input type="password" name="password" id="password" minlength="8">
-              <br>
-              <br>
-              <label for="nombre"> NOMBRE </label>
-              <input type="text" name="nombre" id="nombre" required>
-              <br>
-              <br>
-              <label for="nombre"> APELLIDO </label>
-              <input type="text" name="nombre" id="nombre" required>
+              
+              
             </form>
+          </div>
         </nav>
-
-        <input type="checkbox" value= "politica-privacidad" name="politica-privacidad" id="politica-privacidad"> 
-            Acepto y entiendo la política de privacidad y uso de cookies. 
-       
-        <button class= "boton-crear" type="submit"> CREAR CUENTA </button> 
-     
-        <div class="registro-initsesion"> 
+        <br>
+        <br>
+        <div class="politica"><input type="radio" value= "politica-privacidad" name="politica-privacidad" id="politica-privacidad"> 
+            Acepto y entiendo la política de privacidad y uso de cookies. </div>
+            <br>
+            <br>
+        <div><button class= "boton-crear" type="submit"> CREAR CUENTA </button> </div>
+        <br>
+        <br>
+        <div class="registro-inicsesion"> 
             <p> ¿Ya tenés una cuenta? </p>
-            <button type="submit"> INICIÁ SESIÓN  </button> 
+            <button class= "boton-sesion" type="submit"> INICIÁ SESIÓN  </button> 
         </div>
      
     </main>
@@ -93,7 +109,7 @@
       <div class="info-footer">
         <div>
           <ul>
-            <li class="footer-tittle">Navegación</li>
+            <li class="fotter-titulo">Navegación</li>
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Productos</a></li>
             <li><a href="#">Quiénes Somos</a></li>
@@ -102,7 +118,7 @@
         </div>
         <div>
           <ul>
-            <li class="footer-tittle">Redes Sociales</li>
+            <li class="fotter-titulo">Redes Sociales</li>
             <li>
               <i class="fab fa-instagram"></i>
               @fajuvi
@@ -119,7 +135,7 @@
         </div>
         <div>
           <ul>
-            <li class="footer-tittle">Contactanos</li>
+            <li class="fotter-titulo">Contactanos</li>
             <li>
               <i class="fas fa-mobile-alt"></i>
               +54 9 3517896573
@@ -135,7 +151,7 @@
           </ul>
         </div>
       </div>
-      <div class="copyright">
+      <div class="caja-copyright">
         <i class="far fa-copyright"></i>
         <p>COPYRIGHT FAJUVI - 2021. TODOS LOS DERECHOS RESERVADOS.</p>
       </div>

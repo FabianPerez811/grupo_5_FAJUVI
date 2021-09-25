@@ -13,4 +13,4 @@ app.get ('/', (req,res) => {res.sendFile(path.join(__dirname, '/views/indice.htm
 app.get ('/', (req,res) => {res.sendFile(path.join(__dirname, '/views/acceso.html'))})
 app.get ('/carritoProductos', (req,res) => {res.sendFile(path.join(__dirname, '/views/carritoProductos.html'))})
 app.get ('/', (req,res) => {res.sendFile(path.join(__dirname, '/views/detalleProducto.html'))})
-app.get ('/', (req,res) => {res.sendFile(path.join(__dirname, '/views/registro.html'))})
+app.get ('/registro', (req,res) => {res.sendFile(path.join(__dirname, '/views/registro.html'))})
