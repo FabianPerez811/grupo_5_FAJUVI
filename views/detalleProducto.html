@@ -14,25 +14,29 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/normalizador.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/detalleProducto.css" />
+
     <title>FAJUVI</title>
   </head>
   <body>
     <header>
-      <div class="cabecera-nav">
+      <div class="cabecera-promo">
         <p>10% off transferencia bancaria - 3 cuotas sin interés</p>
       </div>
-      <div class="menu">
+      <div class="cabecera-principal">
         <i class="fas fa-bars"></i>
-        <div class="button-search">
+        <div class="caja-busqueda">
           <input type="text" placeholder="Buscar..." />
           <button><i class="fas fa-search"></i></button>
         </div>
-        <div class="logo">
-          <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
+        <div class="cabecera-logo">
+          <a href="/index">
+            <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
+          </a>
         </div>
-        <div class="menu-items">
+        <div class="cabecera-items">
           <i class="fas fa-search"></i>
           <i class="fas fa-user"></i>
           <a href="">Iniciar Sesión</a>
@@ -41,7 +45,7 @@
         </div>
       </div>
       <nav>
-        <div class="nav-desktop">
+        <div class="barra-nav">
           <a href="#" class="seleccionado">Inicio</a>
           <a href="#">Productos</a>
           <a href="#">Quiénes Somos</a>
@@ -49,43 +53,49 @@
         </div>
       </nav>
     </header>
-    
-    <main class="register-main">
-        <nav class= "register-form">
-            <p class="form-título"> CREÁ TU CUENTA </p>
-            <form class= "box-form"> 
-                <div> E-MAIL </div> 
-                <input type="text" name="email"/>;
-                <div> CONTRASEÑA </div>
-                <input type="password" name="contraseña"/>
-                <div> REETÍ TU CONTRASEÑA </div>
-                <input type="password" name="contraseña2"/>
-                <div> NOMBRE </div>
-                <input type="text" name="nombre"/>;
-                <div> APELLIDO </div>
-                <input type="text" name="apellido"/>;
-            </form>
-        </nav>
-     
-        <div class="register-priv"> 
-            <input type="checkbox" id="checkbox" value="first_checkbox"/>  
-            Acepto y entiendo la política de privacidad y uso de cookies. 
+    <section class="posicion">
+      <hr />
+      <ul>
+        <li><a href="/index">Inicio</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li><a href="/productDetail">Detalle de Producto</a></li>
+      </ul>
+    </section>
+    <main>
+      <div>
+        <div class="fotos-producto">
+          <img src="" alt="" />
         </div>
-     
-        <p class= "register-crear"> <button> CREAR CUENTA </button> </p>
-     
-        <div class="register-initsesion"> 
-            <p> ¿Ya tenés una cuenta? </p>
-            <button> INICIÁ SESIÓN  </button> 
+        <div class="info-producto">
+          <h3 class="nombre-producto">Cinto Black</h3>
+          <div>
+            <p>$4.000</p>
+            <p>3 cuotas sin interés de $666,67</p>
+            <p>Ver medios de pago</p>
+          </div>
+          <div>
+            <p>Medidas</p>
+            <select name="medidas">
+              <option value="seleccione" selected>Seleccione una opción</option>
+              <option value="85">80</option>
+              <option value="90">90</option>
+              <option value="85">95</option>
+              <option value="90">100</option>
+            </select>
+          </div>
+          <button></button>
+          <div class="caja-cp">
+            <p>Entregas para el CP: 5021</p>
+            <button></button>
+          </div>
         </div>
-     
+      </div>
     </main>
-
     <footer>
       <div class="info-footer">
         <div>
           <ul>
-            <li class="footer-tittle">Navegación</li>
+            <li class="fotter-titulo">Navegación</li>
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Productos</a></li>
             <li><a href="#">Quiénes Somos</a></li>
@@ -94,7 +104,7 @@
         </div>
         <div>
           <ul>
-            <li class="footer-tittle">Redes Sociales</li>
+            <li class="fotter-titulo">Redes Sociales</li>
             <li>
               <i class="fab fa-instagram"></i>
               @fajuvi
@@ -111,7 +121,7 @@
         </div>
         <div>
           <ul>
-            <li class="footer-tittle">Contactanos</li>
+            <li class="fotter-titulo">Contactanos</li>
             <li>
               <i class="fas fa-mobile-alt"></i>
               +54 9 3517896573
@@ -127,7 +137,7 @@
           </ul>
         </div>
       </div>
-      <div class="copyright">
+      <div class="caja-copyright">
         <i class="far fa-copyright"></i>
         <p>COPYRIGHT FAJUVI - 2021. TODOS LOS DERECHOS RESERVADOS.</p>
       </div>

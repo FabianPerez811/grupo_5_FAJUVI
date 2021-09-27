@@ -14,10 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
       rel="stylesheet"
     />
+    
+    <link rel="stylesheet" href="/css/registro.css" />
     <link rel="stylesheet" href="/css/normalizador.css" />
     <link rel="stylesheet" href="/css/general.css" />
-    <link rel="stylesheet" href="/css/detalleProducto.css" />
-
+    <link rel="stylesheet" href="/css/indice.css" />
     <title>FAJUVI</title>
   </head>
   <body>
@@ -32,9 +33,7 @@
           <button><i class="fas fa-search"></i></button>
         </div>
         <div class="cabecera-logo">
-          <a href="/index">
-            <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
-          </a>
+          <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
         </div>
         <div class="cabecera-items">
           <i class="fas fa-search"></i>
@@ -53,44 +52,59 @@
         </div>
       </nav>
     </header>
-    <section class="posicion">
-      <hr />
-      <ul>
-        <li><a href="/index">Inicio</a></li>
-        <li><i class="fas fa-chevron-right"></i></li>
-        <li><a href="/productDetail">Detalle de Producto</a></li>
-      </ul>
-    </section>
-    <main>
-      <div>
-        <div class="fotos-producto">
-          <img src="" alt="" />
+
+    <main class="registro-main">
+        <nav class= "registro-form">
+            <div class="form-titulo"> CREÁ TU CUENTA </div>
+            
+        
+            <div class= "box-form">
+              <form > 
+                <label for="nombre"> NOMBRE </label>
+                <div><input type="text" name="nombre" id="nombre" required> </div>
+                <br>
+                <label class="textos" for="nombre"> APELLIDO </label>
+                <div><input type="text" name="nombre" id="nombre" required></div>
+                <br>
+                <label for="email"> EMAIL </label>
+              <div class="barra"><input type="email" name="email" id="email"  required></div>
+              <br>
+                <div class="contraseña">
+                  <div class="contraseña1">
+                    <label for="password"> CONTRASEÑA </label>
+                    <div ><input type="password" name="password" id="password"  minlength="8"></div>
+                  </div>
+                  <br>
+                  <div class="contraseña2">
+                    <label for="password"> REPETÍ CONTRASEÑA </label> 
+                    <div ><input type="password" name="password" id="password" minlength="8"></div>
+                  </div>
+              </div>
+              <br>
+              
+              
+              <br>
+              
+              
+            </form>
+          </div>
+        </nav>
+        <br>
+        <br>
+        <div class="politica"><input type="radio" value= "politica-privacidad" name="politica-privacidad" id="politica-privacidad"> 
+            Acepto y entiendo la política de privacidad y uso de cookies. </div>
+            <br>
+            <br>
+        <div><button class= "boton-crear" type="submit"> CREAR CUENTA </button> </div>
+        <br>
+        <br>
+        <div class="registro-inicsesion"> 
+            <p> ¿Ya tenés una cuenta? </p>
+            <button class= "boton-sesion" type="submit"> INICIÁ SESIÓN  </button> 
         </div>
-        <div class="info-producto">
-          <h3 class="nombre-producto">Cinto Black</h3>
-          <div>
-            <p>$4.000</p>
-            <p>3 cuotas sin interés de $666,67</p>
-            <p>Ver medios de pago</p>            
-          </div>
-          <div>
-            <p>Medidas</p>
-            <select name="medidas">
-                <option value="seleccione" selected>Seleccione una opción</option>
-                <option value="85">80</option>
-                <option value="90">90</option>
-                <option value="85">95</option>
-                <option value="90">100</option>
-            </select>
-          </div>
-          <button></button>
-          <div class="caja-cp">
-              <p>Entregas para el CP: 5021</p>
-              <button></button>
-          </div>
-        </div>
-      </div>
+     
     </main>
+
     <footer>
       <div class="info-footer">
         <div>
