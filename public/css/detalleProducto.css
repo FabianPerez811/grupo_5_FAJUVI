@@ -1,17 +1,41 @@
-/* Escribir acá css que impacta en todos los dispositivos aplicando la técnica de mobile first 
-
-
-
-
-
-
-
-*/
-
-
-@media (min-width: 768px) { /* Escribir acá css que impacta solamente en TABLET y DESKTOP*/
+.posicion ul {
+  display: none;
 }
 
-@media (min-width: 1280px) { /* Escribir acá css que impacta solamente en DESKTOP */
+@media (min-width: 768px) {
+  .posicion hr {
+    border: solid 0.5px #d6d6d69d;
+  }
 
+  .posicion ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .posicion ul li {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .posicion ul li a {
+    text-decoration: none;
+    color: #2a2c25;
+  }
+
+  .posicion ul li a:hover {
+    color: #9fbfc8;
+    text-decoration: underline;
+  }
+
+  .posicion li i {
+    font-size: 10px;
+    color: #2a2c25;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* Escribir acá css que impacta solamente en DESKTOP */
 }
