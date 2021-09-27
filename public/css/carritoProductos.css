@@ -1,6 +1,9 @@
 /* Escribir acá css que impacta en todos los dispositivos aplicando la técnica de mobile first */
 
 /*-------- MAIN SECTION---------------*/
+.cabecera-items{
+    display: none;
+}
 #carrito_titulo{
     margin: 5px 20px;
     font-family: 'Lato', sans-serif;
@@ -53,6 +56,10 @@
 
 
 @media (min-width: 768px) { /* Escribir acá css que impacta solamente en TABLET y DESKTOP*/
+ .carrito-main{
+     max-width: 50%;
+     margin: auto;
+ }
 }
 
 @media (min-width: 1280px) { /* Escribir acá css que impacta solamente en DESKTOP */
