@@ -35,19 +35,21 @@
           <button><i class="fas fa-search"></i></button>
         </div>
         <div class="cabecera-logo">
-          <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
-        </div>
+          <a href="/indice">
+            <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
+          </a>
+       </div>
         <div class="cabecera-items">
           <i class="fas fa-search"></i>
           <i class="fas fa-user"></i>
-          <a href="">Iniciar Sesión</a>
-          <a href="">Registrarse</a>
+          <a href="acceso">Iniciar Sesión</a>
+          <a href="registro">Registrarse</a>
           <i class="fas fa-shopping-cart"></i>
         </div>
       </div>
       <nav>
         <div class="barra-nav">
-          <a href="#" class="seleccionado">Inicio</a>
+          <a href="/indice" class="seleccionado">Inicio</a>
           <a href="#">Productos</a>
           <a href="#">Quiénes Somos</a>
           <a href="#">Contacto</a>
@@ -57,7 +59,7 @@
 
     <main class="carrito-main">
         <section>
-          <h2 id="carrito_titulo"> Mi Carrito</h2>   
+          <h2 id="carrito_titulo"> Mi carrito</h2>   
           <article class="articulo"> 
                <div class="carrito_producto">
                     <div class="carrito_img">
@@ -72,9 +74,7 @@
                     </div>   
                </div>
                <div class="btn_borrar_prod">
-                  <button>
-                    <i class="fas fa-trash-alt"></i>
-                  </button>
+                <i class="fas fa-trash-alt"></i>
                </div>  
           </article>
 
@@ -92,9 +92,7 @@
                    </div>   
               </div>
               <div class="btn_borrar_prod">
-                 <button>
                    <i class="fas fa-trash-alt"></i>
-                 </button>
               </div>  
           </article>
 
@@ -112,9 +110,9 @@
                  </div>   
             </div>
             <div class="btn_borrar_prod">
-               <button>
-                 <i class="fas fa-trash-alt"></i>
-               </button>
+              <div class="btn_borrar_prod">
+                <i class="fas fa-trash-alt"></i>
+               </div>  
             </div>  
           </article>
 
@@ -132,15 +130,22 @@
                </div>   
           </div>
           <div class="btn_borrar_prod">
-             <button>
-               <i class="fas fa-trash-alt"></i>
-             </button>
+            <div class="btn_borrar_prod">
+              <i class="fas fa-trash-alt"></i>
+             </div>  
           </div>  
           </article>
         </section>
         <section>
           <div class="total">
             <h2>Total: $13.500 </h2>
+          </div>
+        </section>
+        <section>
+          <div class="envio">
+            <input class="envio-barra" type="number" name="" placeholder="Tu codigo postal">
+            <button class="btn-calcular">CALCULAR</button>
+              <h4><i class="truck fas fa-truck "></i> Envio gratis superando los $6.000</h4>
           </div>
         </section>
 

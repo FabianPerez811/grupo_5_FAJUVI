@@ -7,11 +7,12 @@
 #carrito_titulo{
     margin: 5px 20px;
     font-family: 'Lato', sans-serif;
+    color: #6d6f74;
 }
 
 .articulo{
     font-family: 'Lato', sans-serif;
-    border-top: solid 1px gray;
+    border-top: solid 1px #D6D6D6;
     margin: 0 10px;
 }
 
@@ -37,19 +38,52 @@
     flex-grow: 6;
 }
 
+.carrito_descripcion h4{
+    font-size: 15px;
+}
+
 .btn_borrar_prod{
     display: flex;
     justify-content: right;
     border: none;
     position: relative;
     bottom: 20px;
+    color:#6D6F74;
+}
+.btn_borrar_prod:hover{
+    color:#2a2c25;
+ 
 }
 
 .total{
     display: flex;
     justify-content: right;
     margin: 0 10px;
-    border-top: solid 1px gray;
+    border-top: solid 1px #D6D6D6;
+}
+.total h2{
+    padding: 5px;
+    color: #6d6f74;
+    border-radius: 10px;
+}
+.truck{
+    color:#6d6f74;
+}
+.envio{
+    font-style: italic;
+    color:#6d6f74;
+    margin:0px;
+}
+.envio-barra{ 
+    height: 31px;
+}
+.btn-calcular{
+    font-size: 17px;
+    padding: 5px 10px;
+    border-color: white;
+    border-radius: 5px;
+    color:white;
+    background-color:#6D6F74;
 }
 
 
