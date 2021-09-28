@@ -148,6 +148,7 @@ footer li .far {
 
   .cabecera-items {
     display: inline-flex;
+    align-items: center;
   }
 
   .cabecera-items a {
