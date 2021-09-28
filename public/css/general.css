@@ -132,6 +132,10 @@ footer li .far {
     cursor: pointer;
   }
 
+  .caja-busqueda button {
+    cursor: pointer;
+  }
+
   .cabecera-principal input[type='text'],
   .cabecera-principal button {
     padding: 5px;
