@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="/css/normalizador.css" />
     <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/indice.css" />
     <link rel="stylesheet" href="/css/detalleProducto.css" />
 
     <title>FAJUVI</title>
@@ -26,22 +27,22 @@
         <p>10% off transferencia bancaria - 3 cuotas sin interés</p>
       </div>
       <div class="cabecera-principal">
-        <i class="fas fa-bars"></i>
-        <div class="caja-busqueda">
-          <input type="text" placeholder="Buscar..." />
-          <button><i class="fas fa-search"></i></button>
-        </div>
+        <i class="fas fa-bars"></i>        
+          <form action="#" class="caja-busqueda"  method="GET">
+            <input type="text" placeholder="Buscar..." />
+            <button type="submit" ><i class="fas fa-search"></i></button>
+          </form>       
         <div class="cabecera-logo">
-          <a href="/index">
+          <a href="/indice">
             <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
           </a>
         </div>
         <div class="cabecera-items">
           <i class="fas fa-search"></i>
           <i class="fas fa-user"></i>
-          <a href="">Iniciar Sesión</a>
-          <a href="">Registrarse</a>
-          <i class="fas fa-shopping-cart"></i>
+          <a href="/acceso">Iniciar Sesión</a>
+          <a href="/registro">Registrarse</a>
+          <a href="/carritoProductos"></a><i class="fas fa-shopping-cart"></i></a>
         </div>
       </div>
       <nav>
@@ -53,28 +54,46 @@
         </div>
       </nav>
     </header>
-    <section class="posicion">
-      <hr />
-      <ul>
-        <li><a href="/index">Inicio</a></li>
-        <li><i class="fas fa-chevron-right"></i></li>
-        <li><a href="/productDetail">Detalle de Producto</a></li>
-      </ul>
-    </section>
     <main>
-      <div>
+      <section class="posicion">
+        <hr />
+        <ul>
+          <li><a href="/indice">Inicio</a></li>
+          <li><i class="fas fa-chevron-right"></i></li>
+          <li><a href="/detalleProducto">Detalle de Producto</a></li>
+        </ul>
+      </section>
+      <section class="detalle-producto-flex">
         <div class="fotos-producto">
-          <img src="" alt="" />
+          <img src="img/cintoA.jpg" alt="Cinto negro" />
+          <div class="opciones-producto">
+            <img src="img/cinto.jpg" alt="Cinto negro" />
+            <img src="img/cintoB.jpg" alt="Cinto negro" />
+            <img src="img/cintoC.jpg" alt="Cinto negro" />
+          </div>
+        </div>
+        <div class="carrusel-circulo">
+          <span class="circulo"></span>
+          <span class="circulo"></span>
+          <span class="circulo"></span>
         </div>
         <div class="info-producto">
           <h3 class="nombre-producto">Cinto Black</h3>
-          <div>
-            <p>$4.000</p>
-            <p>3 cuotas sin interés de $666,67</p>
-            <p>Ver medios de pago</p>
-          </div>
-          <div>
-            <p>Medidas</p>
+          <p class="dp-precio">$4.000</p>
+          <p class="dp-cuotas">
+            <i class="fas fa-credit-card"></i>
+            3 cuotas sin interés de
+            <strong>$666,67</strong>
+          </p>
+          <p class="dp-descuento">
+            <i class="fas fa-money-bill"></i>
+            <strong>10% de descuento</strong>
+            pagando con Transferencia Bancaria
+          </p>
+          <a href="#" class="dp-mediosPago">Ver medios de pago</a>
+          <hr class="linea" />
+          <div class="box-select">
+            <p>Medidas:</p>
             <select name="medidas">
               <option value="seleccione" selected>Seleccione una opción</option>
               <option value="85">80</option>
@@ -83,13 +102,87 @@
               <option value="90">100</option>
             </select>
           </div>
-          <button></button>
+          <hr class="linea" />
+          <button class="boton-agregar">Agregar al carrito</button>
           <div class="caja-cp">
             <p>Entregas para el CP: 5021</p>
-            <button></button>
+            <button class="boton-cp">Cambiar CP</button>
+          </div>
+          <div>
+            <div class="titulo-envio">
+              <i class="fas fa-truck"></i>
+              <p>Envío a domicilio</p>
+            </div>
+            <div class="detalle-envio">
+              <p>
+                Correo Argentino -Envío a domicilio. Llega el jueves 30/10
+              </p>
+              <p><strong>$400,00</strong></p>
+            </div>
+          </div>
+          <div>
+            <div class="titulo-envio">
+              <i class="fas fa-store"></i>
+              <p>Nuestro local</p>
+            </div>
+            <div class="detalle-envio">
+              <p>
+                Punto de Entrega - Rafael Nuñez 5000 Cba Capital. L a V de 9 a
+                16hs.
+              </p>
+              <p><strong>Gratis</strong></p>
+            </div>
+          </div>
+          <div class="compartir-redes">
+            <p>Compartir:</p>
+            <div>
+              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-pinterest"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-facebook"></i>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="informacion-producto">
+        <div>Cinto Black</div>
+        <p>
+          Cinturón de cuero vacuno. Hebilla metálica en baño de plata.
+          <br />
+          <strong>Composición:</strong>
+          100% cuero vacuno
+        </p>
+      </section>
+      <hr />
+      <section class="destacados">
+        <h3 class="titulo-destacado">Productos Relacionados</h3>
+        <section class="productos-destacados">
+          <article>
+            <a href="/detalleProducto"><img src="img/cinto4.jpg" /></a>
+            <h4 class="producto">Cinto Sol</h4>
+            <p class="precio">$5.000</p>
+            <p class="cuotas">6 Cuotas sin interés de $833,33</p>
+          </article>
+          <article>
+            <a href="/detalleProducto"><img src="img/cinto2.jpg" /></a>
+            <h4 class="producto">Cinto Carmin</h4>
+            <p class="precio">$4.500</p>
+            <p class="cuotas">6 Cuotas sin interés de $750</p>
+          </article>
+          <article>
+            <a href="/detalleProducto"><img src="img/cinto3.jpg" /></a>
+            <h4 class="producto">Cinto Rubí</h4>
+            <p class="precio">$2.550</p>
+            <p class="cuotas">6 Cuotas sin interés de $425</p>
+          </article>
+          <article>
+            <a href="/detalleProducto"><img src="img/cinto5.jpg" /></a>
+            <h4 class="producto">Cinto Tachas</h4>
+            <p class="precio">$2.550</p>
+            <p class="cuotas">6 Cuotas sin interés de $425</p>
+          </article>
+        </section>
+      </section>
     </main>
     <footer>
       <div class="info-footer">
