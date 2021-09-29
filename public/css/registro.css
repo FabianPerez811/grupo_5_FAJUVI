@@ -42,10 +42,7 @@ celeste clarito #9FBFC8
     border:white;
 
 }
-#password{
-    width: 100%;
-    
-}
+
 
 .politica{
     font-style: italic;
@@ -92,20 +89,22 @@ celeste clarito #9FBFC8
         }
         .contraseña{
             display: flex;
-            justify-content: flex-start;}
-        .contraseña1{
+            justify-content: space-between;}
+
+        /*.contraseña1{
             display:flex;
             flex-direction: column;
         }
         .contraseña2{
-            margin-left: 20%;}
+            margin-left: 4px;
+        margin-right: 0px;}
         
         #password{
             width: 100%;
-        }
+        }*/
         .boton-crear{
             font-size: 20px;
-            transition: background-color 1s;
+            transition: background-color 0.5s;
     }
     .boton-crear:hover{
         background-color:#71A2AE ;
@@ -122,7 +121,7 @@ celeste clarito #9FBFC8
     
 
 
-@media (min-width: 1280px) { /* Escribir acá css que impacta solamente en DESKTOP */
+@media (min-width: 800px) { /* Escribir acá css que impacta solamente en DESKTOP */
     
     .registro-form{
     max-width: 50%; 
@@ -136,16 +135,21 @@ celeste clarito #9FBFC8
         font-size: 18px;
     }
     .contraseña{
+        
         display: flex;
-        justify-content: flex-start;}
+        justify-content: space-between;
+    }
     
     .contraseña2{
-        margin-left: 15%;
+        display:flex;
+        flex-direction: column;
+        
+        margin-left: 5px;
     }
     .boton-crear{
         font-size: 20px;
     background-color: #6D6F74;    
-    transition: background-color 1s;
+    transition: background-color 0.5s;
 }
 .boton-crear:hover{
     background-color:#71A2AE ;

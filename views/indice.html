@@ -27,21 +27,21 @@
       </div>
       <div class="cabecera-principal">
         <i class="fas fa-bars"></i>
-        <div class="caja-busqueda">
+        <form action="#" class="caja-busqueda" method="GET">
           <input type="text" placeholder="Buscar..." />
-          <button><i class="fas fa-search"></i></button>
-        </div>
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
         <div class="cabecera-logo">
           <a href="/indice">
             <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
           </a>
-       </div>
+        </div>
         <div class="cabecera-items">
           <i class="fas fa-search"></i>
           <i class="fas fa-user"></i>
-          <a href="acceso">Iniciar Sesión</a>
-          <a href="registro">Registrarse</a>
-          <i class="fas fa-shopping-cart"></i>
+          <a class="escritorio" href="acceso">Iniciar Sesión</a>
+          <a class="escritorio" href="registro">Registrarse</a>
+          <a href="carritoProductos"><i class="fas fa-shopping-cart"></i></a>
         </div>
       </div>
       <nav>
@@ -72,61 +72,81 @@
       <h3 class="titulo-destacado">Productos destacados</h3>
       <section class="productos-destacados">
         <article>
-          <a href="/detalleProducto"><img src="img/collar.jpg" /></a>
+          <a href="/detalleProducto">
+            <img src="img/collar.jpg" alt="imagen de collar" />
+          </a>
           <h4 class="producto">Collar Luna</h4>
           <p class="precio">$5.000</p>
           <p class="cuotas">6 Cuotas sin interés de $833,33</p>
         </article>
         <article>
-          <a href="/detalleProducto"><img src="img/collar3.jpg" /></a>
+          <a href="/detalleProducto">
+            <img src="img/collar3.jpg" alt="imagen de collar" />
+          </a>
           <h4 class="producto">Collar Perlas</h4>
           <p class="precio">$4.500</p>
           <p class="cuotas">6 Cuotas sin interés de $750</p>
         </article>
         <article>
-          <a href="/detalleProducto"><img src="img/aro.jpg" /></a>
+          <a href="/detalleProducto">
+            <img src="img/aro.jpg" alt="imagen de Aro" />
+          </a>
           <h4 class="producto">Aro Gota</h4>
           <p class="precio">$2.550</p>
           <p class="cuotas">6 Cuotas sin interés de $425</p>
         </article>
         <article>
-          <a href="/detalleProducto"><img src="img/pulsera.jpg" /></a>
+          <a href="/detalleProducto">
+            <img src="img/pulsera.jpg" alt="imagen de pulsera" />
+          </a>
           <h4 class="producto">Pulsera Calia</h4>
           <p class="precio">$1.500</p>
           <p class="cuotas">6 Cuotas sin interés de $250</p>
         </article>
         <article>
-          <a href="/detalleProducto"><img src="img/cinto.jpg" /></a>
+          <a href="/detalleProducto">
+            <img src="img/cinto.jpg" alt="imagen de cinto" />
+          </a>
           <h4 class="producto">Cinto Black</h4>
           <p class="precio">$4.000</p>
           <p class="cuotas">6 Cuotas sin interés de $666,67</p>
         </article>
         <article>
-          <a href="/detalleProducto"><img src="img/aro2.jpg" /></a>
+          <a href="/detalleProducto">
+            <img src="img/aro2.jpg" alt="imagen de aros" />
+          </a>
           <h4 class="producto">Aro Florencia</h4>
           <p class="precio">$3.660</p>
           <p class="cuotas">6 Cuotas sin interés de $610</p>
         </article>
         <article>
-          <a href="/detalleProducto"><img src="img/anillo.jpg" /></a>
+          <a href="/detalleProducto">
+            <img src="img/anillo.jpg" alt="imagen de anillo" />
+          </a>
           <h4 class="producto">Anillo Mia</h4>
           <p class="precio">$4.800</p>
           <p class="cuotas">6 Cuotas sin interés de $800</p>
         </article>
         <article>
-          <a href="/detalleProducto"><img src="img/aro3.jpg" /></a>
+          <a href="/detalleProducto">
+            <img src="img/aro3.jpg" alt="imagen de aros" />
+          </a>
           <h4 class="producto">Aro Col</h4>
           <p class="precio">$2750</p>
           <p class="cuotas">6 Cuotas sin interés de $458,33</p>
         </article>
         <article>
-          <a href="/detalleProducto"><img src="img/pulsera2.jpg" /></a>
+          <a href="/detalleProducto">
+            <img src="img/pulsera2.jpg" alt="imagen de pulsera" />
+          </a>
           <h4 class="producto">Pulsera Esclava</h4>
           <p class="precio">$3.060</p>
           <p class="cuotas">6 Cuotas sin interés de $510</p>
         </article>
         <article>
-          <a href="/detalleProducto"><img src="img/collar4.png" /></a>
+          <a href="/detalleProducto">
+            <img src="img/collar4.png" alt="imagen de collar" />
+          </a>
           <h4 class="producto">Cadena Luz</h4>
           <p class="precio">$2.040</p>
           <p class="cuotas">6 Cuotas sin interés de $340</p>
@@ -136,6 +156,7 @@
         <button class="boton-ver-mas">Ver todos los productos</button>
       </div>
     </main>
+
     <footer>
       <div class="info-footer">
         <div>

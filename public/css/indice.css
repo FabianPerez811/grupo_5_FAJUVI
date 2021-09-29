@@ -86,6 +86,13 @@
   border: none;
   margin: 10px;
   max-width: 80%;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transform: background-color 0.5s;
+}
+
+.boton-ver-mas:hover {
+  background-color: #71a2ae;
 }
 
 .boton-mas-productos {
@@ -131,7 +138,7 @@
 }
 
 @media (min-width: 1280px) {
-    .productos-destacados {
-      margin: 10px 130px;
-    }
+  .productos-destacados {
+    margin: 10px 130px;
   }
+}
