@@ -30,21 +30,21 @@
       </div>
       <div class="cabecera-principal">
         <i class="fas fa-bars"></i>
-        <div class="caja-busqueda">
+        <form action="#" class="caja-busqueda" method="GET">
           <input type="text" placeholder="Buscar..." />
-          <button><i class="fas fa-search"></i></button>
-        </div>
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
         <div class="cabecera-logo">
           <a href="/indice">
             <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
           </a>
-       </div>
+        </div>
         <div class="cabecera-items">
           <i class="fas fa-search"></i>
           <i class="fas fa-user"></i>
-          <a href="acceso">Iniciar Sesión</a>
-          <a href="registro">Registrarse</a>
-          <i class="fas fa-shopping-cart"></i>
+          <a class="escritorio" href="acceso">Iniciar Sesión</a>
+          <a class="escritorio" href="registro">Registrarse</a>
+          <a href="carritoProductos"><i class="fas fa-shopping-cart"></i></a>
         </div>
       </div>
       <nav>
@@ -56,6 +56,7 @@
         </div>
       </nav>
     </header>
+
 
     <main class="carrito-main">
         <section>
@@ -73,9 +74,17 @@
                       <h3>$5.000</h3>
                     </div>   
                </div>
-               <div class="btn_borrar_prod">
-                <i class="fas fa-trash-alt"></i>
-               </div>  
+               <div>
+                <div class="contador">
+                  <div class="sum-res"> <i class="fas fa-plus-circle"> </i></div>
+                  <div class="contador-num">0</div>
+                  <div class="sum-res"> <i class="fas fa-minus-circle"> </i></div>
+                </div>
+                <div class="btn_borrar_prod">
+                  <i class="fas fa-trash-alt"></i>
+                 </div> 
+               </div>
+              
           </article>
 
           <article class="articulo"> 
@@ -91,9 +100,16 @@
                      <h3>$2.550</h3>
                    </div>   
               </div>
-              <div class="btn_borrar_prod">
-                   <i class="fas fa-trash-alt"></i>
-              </div>  
+              <div>
+                <div class="contador">
+                  <div class="sum-res"> <i class="fas fa-plus-circle"> </i></div>
+                  <div class="contador-num">0</div>
+                  <div class="sum-res"> <i class="fas fa-minus-circle"> </i></div>
+                </div>
+                <div class="btn_borrar_prod">
+                  <i class="fas fa-trash-alt"></i>
+                 </div> 
+               </div> 
           </article>
 
           <article class="articulo"> 
@@ -109,11 +125,16 @@
                    <h3>$1.500</h3>
                  </div>   
             </div>
-            <div class="btn_borrar_prod">
+            <div>
+              <div class="contador">
+                <div class="sum-res"> <i class="fas fa-plus-circle"> </i></div>
+                <div class="contador-num">0</div>
+                <div class="sum-res"> <i class="fas fa-minus-circle"> </i></div>
+              </div>
               <div class="btn_borrar_prod">
                 <i class="fas fa-trash-alt"></i>
-               </div>  
-            </div>  
+               </div> 
+             </div> 
           </article>
 
           <article class="articulo"> 
@@ -129,11 +150,16 @@
                  <h3>$4.000</h3>
                </div>   
           </div>
-          <div class="btn_borrar_prod">
+          <div>
+            <div class="contador">
+              <div class="sum-res"> <i class="fas fa-plus-circle"> </i></div>
+              <div class="contador-num">0</div>
+              <div class="sum-res"> <i class="fas fa-minus-circle"> </i></div>
+            </div>
             <div class="btn_borrar_prod">
               <i class="fas fa-trash-alt"></i>
-             </div>  
-          </div>  
+             </div> 
+           </div>  
           </article>
         </section>
         <section>
@@ -149,7 +175,7 @@
           </div>
         </section>
 
-
+        
     </main>
     <footer>
       <div class="info-footer">

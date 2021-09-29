@@ -44,16 +44,37 @@
 
 .btn_borrar_prod{
     display: flex;
-    justify-content: right;
+    flex-direction: row-reverse;
     border: none;
     position: relative;
-    bottom: 20px;
+    bottom: 30px;
     color:#6D6F74;
 }
 .btn_borrar_prod:hover{
-    color:#2a2c25;
+    color:#71A2AE;
  
 }
+.contador{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+    right: 5px;
+    bottom: 50px;
+    height: 15px;
+    color:#71A2AE;
+}
+.contador-num{
+    width: 13px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+.sum-res{
+    font-size: 12px;
+    
+}
+
 
 .total{
     display: flex;
@@ -72,7 +93,7 @@
 .envio{
     font-style: italic;
     color:#6d6f74;
-    margin:0px;
+    margin:5px;
 }
 .envio-barra{ 
     height: 31px;
