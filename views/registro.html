@@ -53,7 +53,6 @@
         </div>
       </nav>
     </header>
-
     <section class="posicion">
       <hr />
       <ul>
@@ -62,78 +61,74 @@
         <li><a href="/detalleProducto">Detalle de Producto</a></li>
       </ul>
     </section>
-    <main class="registro-main">
-      <nav class="registro-form">
-        <div class="form-titulo">CREÁ TU CUENTA</div>
-
-        <div class="box-form">
-          <form class="formulario-crear">
-            <label for="nombre">NOMBRE</label>
-            <div><input type="text" name="nombre" id="nombre" required /></div>
-            <!--<br /> -->
-            <label class="textos" for="nombre">APELLIDO</label>
-            <div><input type="text" name="nombre" id="nombre" required /></div>
-            <!--<br /> -->
-            <label for="email">EMAIL</label>
-            <div class="barra">
-              <input type="email" name="email" id="email" required />
-            </div>
-            <!--<br /> -->
-            <div class="contraseña">
-              <div class="contraseña1">
-                <label for="password">CONTRASEÑA</label>
-                <div>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    minlength="8"
-                  />
+    <main>
+      <!--Te cambio la etiqueta nav por un section, el nav lo usas para una barra de navegación-->
+      <section>
+        <div class="registro-form">
+          <div class="form-titulo">Creá tu cuenta</div>
+          <div>
+            <form class="formulario-crear">
+              <label for="nombre">Nombre</label>
+              <!--Para que el texto figure en mayuscula pones text-transform:uppercase-->
+              <div>
+                <input type="text" name="nombre" id="nombre" required />
+              </div>
+              <!--<br /> El br lo usas solamente para salto de línea, cuando querés generar espacio entre las cajas usas margin-->
+              <label for="nombre">Apellido</label>
+              <div>
+                <input type="text" name="nombre" id="nombre" required />
+              </div>
+              <label for="email">Email</label>
+              <div>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="contraseña">
+                <div class="contraseña1">
+                  <label for="password">CONTRASEÑA</label>
+                  <div>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      minlength="8"
+                    />
+                  </div>
+                </div>
+                <div class="contraseña2">
+                  <label for="password">REPETÍ CONTRASEÑA</label>
+                  <div>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      minlength="8"
+                    />
+                  </div>
                 </div>
               </div>
-              <!--<br /> -->
-              <div class="contraseña2">
-                <label for="password">REPETÍ CONTRASEÑA</label>
-                <div>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    minlength="8"
-                  />
-                </div>
-              </div>
-            </div>
-           <!--<br /> -->
-
-            <!--<br /> -->
-          </form>
+            </form>
+          </div>
         </div>
-      </nav>
-     <!--<br /> -->
-      <!--<br /> -->
-      <div class="politica">
-        <input
-          type="radio"
-          value="politica-privacidad"
-          name="politica-privacidad"
-          id="politica-privacidad"
-        />
-        Acepto y entiendo la política de privacidad y uso de cookies.
-      </div>
-      <!--<br /> -->
-      <!--<br /> -->
+        <div class="politica">
+          <input
+            type="radio"
+            value="politica-privacidad"
+            name="politica-privacidad"
+            id="politica-privacidad"
+          />
+          Acepto y entiendo la política de privacidad y uso de cookies.
+        </div>
+      </section>
+
       <div class="crear-cuenta">
-        <button class="boton-crear" type="submit">CREAR CUENTA</button>
+        <button class="boton-crear" type="submit">Crear cuenta</button>
       </div>
-      <!--<br /> -->
-      <!--<br /> -->
       <div class="registro-inicsesion">
-        <p>¿Ya tenés una cuenta?</p>
-        <button class="boton-sesion" type="submit">INICIÁ SESIÓN</button>
+        <a href="#">¿Ya tenés una cuenta?</a>
+        <!--Te cambio el p por un a para que sea un link-->
+        <button class="boton-sesion" type="submit">Iniciá Sesión</button>
       </div>
     </main>
-
     <footer>
       <div class="info-footer">
         <div>
