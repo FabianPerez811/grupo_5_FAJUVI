@@ -88,7 +88,7 @@
   max-width: 80%;
   letter-spacing: 1px;
   border-radius: 5px;
-  transform: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .boton-ver-mas:hover {

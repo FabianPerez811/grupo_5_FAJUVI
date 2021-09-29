@@ -1,97 +1,94 @@
-/* COLORES
-gris oscuro #2a2c25
-gris claro #6D6F74
-gris clarito #D6D6D6
-celeste oscuro #71A2AE
-celeste claro #83AEB8
-celeste clarito #9FBFC8
- */
-/* Escribir acá css que impacta en todos los dispositivos aplicando la técnica de mobile first 
+main {
+  margin-top: 30px;
+}
+.registro-form {
+  max-width: 90%;
+  background-color: #d6d6d6;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-*/
+.form-titulo {
+  padding: 15px;
+  margin-top: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #6d6f74;
+}
 
-.registro-form{
-    max-width: 80%;
-    background-color:#D6D6D6;
-    margin:auto;        
+form {
+  font-size: 16px;
+  color: #6d6f74;
+  padding: 15px;
+}
+
+form input {
+  margin: 10px 0px;
+  width: 100%;
+  height: 25px;
+  border: white;
+}
+
+.politica {
+  text-align: center;
+  font-style: italic;
+  font-size: 13px;
+  color: #2a2c25;
+  margin: 10px 0;
+}
+
+.crear-cuenta {
+  text-align: center;
+}
+
+.boton-crear,
+.boton-sesion {
+  text-transform: uppercase;
+  background-color: #9fbfc8;
+  color: white;
+  padding: 15px;
+  border: none;
+  margin: 10px;
+  max-width: 80%;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+
+.boton-crear:hover {
+  background-color: #71a2ae;
+}
+
+.boton-sesion {
+  background-color: #6d6f74;
+}
+
+.boton-sesion:hover {
+  background-color: #2a2c25;
+}
+
+.registro-inicsesion {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .registro-form {
+    max-width: 60%;
+    box-shadow: 5px -5px #f6f3f3;
+  }
+
+  .contraseña {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    justify-content: space-between;
+  }
 
-    
-
-.form-titulo{
-    padding: 15px;
-    text-shadow: white 0 -2px;
-    color: #6D6F74;
-    font-size:24px;
-}
-
-.box-form {
-    
-    padding: 15px;
-    align-items: center;
-    position: relative;
-    font-size:18px;
-    color:#6D6F74;
-}
-#email, #password, #nombre, #apellido {
-    width: 100%;
-    height: 25px;
-    border:white;
-
-}
-
-
-.politica{
-    font-style: italic;
-    font-size: 16px;
-    color:#2a2c25;
-    margin-left: 5%;
-    
-}
-.boton-crear{
-    display: flex;
-    padding: 7px 40px;
-    margin:auto;
-    justify-content: center;
-    font-size: 18px;
-    color:white;
-    border: #D6D6D6;
-    background-color:#6D6F74;
-}
-    
-.registro-inicsesion{
-    display: flex;
-    justify-content: center;
-}
-
-.boton-sesion{
-    background-color: #D6D6D6 ;
-    border-color: #D6D6D6;
-    padding: 9px 20px;
-    font-size: 20px;
-    margin-left:7px;
-}
-@media (min-width: 768px) { /* Escribir acá css que impacta solamente en TABLET y DESKTOP*/
-    
-    .registro-form{
-        max-width: 60%; 
-        box-shadow: 5px -5px #f6f3f3;
-        }
-        .form-titulo{
-            font-size: 26px;
-        }
-        .box-form{
-            font-size: 18px;
-            
-        }
-        .contraseña{
-            display: flex;
-            justify-content: space-between;}
-
-        /*.contraseña1{
+  /*.contraseña1{
             display:flex;
             flex-direction: column;
         }
@@ -102,64 +99,24 @@ celeste clarito #9FBFC8
         #password{
             width: 100%;
         }*/
-        .boton-crear{
-            font-size: 20px;
-            transition: background-color 0.5s;
-    }
-    .boton-crear:hover{
-        background-color:#71A2AE ;
-    }
-    .registro-inicsesion{
-        font-size: 18px;
-    }
-    .politica {
-        font-size: 18px;
-        margin-left: 20%;
-    }
-    
-    }
-    
+}
 
+@media (min-width: 800px) {
+  /* Escribir acá css que impacta solamente en DESKTOP */
 
-@media (min-width: 800px) { /* Escribir acá css que impacta solamente en DESKTOP */
-    
-    .registro-form{
-    max-width: 50%; 
+  .registro-form {
+    max-width: 50%;
     padding: 10px 20px;
     box-shadow: 5px -5px #f6f3f3;
-    }
-    .form-titulo{
-        font-size: 26px;
-    }
-    .box-form{
-        font-size: 18px;
-    }
-    .contraseña{
-        
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .contraseña2{
-        display:flex;
-        flex-direction: column;
-        
-        margin-left: 5px;
-    }
-    .boton-crear{
-        font-size: 20px;
-    background-color: #6D6F74;    
-    transition: background-color 0.5s;
-}
-.boton-crear:hover{
-    background-color:#71A2AE ;
-}
-.registro-inicsesion{
-    font-size: 18px;
-}
-.politica {
-    font-size: 18px;
-    margin-left: 25%;
-}
+  }
+  .contraseña {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .contraseña2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
 }
