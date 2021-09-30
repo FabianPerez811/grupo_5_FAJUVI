@@ -30,24 +30,26 @@
       </div>
       <div class="cabecera-principal">
         <i class="fas fa-bars"></i>
-        <div class="caja-busqueda">
+        <form action="#" class="caja-busqueda" method="GET">
           <input type="text" placeholder="Buscar..." />
-          <button><i class="fas fa-search"></i></button>
-        </div>
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
         <div class="cabecera-logo">
-          <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
+          <a href="/indice">
+            <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
+          </a>
         </div>
         <div class="cabecera-items">
           <i class="fas fa-search"></i>
           <i class="fas fa-user"></i>
-          <a href="">Iniciar Sesión</a>
-          <a href="">Registrarse</a>
-          <i class="fas fa-shopping-cart"></i>
+          <a class="escritorio" href="acceso">Iniciar Sesión</a>
+          <a class="escritorio" href="registro">Registrarse</a>
+          <a href="carritoProductos"><i class="fas fa-shopping-cart"></i></a>
         </div>
       </div>
       <nav>
         <div class="barra-nav">
-          <a href="#" class="seleccionado">Inicio</a>
+          <a href="/indice" class="seleccionado">Inicio</a>
           <a href="#">Productos</a>
           <a href="#">Quiénes Somos</a>
           <a href="#">Contacto</a>
@@ -55,9 +57,10 @@
       </nav>
     </header>
 
+
     <main class="carrito-main">
         <section>
-          <h2 id="carrito_titulo"> Mi Carrito</h2>   
+          <h2 id="carrito_titulo"> Mi carrito</h2>   
           <article class="articulo"> 
                <div class="carrito_producto">
                     <div class="carrito_img">
@@ -71,11 +74,17 @@
                       <h3>$5.000</h3>
                     </div>   
                </div>
-               <div class="btn_borrar_prod">
-                  <button>
-                    <i class="fas fa-trash-alt"></i>
-                  </button>
-               </div>  
+               <div>
+                <div class="contador">
+                  <div class="sum-res"> <i class="fas fa-plus-circle"> </i></div>
+                  <div class="contador-num">0</div>
+                  <div class="sum-res"> <i class="fas fa-minus-circle"> </i></div>
+                </div>
+                <div class="btn_borrar_prod">
+                  <i class="fas fa-trash-alt"></i>
+                 </div> 
+               </div>
+              
           </article>
 
           <article class="articulo"> 
@@ -91,11 +100,16 @@
                      <h3>$2.550</h3>
                    </div>   
               </div>
-              <div class="btn_borrar_prod">
-                 <button>
-                   <i class="fas fa-trash-alt"></i>
-                 </button>
-              </div>  
+              <div>
+                <div class="contador">
+                  <div class="sum-res"> <i class="fas fa-plus-circle"> </i></div>
+                  <div class="contador-num">0</div>
+                  <div class="sum-res"> <i class="fas fa-minus-circle"> </i></div>
+                </div>
+                <div class="btn_borrar_prod">
+                  <i class="fas fa-trash-alt"></i>
+                 </div> 
+               </div> 
           </article>
 
           <article class="articulo"> 
@@ -111,11 +125,16 @@
                    <h3>$1.500</h3>
                  </div>   
             </div>
-            <div class="btn_borrar_prod">
-               <button>
-                 <i class="fas fa-trash-alt"></i>
-               </button>
-            </div>  
+            <div>
+              <div class="contador">
+                <div class="sum-res"> <i class="fas fa-plus-circle"> </i></div>
+                <div class="contador-num">0</div>
+                <div class="sum-res"> <i class="fas fa-minus-circle"> </i></div>
+              </div>
+              <div class="btn_borrar_prod">
+                <i class="fas fa-trash-alt"></i>
+               </div> 
+             </div> 
           </article>
 
           <article class="articulo"> 
@@ -131,11 +150,16 @@
                  <h3>$4.000</h3>
                </div>   
           </div>
-          <div class="btn_borrar_prod">
-             <button>
-               <i class="fas fa-trash-alt"></i>
-             </button>
-          </div>  
+          <div>
+            <div class="contador">
+              <div class="sum-res"> <i class="fas fa-plus-circle"> </i></div>
+              <div class="contador-num">0</div>
+              <div class="sum-res"> <i class="fas fa-minus-circle"> </i></div>
+            </div>
+            <div class="btn_borrar_prod">
+              <i class="fas fa-trash-alt"></i>
+             </div> 
+           </div>  
           </article>
         </section>
         <section>
@@ -143,8 +167,15 @@
             <h2>Total: $13.500 </h2>
           </div>
         </section>
+        <section>
+          <div class="envio">
+            <input class="envio-barra" type="number" name="" placeholder="Tu codigo postal">
+            <button class="btn-calcular">CALCULAR</button>
+              <h4><i class="truck fas fa-truck "></i> Envio gratis superando los $6.000</h4>
+          </div>
+        </section>
 
-
+        
     </main>
     <footer>
       <div class="info-footer">

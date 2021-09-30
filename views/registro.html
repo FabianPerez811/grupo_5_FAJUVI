@@ -14,11 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
       rel="stylesheet"
     />
-    
-    <link rel="stylesheet" href="/css/registro.css" />
+
     <link rel="stylesheet" href="/css/normalizador.css" />
     <link rel="stylesheet" href="/css/general.css" />
-    <link rel="stylesheet" href="/css/indice.css" />
+    <link rel="stylesheet" href="/css/registro.css" />
     <title>FAJUVI</title>
   </head>
   <body>
@@ -28,83 +27,108 @@
       </div>
       <div class="cabecera-principal">
         <i class="fas fa-bars"></i>
-        <div class="caja-busqueda">
+        <form action="#" class="caja-busqueda" method="GET">
           <input type="text" placeholder="Buscar..." />
-          <button><i class="fas fa-search"></i></button>
-        </div>
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
         <div class="cabecera-logo">
-          <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
+          <a href="/">
+            <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
+          </a>
         </div>
         <div class="cabecera-items">
           <i class="fas fa-search"></i>
           <i class="fas fa-user"></i>
-          <a href="">Iniciar Sesión</a>
-          <a href="">Registrarse</a>
-          <i class="fas fa-shopping-cart"></i>
+          <a class="escritorio" href="acceso">Iniciar Sesión</a>
+          <a class="escritorio" href="registro">Registrarse</a>
+          <a href="carritoProductos"><i class="fas fa-shopping-cart"></i></a>
         </div>
       </div>
       <nav>
         <div class="barra-nav">
-          <a href="#" class="seleccionado">Inicio</a>
+          <a href="/indice" class="seleccionado">Inicio</a>
           <a href="#">Productos</a>
           <a href="#">Quiénes Somos</a>
           <a href="#">Contacto</a>
         </div>
       </nav>
     </header>
-
-    <main class="registro-main">
-        <nav class= "registro-form">
-            <div class="form-titulo"> CREÁ TU CUENTA </div>
-            
-        
-            <div class= "box-form">
-              <form > 
-                <label class="textos" for="nombre"> NOMBRE </label>
-                <div><input type="text" name="nombre" id="nombre" required> </div>
-                <br>
-                <label class="textos" for="nombre"> APELLIDO </label>
-                <div><input type="text" name="nombre" id="nombre" required></div>
-                <br>
-                <label class="textos" for="email"> EMAIL </label>
-              <div class="barra"><input type="email" name="email" id="email"  required></div>
-              <br>
-                <div class="contraseña">
-                  <div class="contraseña1">
-                    <label class="textos" for="password"> CONTRASEÑA </label>
-                    <div ><input type="password" name="password" id="password"  minlength="8"></div>
-                  </div>
-                  <br>
-                  <div class="contraseña2">
-                    <label class="textos" for="password"> REPETÍ CONTRASEÑA </label> 
-                    <div ><input type="password" name="password" id="password" minlength="8"></div>
-                  </div>
+    <section class="posicion">
+      <hr />
+      <ul>
+        <li><a href="/indice">Inicio</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li><a href="/detalleProducto">Detalle de Producto</a></li>
+      </ul>
+    </section>
+    <main>
+      <!--Te cambio la etiqueta nav por un section, el nav lo usas para una barra de navegación-->
+      <section>
+        <div class="registro-form">
+          <div class="form-titulo">Creá tu cuenta</div>
+          <div>
+            <form class="formulario-crear">
+              <label for="nombre">Nombre</label>
+              <!--Para que el texto figure en mayuscula pones text-transform:uppercase-->
+              <div>
+                <input type="text" name="nombre" id="nombre" required />
               </div>
-              <br>
-              
-              
-              <br>
-              
-              
+              <!--<br /> El br lo usas solamente para salto de línea, cuando querés generar espacio entre las cajas usas margin-->
+              <label for="nombre">Apellido</label>
+              <div>
+                <input type="text" name="nombre" id="nombre" required />
+              </div>
+              <label for="email">Email</label>
+              <div>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="contraseña">
+                <div class="contraseña1">
+                  <label for="password">CONTRASEÑA</label>
+                  <div>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      minlength="8"
+                    />
+                  </div>
+                </div>
+                <div class="contraseña2">
+                  <label for="password">REPETÍ CONTRASEÑA</label>
+                  <div>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      minlength="8"
+                    />
+                  </div>
+                </div>
+              </div>
             </form>
           </div>
-        </nav>
-        <br>
-        <br>
-        <div class="politica"><input type="radio" value= "politica-privacidad" name="politica-privacidad" id="politica-privacidad"> 
-            Acepto y entiendo la política de privacidad y uso de cookies. </div>
-            <br>
-            <br>
-        <div><button class= "boton-crear" type="submit"> CREAR CUENTA </button> </div>
-        <br>
-        <br>
-        <div class="registro-inicsesion"> 
-            <p> ¿Ya tenés una cuenta? </p>
-            <button class= "boton-sesion" type="submit"> INICIÁ SESIÓN  </button> 
         </div>
-     
-    </main>
+        <div class="politica">
+          <input
+            type="radio"
+            value="politica-privacidad"
+            name="politica-privacidad"
+            id="politica-privacidad"
+          />
+          Acepto y entiendo la política de privacidad y uso de cookies.
+        </div>
+      </section>
 
+      <div class="crear-cuenta">
+        <button class="boton-crear" type="submit">Crear cuenta</button>
+      </div>
+      <div class="registro-inicsesion">
+        <a href="#">¿Ya tenés una cuenta?</a>
+        <!--Te cambio el p por un a para que sea un link-->
+        <button class="boton-sesion" type="submit">Iniciá Sesión</button>
+      </div>
+    </main>
     <footer>
       <div class="info-footer">
         <div>
