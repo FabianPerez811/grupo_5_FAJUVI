@@ -91,17 +91,7 @@ celeste clarito #9FBFC8
             display: flex;
             justify-content: space-between;}
 
-        /*.contraseña1{
-            display:flex;
-            flex-direction: column;
-        }
-        .contraseña2{
-            margin-left: 4px;
-        margin-right: 0px;}
         
-        #password{
-            width: 100%;
-        }*/
         .boton-crear{
             font-size: 20px;
             transition: background-color 0.5s;
@@ -139,11 +129,13 @@ celeste clarito #9FBFC8
         display: flex;
         justify-content: space-between;
     }
-    
+    .contraseña1{
+        width: 100%;
+    }
     .contraseña2{
         display:flex;
         flex-direction: column;
-        
+        width: 100%;
         margin-left: 5px;
     }
     .boton-crear{
