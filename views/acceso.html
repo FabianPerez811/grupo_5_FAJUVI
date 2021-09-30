@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/css/normalizador.css" />
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/indice.css" />
-
+    <link rel="stylesheet" href="/css/acceso.css" />
     <title>FAJUVI</title>
   </head>
   <body>
@@ -58,31 +58,42 @@
       <section class="posicion">
         <hr />
         <ul>
-          <li><a href="/indice">Inicio</a></li>
+          <li><a href="/">Inicio</a></li>
           <li><i class="fas fa-chevron-right"></i></li>
-          <li><a href="/detalleProducto">Detalle de Producto</a></li>
+          <li><a href="/acceso">Iniciar Sesión</a></li>
         </ul>
       </section>
       <section>
-          <div class="caja-sesion">
-            <form class="formulario-sesion">
-                <p>Iniciar Sesión</p>             
-                <label for="email">Email</label>                
-                <input type="email" name="email" id="email" required />               
-
-                <label for="password">Contraseña</label>                   
-                <input type="password" name="password" id="password" minlength="8"/>
-            </form>
-            <input type="radio" value="sesionIniciada" name="sesionIniciada" id="sesionIniciada"/>
-            <div><a href="">Mantener sesión iniciada</a></div>>
+        <div class="caja-sesion">
+          <form class="formulario-sesion">
+            <p>Iniciar Sesión</p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+            />
+          </form>
+        </div>
+        <div class="mantenerSesion">
+          <input
+            type="radio"
+            value="sesionIniciada"
+            name="sesionIniciada"
+            id="sesionIniciada"
+          />
+          Mantener sesión iniciada
         </div>
       </section>
-      <div>
-          <button type="submit">Iniciar Sesión</button>
+      <div class="boton-iniciar">
+        <button type="submit">Iniciar Sesión</button>
       </div>
-      <div>
-          <a href="">¿No tenés una cuenta?</a>
-          <button type="submit">Crear Cuenta</button>
+      <div class="crear-cuenta">
+        <a href="">¿No tenés una cuenta?</a>
+        <button class="boton-crear" type="submit">Crear Cuenta</button>
       </div>
     </main>
     <footer>
