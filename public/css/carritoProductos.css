@@ -96,15 +96,26 @@
     margin:5px;
 }
 .envio-barra{ 
-    height: 31px;
+    height: 38px;
+    font-size: 17px;
+    padding: 15px;
 }
 .btn-calcular{
     font-size: 17px;
-    padding: 5px 10px;
     border-color: white;
     border-radius: 5px;
     color:white;
     background-color:#6D6F74;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    max-width: 80%;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+.btn-calcular:hover{
+    background-color: #2a2c25;
 }
 
 
