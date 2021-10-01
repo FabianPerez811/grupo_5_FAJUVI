@@ -4,6 +4,10 @@
 .cabecera-items{
     display: none;
 }
+.carrito-section{
+    display: flex;
+    flex-flow: column;
+}
 #carrito_titulo{
     margin: 5px 20px;
     font-family: 'Lato', sans-serif;
