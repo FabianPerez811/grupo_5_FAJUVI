@@ -10,8 +10,9 @@ app.listen(3030, () => {
 
 })
 
-app.get('/', (req, res) => { res.sendFile(path.join(__dirname, '/views/indice.html')) })
-app.get('/acceso', (req, res) => { res.sendFile(path.join(__dirname, '/views/acceso.html')) })
-app.get('/carritoProductos', (req, res) => { res.sendFile(path.join(__dirname, '/views/carritoProductos.html')) })
-app.get('/detalleProducto', (req, res) => { res.sendFile(path.join(__dirname, '/views/detalleProducto.html')) })
-app.get('/registro', (req, res) => { res.sendFile(path.join(__dirname, '/views/registro.html')) })
+app.get('/', (req, res) => { res.sendFile(path.join(__dirname, 'src/views/indice.html')) })
+app.get('/acceso', (req, res) => { res.sendFile(path.join(__dirname, 'src/views/acceso.html')) })
+app.get('/carritoProductos', (req, res) => { res.sendFile(path.join(__dirname, 'src/views/carritoProductos.html')) })
+app.get('/detalleProducto', (req, res) => { res.sendFile(path.join(__dirname, 'src/views/detalleProducto.html')) })
+app.get('/registro', (req, res) => { res.sendFile(path.join(__dirname, 'src/views/registro.html')) })
+app.get('/agregarProducto', (req, res) => { res.sendFile(path.join(__dirname, 'src/views/agregarProducto.html')) })

@@ -1,0 +1,83 @@
+.boton-hamburguesa {
+  text-align: left;
+  margin: 20px;
+}
+
+.boton-hamburguesa i {
+  color: #83aeb8;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.agregar-producto {
+  padding: 0px 20px;
+}
+.titulo {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #6d6f74;
+  margin: 20px 30px;
+}
+
+.subtitulo {
+  text-align: left;
+  margin: 10px 0px 15px 0px;
+  font-size: 18px;
+  color: #6d6f74;
+}
+
+.tarjeta {
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.caja-tarjeta input,
+.caja-tarjeta textarea,
+.caja-tarjeta select {
+  border: 1px solid #6d6f74b2;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 5px 0px 20px;
+  width: 100%;
+}
+
+.caja-tarjeta textarea,
+.precio,
+.caja-tarjeta select {
+  margin-bottom: 10px;
+}
+
+.caja-tarjeta label {
+  color: #71a2ae;
+}
+.boton-publicar {
+  text-align: center;
+}
+
+.caja-informacion {
+  background-color: #9fbfc8;
+  color: white;
+  font-size: 12px;
+  text-align: left;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.publicar {
+  text-transform: uppercase;
+  background-color: #9fbfc8;
+  color: white;
+  padding: 15px;
+  border: none;
+  width: 100%;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+
+.publicar:hover {
+  background-color: #71a2ae;
+}

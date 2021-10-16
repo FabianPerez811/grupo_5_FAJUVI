@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/normalizador.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/agregarProducto.css" />
+    <title>FAJUVI</title>
+  </head>
+  <body>
+    <header>
+      <div class="boton-hamburguesa">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <main>
+      <p class="titulo">Agregar un producto</p>
+      <form class="agregar-producto">
+        <div class="tarjeta">
+          <div>
+            <p class="subtitulo">Nombre y descripción</p>
+          </div>
+          <div class="caja-tarjeta">
+            <label for="">Nombre</label>
+            <br />
+            <input type="text" name="nombre" placeholder="Ej: Aro mariposa" />
+          </div>
+          <div class="caja-tarjeta">
+            <label for="">Descripción</label>
+            <br />
+            <textarea name="" id="" cols="30" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <p class="subtitulo">Precio</p>
+          <div class="caja-tarjeta">
+            <label for="">Precio</label>
+            <input class="precio" type="text" name="" />
+          </div>
+        </div>
+        <div class="tarjeta">
+          <p class="subtitulo">Fotos</p>
+
+          <input type="file" id="" name="" />
+          <input type="submit" />
+
+          <div class="caja-informacion">
+            Tamaño mínimo recomendado: ancho y alto 1024px
+          </div>
+        </div>
+        <div class="tarjeta">
+          <p class="subtitulo">Categoría</p>
+          <div class="caja-tarjeta">
+            <select name="categoria" id="">
+              <option value="">Seleccionar categoría</option>
+              <option value="">Pulseras</option>
+              <option value="">Aros</option>
+              <option value="">Cinturones</option>
+              <option value="">Anillos</option>
+            </select>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <p class="subtitulo">Seleccionar talle</p>
+          <input type="checkbox" id="" name="" value="" />
+          <label for="">S</label>
+          <input type="checkbox" id="" name="" value="" />
+          <label for="">M</label>
+          <input type="checkbox" id="" name="" value="" />
+          <label for="">L</label>
+        </div>
+        <div class="boton-publicar">
+          <button class="publicar" type="submit">Publicar producto</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
