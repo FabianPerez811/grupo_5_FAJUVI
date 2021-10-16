@@ -16,3 +16,4 @@ app.get('/carritoProductos', (req, res) => { res.sendFile(path.join(__dirname, '
 app.get('/detalleProducto', (req, res) => { res.sendFile(path.join(__dirname, 'src/views/detalleProducto.html')) })
 app.get('/registro', (req, res) => { res.sendFile(path.join(__dirname, 'src/views/registro.html')) })
 app.get('/agregarProducto', (req, res) => { res.sendFile(path.join(__dirname, 'src/views/agregarProducto.html')) })
+app.get('/bmProducto', (req, res) => { res.sendFile(path.join(__dirname, 'src/views/bmProducto.html')) })

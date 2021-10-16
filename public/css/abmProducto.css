@@ -83,6 +83,7 @@ main {
 .tarjeta.checkbox label {
   padding-right: 10px;
 }
+
 .publicar {
   text-transform: uppercase;
   background-color: #9fbfc8;
@@ -186,14 +187,30 @@ main {
     transition: color 0.5s;
   }
 
+  .link-productos a {
+    text-decoration: none;
+    color: #2a2c25;
+    transition: color 0.5s;
+  }
+
   .link-panel i {
     padding: 10px;
     color: #2a2c25;
   }
 
-  .link-panel:hover {
+  .link-panel:hover,
+  .link-productos a:hover {
     color: #71a2ae;
     cursor: pointer;
+  }
+
+  .publicar {
+    width: 50%;
+  }
+
+  .boton-cancelar {
+    width: 50%;
+    margin: auto;
   }
 }
 
