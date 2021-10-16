@@ -1,3 +1,16 @@
+main {
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.panel-administrador {
+  display: none;
+}
+
+.cabecera-administrador {
+  display: none;
+}
+
 .boton-hamburguesa {
   text-align: left;
   margin: 20px;
@@ -64,8 +77,12 @@
   text-align: left;
   padding: 10px;
   margin-top: 10px;
+  max-width: 300px;
 }
 
+.tarjeta.checkbox label {
+  padding-right: 10px;
+}
 .publicar {
   text-transform: uppercase;
   background-color: #9fbfc8;
@@ -76,8 +93,112 @@
   letter-spacing: 1px;
   border-radius: 5px;
   transition: background-color 0.5s;
+  margin: 10px 0px;
+}
+
+.cancelar {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.boton-cancelar {
+  text-align: center;
+  background-color: #6d6f74;
+  border-radius: 5px;
+  padding: 15px;
+  transition: background-color 0.5s;
+}
+
+.boton-cancelar:hover {
+  background-color: #2a2c25;
 }
 
 .publicar:hover {
   background-color: #71a2ae;
+}
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .boton-hamburguesa {
+    display: none;
+  }
+  .cabecera-administrador {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 30px;
+    background-color: #9fbfc8;
+  }
+
+  .cabecera-administrador i {
+    color: #d6d6d6;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .cabecera-administrador i:hover {
+    color: #9fbfc8;
+    cursor: pointer;
+  }
+
+  .panel-agregar {
+    flex-grow: 1;
+    padding: 0px 20px;
+  }
+
+  input.precio,
+  .caja-tarjeta select {
+    width: 30%;
+  }
+
+  .panel-administrador {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 5px;
+    border: 1px solid #d6d6d6;
+    border-top: none;
+    border-bottom: none;
+    color: #2a2c25;
+  }
+
+  .logo-panel img {
+    width: 75%;
+    margin: 15px 0px 30px 0px;
+    padding: 0px 12px;
+  }
+  .titulo-panel {
+    padding: 6px 22px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .link-panel {
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    transition: color 0.5s;
+  }
+
+  .link-panel i {
+    padding: 10px;
+    color: #2a2c25;
+  }
+
+  .link-panel:hover {
+    color: #71a2ae;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo-panel img {
+    width: 50%;
+  }
 }

@@ -24,67 +24,113 @@
       <div class="boton-hamburguesa">
         <i class="fas fa-bars"></i>
       </div>
+      <div class="cabecera-administrador">
+        <i class="fas fa-user"></i>
+        <div>Mi cuenta</div>
+      </div>
     </header>
     <main>
-      <p class="titulo">Agregar un producto</p>
-      <form class="agregar-producto">
-        <div class="tarjeta">
-          <div>
-            <p class="subtitulo">Nombre y descripción</p>
-          </div>
-          <div class="caja-tarjeta">
-            <label for="">Nombre</label>
-            <br />
-            <input type="text" name="nombre" placeholder="Ej: Aro mariposa" />
-          </div>
-          <div class="caja-tarjeta">
-            <label for="">Descripción</label>
-            <br />
-            <textarea name="" id="" cols="30" rows="4"></textarea>
-          </div>
+      <div class="panel-administrador">
+        <div class="logo-panel">
+          <a href="/">
+            <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
+          </a>
         </div>
-        <div class="tarjeta">
-          <p class="subtitulo">Precio</p>
-          <div class="caja-tarjeta">
-            <label for="">Precio</label>
-            <input class="precio" type="text" name="" />
-          </div>
+        <div class="link-panel">
+          <i class="fas fa-home"></i>
+          <div>Inicio</div>
         </div>
-        <div class="tarjeta">
-          <p class="subtitulo">Fotos</p>
-
-          <input type="file" id="" name="" />
-          <input type="submit" />
-
-          <div class="caja-informacion">
-            Tamaño mínimo recomendado: ancho y alto 1024px
+        <div>
+          <div class="titulo-panel">Administrar</div>
+          <div class="link-panel">
+            <i class="fas fa-search-dollar"></i>
+            <div>Ventas</div>
+          </div>
+          <div class="link-panel">
+            <i class="fas fa-tags"></i>
+            <div>Productos</div>
+          </div>
+          <div class="link-panel">
+            <i class="fas fa-list-ul"></i>
+            <div>Lista de Productos</div>
+          </div>
+          <div class="link-panel">
+            <i class="fas fa-user-friends"></i>
+            <div>Clientes</div>
           </div>
         </div>
-        <div class="tarjeta">
-          <p class="subtitulo">Categoría</p>
-          <div class="caja-tarjeta">
-            <select name="categoria" id="">
-              <option value="">Seleccionar categoría</option>
-              <option value="">Pulseras</option>
-              <option value="">Aros</option>
-              <option value="">Cinturones</option>
-              <option value="">Anillos</option>
-            </select>
+      </div>
+      <div class="panel-agregar">
+        <p class="titulo">Agregar un producto</p>
+        <form class="agregar-producto">
+          <div class="tarjeta">
+            <div>
+              <p class="subtitulo">Nombre y descripción</p>
+            </div>
+            <div class="caja-tarjeta">
+              <label for="">Nombre</label>
+              <br />
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Ej: Aro mariposa"
+                required
+              />
+            </div>
+            <div class="caja-tarjeta">
+              <label for="">Descripción</label>
+              <br />
+              <textarea name="" id="" cols="30" rows="4" required></textarea>
+            </div>
           </div>
-        </div>
-        <div class="tarjeta">
-          <p class="subtitulo">Seleccionar talle</p>
-          <input type="checkbox" id="" name="" value="" />
-          <label for="">S</label>
-          <input type="checkbox" id="" name="" value="" />
-          <label for="">M</label>
-          <input type="checkbox" id="" name="" value="" />
-          <label for="">L</label>
-        </div>
-        <div class="boton-publicar">
-          <button class="publicar" type="submit">Publicar producto</button>
-        </div>
-      </form>
+          <div class="tarjeta">
+            <p class="subtitulo">Precio</p>
+            <div class="caja-tarjeta">
+              <label for="">Precio</label>
+              <br />
+              <input class="precio" type="text" name="" required />
+            </div>
+          </div>
+          <div class="tarjeta">
+            <p class="subtitulo">Fotos</p>
+            <input type="file" id="" name="" />
+            <div class="caja-informacion">
+              Tamaño mínimo recomendado: ancho y alto 1024px
+            </div>
+          </div>
+          <div class="tarjeta">
+            <p class="subtitulo">Categoría</p>
+            <div class="caja-tarjeta">
+              <select name="categoria" id="" required>
+                <option value="">Seleccionar categoría</option>
+                <option value="">Pulseras</option>
+                <option value="">Aros</option>
+                <option value="">Cinturones</option>
+                <option value="">Anillos</option>
+              </select>
+            </div>
+          </div>
+          <div class="tarjeta checkbox">
+            <p class="subtitulo">Seleccionar talle</p>
+            <input type="checkbox" id="" name="" value="" />
+            <label for="">XS</label>
+            <input type="checkbox" id="" name="" value="" />
+            <label for="">S</label>
+            <input type="checkbox" id="" name="" value="" />
+            <label for="">M</label>
+            <input type="checkbox" id="" name="" value="" />
+            <label for="">L</label>
+            <input type="checkbox" id="" name="" value="" />
+            <label for="">XL</label>
+          </div>
+          <div class="boton-publicar">
+            <button class="publicar" type="submit">Publicar producto</button>
+          </div>
+          <div class="boton-cancelar">
+            <a href="#" class="cancelar">Cancelar</a>
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
