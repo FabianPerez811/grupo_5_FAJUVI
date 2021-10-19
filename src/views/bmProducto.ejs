@@ -34,11 +34,15 @@
           </div>
           <div class="link-panel">
             <i class="fas fa-tags"></i>
-            <div>Productos</div>
+            <div class="link-productos">
+              <a href="/agregar">Agregar Productos</a>
+            </div>
           </div>
           <div class="link-panel">
             <i class="fas fa-list-ul"></i>
-            <div>Lista de Productos</div>
+            <div class="link-productos">
+              <a href="/bmProducto">Lista de Productos</a>
+            </div>
           </div>
           <div class="link-panel">
             <i class="fas fa-user-friends"></i>
@@ -46,9 +50,122 @@
           </div>
         </div>
       </div>
-      <div class="panel-agregar"></div>
-    </main>
-    
+      <div class="panel-abm">        
+        <div class="titulo">
+          Productos
+         </div>
+        <div class="tarjeta-producto">
+          <div class="check-producto">
+            <i class="fas fa-check-square"></i>
+          </div>
+            <div class="caja-imagen">          
+              <a href="/detalle">
+                <img src="img/collar.jpg" alt="imagen de collar" />
+              </a>
+            </div>
+            <div class="caja-descripcion">
+              <h4 class="producto">Collar Luna</h4>
+              <div class="stock">
+                <div class="total-stock">1</div>
+                <div>en stock</div>
+              </div>              
+              <p class="precio"><strong>Precio</strong> $5.000</p>
+            </div>
+            <div class="caja-editar">
+              <i class="fas fa-pen"></i>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+          <div class="check-producto">
+            <i class="fas fa-square"></i>
+          </div>
+            <div class="caja-imagen">          
+              <a href="/detalle">
+                <img src="img/collar3.jpg" alt="imagen de collar" />
+              </a>
+            </div>
+            <div class="caja-descripcion">
+              <h4 class="producto">Collar Perlas</h4>
+              <div class="stock">
+                <div class="total-stock cero">0</div>
+                <div>en stock</div>
+              </div>              
+              <p class="precio"><strong>Precio</strong> $4.500</p>
+            </div>
+            <div class="caja-editar">
+              <i class="fas fa-pen"></i>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+          <div class="check-producto">
+            <i class="fas fa-check-square"></i>
+          </div>
+            <div class="caja-imagen">          
+              <a href="/detalle">
+                <img src="img/aro.jpg" alt="imagen de aro" />
+              </a>
+            </div>
+            <div class="caja-descripcion">
+              <h4 class="producto">Aro Gota</h4>
+              <div class="stock">
+                <div class="total-stock">2</div>
+                <div>en stock</div>
+              </div>              
+              <p class="precio"><strong>Precio</strong> $2.550</p>
+            </div>
+            <div class="caja-editar">
+              <i class="fas fa-pen"></i>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+        </div>
+        <div class="tarjeta-producto">
+          <div class="check-producto">
+            <i class="fas fa-check-square"></i>
+          </div>
+            <div class="caja-imagen">          
+              <a href="/detalle">
+                <img src="img/pulsera.jpg" alt="imagen de pulsera" />
+              </a>
+            </div>
+            <div class="caja-descripcion">
+              <h4 class="producto">Pulsera Calia</h4>
+              <div class="stock">
+                <div class="total-stock cero">0</div>
+                <div>en stock</div>
+              </div>              
+              <p class="precio"><strong>Precio</strong> $1.500</p>
+            </div>
+            <div class="caja-editar">
+              <i class="fas fa-pen"></i>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+        </div>
+        <div class="tarjeta-producto">
+          <div class="check-producto">
+            <i class="fas fa-square"></i>
+          </div>
+            <div class="caja-imagen">          
+              <a href="/detalle">
+                <img src="img/cinto.jpg" alt="imagen de cinto" />
+              </a>
+            </div>
+            <div class="caja-descripcion">
+              <h4 class="producto">Cinto Black</h4>
+              <div class="stock">
+                <div class="total-stock">4</div>
+                <div>en stock</div>
+              </div>              
+              <p class="precio"><strong>Precio</strong> $4.000</p>
+            </div>
+            <div class="caja-editar">
+              <i class="fas fa-pen"></i>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+        </div>            
+      </div>
+    </main>    
 <%-  include('./partials/footer')  %> 
   </body>
 </html>
