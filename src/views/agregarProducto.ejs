@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
   <%- include('./partials/head')  %> 
+  <link rel="stylesheet" href="/css/abmProducto.css" /> 
+
+</head>
+  
+  
 
   <body>
     <header>
@@ -54,7 +60,7 @@
               <p class="subtitulo">Nombre y descripción</p>
             </div>
             <div class="caja-tarjeta">
-              <label for="">Nombre</label>
+              <label for="nombre">Nombre</label>
               <br />
               <input
                 type="text"
@@ -64,22 +70,22 @@
               />
             </div>
             <div class="caja-tarjeta">
-              <label for="">Descripción</label>
+              <label for="descripcion">Descripción</label>
               <br />
-              <textarea name="" id="" cols="30" rows="4" required></textarea>
+              <textarea name="descripcion" id="descripcion" cols="30" rows="4" required></textarea>
             </div>
           </div>
           <div class="tarjeta">
             <p class="subtitulo">Precio</p>
             <div class="caja-tarjeta">
-              <label for="">Precio</label>
+              <label for="precio">Precio</label>
               <br />
-              <input class="precio" type="text" name="" required />
+              <input class="precio" type="text" name="precio" required />
             </div>
           </div>
           <div class="tarjeta">
             <p class="subtitulo">Fotos</p>
-            <input type="file" id="" name="" />
+            <input type="file" id="foto" name="foto" />
             <div class="caja-informacion">
               Tamaño mínimo recomendado: ancho y alto 1024px
             </div>
@@ -87,27 +93,27 @@
           <div class="tarjeta">
             <p class="subtitulo">Categoría</p>
             <div class="caja-tarjeta">
-              <select name="categoria" id="" required>
-                <option value="">Seleccionar categoría</option>
-                <option value="">Pulseras</option>
-                <option value="">Aros</option>
-                <option value="">Cinturones</option>
-                <option value="">Anillos</option>
+              <select name="categoria" id="categoria" required>
+                <option value="seleccionar">Seleccionar categoría</option>
+                <option value="pulsera">Pulseras</option>
+                <option value="aro">Aros</option>
+                <option value="cinturon">Cinturones</option>
+                <option value="anillo">Anillos</option>
               </select>
             </div>
           </div>
           <div class="tarjeta checkbox">
             <p class="subtitulo">Seleccionar talle</p>
-            <input type="checkbox" id="" name="" value="" />
-            <label for="">XS</label>
-            <input type="checkbox" id="" name="" value="" />
-            <label for="">S</label>
-            <input type="checkbox" id="" name="" value="" />
+            <input type="checkbox" id="xs" name="xs" value="xs" />
+            <label for="xs">XS</label>
+            <input type="checkbox" id="s" name="s" value="s" />
+            <label for="s">S</label>
+            <input type="checkbox" id="m" name="m" value="m" />
             <label for="">M</label>
-            <input type="checkbox" id="" name="" value="" />
-            <label for="">L</label>
-            <input type="checkbox" id="" name="" value="" />
-            <label for="">XL</label>
+            <input type="checkbox" id="l" name="l" value="l" />
+            <label for="l">L</label>
+            <input type="checkbox" id="xl" name="xl" value="xl" />
+            <label for="xl">XL</label>
           </div>
           <div class="boton-publicar">
             <button class="publicar" type="submit">Publicar producto</button>
