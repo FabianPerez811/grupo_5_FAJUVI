@@ -1,58 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
-      rel="stylesheet"
-    />
+  
+  <%- include('./partials/head')  %> 
 
-    <link rel="stylesheet" href="/css/normalizador.css" />
-    <link rel="stylesheet" href="/css/general.css" />
-    <link rel="stylesheet" href="/css/registro.css" />
-    <title>FAJUVI</title>
-  </head>
   <body>
-    <header>
-      <div class="cabecera-promo">
-        <p>10% off transferencia bancaria - 3 cuotas sin interés</p>
-      </div>
-      <div class="cabecera-principal">
-        <i class="fas fa-bars"></i>
-        <form action="#" class="caja-busqueda" method="GET">
-          <input type="text" placeholder="Buscar..." />
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </form>
-        <div class="cabecera-logo">
-          <a href="/">
-            <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
-          </a>
-        </div>
-        <div class="cabecera-items">
-          <i class="fas fa-search"></i>
-          <i class="fas fa-user"></i>
-          <a class="escritorio" href="acceso">Iniciar Sesión</a>
-          <a class="escritorio" href="registro">Registrarse</a>
-          <a href="carritoProductos"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-      </div>
-      <nav>
-        <div class="barra-nav">
-          <a href="/indice" class="seleccionado">Inicio</a>
-          <a href="#">Productos</a>
-          <a href="#">Quiénes Somos</a>
-          <a href="#">Contacto</a>
-        </div>
-      </nav>
-    </header>
+
+    <%-  include('./partials/header')  %> 
+    
     <section class="posicion">
       <hr />
       <ul>
@@ -129,56 +83,8 @@
         <button class="boton-sesion" type="submit">Iniciá Sesión</button>
       </div>
     </main>
-    <footer>
-      <div class="info-footer">
-        <div>
-          <ul>
-            <li class="fotter-titulo">Navegación</li>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Quiénes Somos</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li class="fotter-titulo">Redes Sociales</li>
-            <li>
-              <i class="fab fa-instagram"></i>
-              @fajuvi
-            </li>
-            <li>
-              <i class="fab fa-twitter"></i>
-              @fajuviAccesorios
-            </li>
-            <li>
-              <i class="fab fa-facebook"></i>
-              Fajuvi Accesorios
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li class="fotter-titulo">Contactanos</li>
-            <li>
-              <i class="fas fa-mobile-alt"></i>
-              +54 9 3517896573
-            </li>
-            <li>
-              <i class="far fa-envelope-open"></i>
-              consultas@fajuvi.com.ar
-            </li>
-            <li>
-              <i class="fas fa-map-marker-alt"></i>
-              Av. Rafael Nuñez 4001, Cba., Argentina
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="caja-copyright">
-        <i class="far fa-copyright"></i>
-        <p>COPYRIGHT FAJUVI - 2021. TODOS LOS DERECHOS RESERVADOS.</p>
-      </div>
-    </footer>
+    
+    <%-  include('./partials/footer')  %> 
+
   </body>
 </html>

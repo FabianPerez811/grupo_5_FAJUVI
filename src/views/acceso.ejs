@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<% //reemplazar el head por el include correspondiente arreglando el estilo %> 
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,38 +25,7 @@
     <title>FAJUVI</title>
   </head>
   <body>
-    <header>
-      <div class="cabecera-promo">
-        <p>10% off transferencia bancaria - 3 cuotas sin interés</p>
-      </div>
-      <div class="cabecera-principal">
-        <i class="fas fa-bars"></i>
-        <form action="#" class="caja-busqueda" method="GET">
-          <input type="text" placeholder="Buscar..." />
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </form>
-        <div class="cabecera-logo">
-          <a href="/">
-            <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
-          </a>
-        </div>
-        <div class="cabecera-items">
-          <i class="fas fa-search"></i>
-          <i class="fas fa-user"></i>
-          <a class="escritorio" href="acceso">Iniciar Sesión</a>
-          <a class="escritorio" href="registro">Registrarse</a>
-          <a href="carritoProductos"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-      </div>
-      <nav>
-        <div class="barra-nav">
-          <a href="/" class="seleccionado">Inicio</a>
-          <a href="#">Productos</a>
-          <a href="#">Quiénes Somos</a>
-          <a href="#">Contacto</a>
-        </div>
-      </nav>
-    </header>
+    <%-  include('./partials/header')  %> 
     <main>
       <section class="posicion">
         <hr />
@@ -96,57 +68,7 @@
         <button class="boton-crear" type="submit">Crear Cuenta</button>
       </div>
     </main>
-    <footer>
-      <div class="info-footer">
-        <div>
-          <ul>
-            <li class="fotter-titulo">Navegación</li>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Quiénes Somos</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li class="fotter-titulo">Redes Sociales</li>
-            <li>
-              <i class="fab fa-instagram"></i>
-              @fajuvi
-            </li>
-            <li>
-              <i class="fab fa-twitter"></i>
-              @fajuviAccesorios
-            </li>
-            <li>
-              <i class="fab fa-facebook"></i>
-              Fajuvi Accesorios
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li class="fotter-titulo">Contactanos</li>
-            <li>
-              <i class="fas fa-mobile-alt"></i>
-              +54 9 3517896573
-            </li>
-            <li>
-              <i class="far fa-envelope-open"></i>
-              consultas@fajuvi.com.ar
-            </li>
-            <li>
-              <i class="fas fa-map-marker-alt"></i>
-              Av. Rafael Nuñez 4001, Cba., Argentina
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="caja-copyright">
-        <i class="far fa-copyright"></i>
-        <p>COPYRIGHT FAJUVI - 2021. TODOS LOS DERECHOS RESERVADOS.</p>
-      </div>
-    </footer>
+    <%-  include('./partials/footer')  %> 
   </body>
 </html>
 
