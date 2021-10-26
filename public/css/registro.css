@@ -1,16 +1,12 @@
 main {
   margin-top: 30px;
 }
-.registro-form {
-  max-width: 90%;
-  background-color: #d6d6d6;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.registro {
+  margin-top: 30px;
 }
 
-.form-titulo {
+form p {
   padding: 15px;
   margin-top: 10px;
   text-align: left;
@@ -22,26 +18,46 @@ main {
 form {
   font-size: 16px;
   color: #6d6f74;
-  padding: 15px;
   text-transform: uppercase;
 }
 
-.formulario-crear input {
+.formulario-registro input {
   margin: 10px 0px;
   width: 100%;
   padding: 10px 20px;
   border: white;
 }
 
+.caja-registro {
+  max-width: 90%;
+  padding: 0px 10px;
+  background-color: #d6d6d6;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
 .politica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-style: italic;
   font-size: 13px;
   color: #2a2c25;
-  margin: 10px 0;
+  text-transform: none;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 10px;
 }
 
-.crear-cuenta {
+.politica input.radioPolitica {
+  width: 25px;
+}
+
+.boton-iniciar {
   text-align: center;
 }
 
@@ -71,7 +87,7 @@ form {
   background-color: #2a2c25;
 }
 
-.registro-inicsesion {
+.registro-inicSesion {
   display: flex;
   justify-content: center;
   margin: 20px 0px;
@@ -83,7 +99,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .registro-form {
+  .caja-registro {
     max-width: 60%;
     box-shadow: 5px -5px #f6f3f3;
   }
@@ -97,22 +113,10 @@ a {
   .contraseña2 {
     width: 48%;
   }
-
-  /*.contraseña1{
-            display:flex;
-            flex-direction: column;
-        }
-        .contraseña2{
-            margin-left: 4px;
-        margin-right: 0px;}
-        
-        #password{
-            width: 100%;
-        }*/
 }
 
 @media (min-width: 1280px) {
-  .registro-form {
+  .caja-registro {
     max-width: 50%;
     padding: 10px 20px;
   }

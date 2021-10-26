@@ -1,36 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-  
+<html lang="en">  
   <head>
     <%- include('./partials/head')  %>
     <link rel="stylesheet" href="/css/registro.css" /> 
   </head>
-
   <body>
-
     <%-  include('./partials/header')  %> 
-    
-    <section class="posicion">
-      <hr />
-      <ul>
-        <li><a href="/">Inicio</a></li>
-        <li><i class="fas fa-chevron-right"></i></li>
-        <li><a href="/registro">Registrarse</a></li>
-      </ul>
-    </section>
+
     <main>
-      <!--Te cambio la etiqueta nav por un section, el nav lo usas para una barra de navegación-->
-      <section>
-        <div class="registro-form">
-          <div class="form-titulo">Creá tu cuenta</div>
-          <div>
-            <form class="formulario-crear">
-              <label for="nombre">Nombre</label>
-              <!--Para que el texto figure en mayuscula pones text-transform:uppercase-->
+      <section class="posicion">
+        <hr />
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><i class="fas fa-chevron-right"></i></li>
+          <li><a href="/registro">Registrarse</a></li>
+        </ul>
+      </section>
+      <section class="registro">
+        <form action="/registro" method="POST" class="formulario-registro">
+          <div class="caja-registro">
+            <p>Creá tu cuenta</p>
+            <label for="nombre">Nombre</label>             
               <div>
                 <input type="text" name="nombre" id="nombre" required />
-              </div>
-              <!--<br /> El br lo usas solamente para salto de línea, cuando querés generar espacio entre las cajas usas margin-->
+              </div>             
               <label for="nombre">Apellido</label>
               <div>
                 <input type="text" name="nombre" id="nombre" required />
@@ -62,29 +55,27 @@
                     />
                   </div>
                 </div>
-              </div>           
+              </div> 
           </div>
-        </div>
-        <div class="politica">
-          <input
-            type="radio"
-            value="politica-privacidad"
-            name="politica-privacidad"
-            id="politica-privacidad"
-          />
-          Acepto y entiendo la política de privacidad y uso de cookies.
-        </div>
+          <div class="politica">
+            <input class="radioPolitica"
+              type="radio"
+              value="politica-privacidad"
+              name="politica-privacidad"
+              id="politica-privacidad"
+            />
+            <label for="politica-privacidad"> Acepto y entiendo la política de privacidad y uso de cookies.</label>           
+          </div>
+          <div class="boton-iniciar">
+            <button class="boton-crear" type="submit">Crear cuenta</button>
+          </div>
+        </form>
       </section>
-      <div class="crear-cuenta">
-        <button class="boton-crear" type="submit">Crear cuenta</button>
-      </div>
-    </form>
-      <div class="registro-inicsesion">
-        <a href="#">¿Ya tenés una cuenta?</a>
-        <!--Te cambio el p por un a para que sea un link-->
+      <div class="registro-inicSesion">
+        <a href="/acceso">¿Ya tenés una cuenta?</a>        
         <button class="boton-sesion" type="submit">Iniciá Sesión</button>
       </div>
-    </main>    
+    </main>     
     <%-  include('./partials/footer')  %> 
   </body>
 </html>

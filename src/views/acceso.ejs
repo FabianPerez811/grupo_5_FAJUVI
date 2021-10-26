@@ -17,9 +17,9 @@
           <li><a href="/acceso">Iniciar Sesión</a></li>
         </ul>
       </section>
-      <section class="acceso">
-        <div class="caja-sesion">
-          <form class="formulario-sesion">
+      <section class="acceso">     
+        <form action="/acceso" method="POST" class="formulario-sesion">
+          <div class="caja-sesion">
             <p>Iniciar Sesión</p>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required />
@@ -30,24 +30,23 @@
               id="password"
               minlength="8"
             />
-
-            <div class="mantenerSesion">
-          <input
+          </div>
+          <div class="mantenerSesion">
+            <input class="iniciada"
             type="radio"
             value="sesionIniciada"
             name="sesionIniciada"
             id="sesionIniciada"
-          />
-          Mantener sesión iniciada
-            </div>
-            <div class="boton-iniciar">
-          <button type="submit">Iniciar Sesión</button>
-            </div>
-          </form>
-        </div>
+            />
+            <label for="sesionIniciada"> Mantener sesión iniciada</label>               
+          </div>
+          <div class="boton-iniciar">
+            <button type="submit">Iniciar Sesión</button>
+          </div>         
+        </form>       
       </section>
       <div class="crear-cuenta">
-        <a href="">¿No tenés una cuenta?</a>
+        <a href="/registro">¿No tenés una cuenta?</a>
         <button class="boton-crear" type="submit">Crear Cuenta</button>
       </div>
     </main>
