@@ -47,9 +47,9 @@
 
 .productos-destacados {
   display: flex;
-  flex-wrap: wrap;
   text-align: center;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
 .productos-destacados img {
