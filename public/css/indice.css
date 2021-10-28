@@ -1,5 +1,6 @@
 /* #region ----------- HOME----------- */
 .carrusel {
+  padding-top: 20px;
   position: relative;
   margin: auto;
   max-width: 100%;
@@ -24,8 +25,8 @@
 
 .circulo {
   cursor: pointer;
-  height: 12px;
-  width: 12px;
+  height: 10px;
+  width: 10px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;

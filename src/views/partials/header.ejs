@@ -4,29 +4,24 @@
     </div>
     <div class="cabecera-principal">
       <i class="fas fa-bars"></i>
-      <form action="#" class="caja-busqueda" method="GET">
-        <input type="text" placeholder="Buscar..." />
-        <button type="submit"><i class="fas fa-search"></i></button>
-      </form>
-      <div class="cabecera-logo">
-        <a href="/">
-          <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
-        </a>
-      </div>
-      <div class="cabecera-items">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-user"></i>
-        <a class="escritorio" href="acceso">Iniciar Sesión</a>
-        <a class="escritorio" href="registro">Registrarse</a>
-        <a href="carritoProductos"><i class="fas fa-shopping-cart"></i></a>
+      <div class="caja-iconos">
+        <form class="caja-busqueda" action="#"  method="GET">
+          <input type="text" placeholder="Buscar..." />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <a href="/registro" class="iconoRegistro"><i class="fas fa-user-alt"></i></a>
       </div>
     </div>
-    <nav>
-      <div class="barra-nav">
-        <a href="/" class="seleccionado">Inicio</a>
-        <a href="/productos">Productos</a>
-        <a href="#">Quiénes Somos</a>
-        <a href="#">Contacto</a>
-      </div>
+    <nav class="barra-nav">
+        <a href="/acceso"><i class="fas fa-sign-in-alt"></i>Ingresar</a>
+        <a href="/productos"><i class="fas fa-list"></i>Productos</a>
+        <a href="/carritoProductos"><i class="fas fa-shopping-cart"></i>Carrito</a>
+        <a class="escritorio" href="#">Quiénes Somos</a>
+        <a class="escritorio" href="#">Contacto</a>     
     </nav>
+    <div class="cabecera-logo">
+      <a href="/">
+        <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
+      </a>
+    </div>  
   </header>
