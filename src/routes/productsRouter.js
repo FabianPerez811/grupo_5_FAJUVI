@@ -6,5 +6,6 @@ router.get ('/carritoProductos', productsController.carrito);
 router.get ('/detalle', productsController.detalle);
 router.get ('/agregar', productsController.agregar);
 router.get ('/bmproducto', productsController.bmproducto);
+router.get ('/productos', productsController.productos);
 
 module.exports = router;

@@ -12,6 +12,9 @@ const productController = {
      
     bmproducto: (req, res) => 
         {res.render ('bmProducto') },
+    
+    productos: (req, res) =>
+        {res.render('productos')}
 }
 
 module.exports = productController;
