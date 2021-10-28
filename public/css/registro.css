@@ -28,6 +28,42 @@ form {
   border: white;
 }
 
+.cajaFlexUsuario {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputIMG input.inputImagen {
+  padding: 10px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.inputImagen::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.inputImagen::before {
+  content: 'Selecciona una foto de perfil';
+  background-color: white;
+  display: inline-block;
+  padding: 10px 5px;
+  cursor: pointer;
+  font-family: 'Roboto';
+  width: 100%;
+}
+
+.categoriaUsuario select {
+  margin: 10px 0px;
+  background-color: white;
+  border: none;
+  padding: 10px 5px;
+  width: 100%;
+  font-family: 'Roboto';
+  cursor: pointer;
+  color: #6d6f74;
+}
+
 .caja-registro {
   max-width: 90%;
   padding: 0px 10px;
