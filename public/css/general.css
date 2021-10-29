@@ -24,11 +24,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 5px;
+  margin: 5px 15px;
 }
 
-.cabecera-principal .fa-bars {
-  font-size: 16px;
+.cabecera-principal .fa-bars,
+.caja-busqueda button i,
+.caja-iconos a i {
+  font-size: 18px;
+}
+
+.caja-menu-busqueda {
+  display: flex;
+  align-items: center;
 }
 
 .caja-iconos {
@@ -76,48 +83,22 @@ nav a:hover {
   cursor: pointer;
 }
 
-.barra-nav .escritorio {
-  display: none;
-}
-
 .cabecera-logo {
   text-align: center;
 }
 
 .cabecera-logo img {
-  max-width: 125px;
+  max-width: 90px;
+  margin-bottom: 15px;
 }
 
-/*nav .seleccionado {
-  border-top: 1px solid #6d6f74;
-  border-bottom: 1px solid #6d6f74;
+.usuarios-escritorio {
+  display: none;
 }
-
-.cabecera-items {
-  display: inline-flex;
-  align-items: center;
-}
-
-.cabecera-items a {
-  padding: 5px;
-  text-decoration: none;
-  color: #2a2c25;
-}
-
-.cabecera-items a:hover {
-  text-decoration: underline;
-}
-
-.cabecera-items .fas.fa-shopping-cart {
-  margin-left: 10px;
-}
-
-.cabecera-items a.celular i {
-  display: inline-block;
-}*/
 
 .posicion hr {
   border: solid 0.5px #d6d6d69d;
+  margin-top: 0px;
 }
 
 .posicion ul {
@@ -217,7 +198,7 @@ footer li .far {
   }
 
   .cabecera-principal {
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   .caja-busqueda input {
@@ -236,7 +217,7 @@ footer li .far {
 
   .cabecera-principal input[type='text'],
   .cabecera-principal button {
-    padding: 5px;
+    padding: 3px 5px;
     border: 1px solid #d6d6d6;
     font-family: 'Roboto', sans-serif;
     background-color: white;
@@ -254,6 +235,27 @@ footer li .far {
   .iconoRegistro {
     margin-top: 5px;
     margin-left: 5px;
+  }
+
+  .caja-iconos {
+    display: none;
+  }
+
+  .usuarios-escritorio {
+    display: flex;
+  }
+
+  .usuarios-escritorio a {
+    text-decoration: none;
+    color: #2a2c25;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    padding-right: 10px;
+    text-decoration: underline;
+  }
+
+  .usuarios-escritorio a:hover {
+    color: #71a2ae;
   }
 
   /* #endregion ----------- HEADER----------- */
