@@ -21,11 +21,11 @@
       </section>
       <section class="detalle-producto-flex">
         <div class="fotos-producto">
-          <img src= '<%=productSend.image%>' alt="Cinto negro" />
+          <img src= <%=productSend.image%> alt="Cinto negro" />
           <div class="opciones-producto">
-            <img src='<%=productSend.image%>' alt="Cinto negro" />
-            <img src='<%=productSend.image%>' alt="Cinto negro" />
-            <img src='<%=productSend.image%>' alt="Cinto negro" />
+            <img src=<%=productSend.image%> alt="Cinto negro" />
+            <img src=<%=productSend.image%> alt="Cinto negro" />
+            <img src=<%=productSend.image%> alt="Cinto negro" />
           </div>
         </div>
         <div class="carrusel-circulo">
@@ -35,11 +35,11 @@
         </div>
         <div class="info-producto">
           <h3 class="nombre-producto"><%= productSend.name  %> </h3>
-          <p class="dp-precio">$4.000</p>
+          <p class="dp-precio">$<%= productSend.price%></p>
           <p class="dp-cuotas">
             <i class="fas fa-credit-card"></i>
             3 cuotas sin interés de
-            <strong>$666,67</strong>
+            <strong>$ <%= productSend.price/3 %> </strong>
           </p>
           <p class="dp-descuento">
             <i class="fas fa-money-bill"></i>
@@ -101,9 +101,9 @@
         </div>
       </section>
       <section class="informacion-producto">
-        <div>Cinto Black</div>
+        <div><%= productSend.name%></div>
         <p>
-          Cinturón de cuero vacuno. Hebilla metálica en baño de plata.
+          <%= productSend.description%>
           <br />
           <strong>Composición:</strong>
           100% cuero vacuno

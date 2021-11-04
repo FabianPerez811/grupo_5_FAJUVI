@@ -14,7 +14,7 @@
     "name": "Anillo Manhattan",
     "description": "Anillo de plata modelo rombo" ,
     "price": 700,
-    "image":"../public/img/anillo.jpg" ,
+    "image":"/img/anillo.jpg" ,
     "category":"Anillos",
     "color": " ",
     "size": "M"
@@ -24,7 +24,7 @@
     "name": "Anillo Manhattan",
     "description": "Anillo de plata modelo rombo" ,
     "price": 700,
-    "image":"../public/img/anillo.jpg" ,
+    "image":"/img/anillo.jpg" ,
     "category":"Anillos",
     "color": " ",
     "size": "L"
@@ -34,7 +34,7 @@
     "name": "Aros Paris" ,
     "description": "Aros de acero quirurgico",
     "price":1100 ,
-    "image": "../public/img/aro.jpg" ,
+    "image": "/img/aro.jpg" ,
     "category": "Aros" ,
     "color": " "
     },
@@ -43,7 +43,7 @@
     "name": "Aros Marsella" ,
     "description": "Aros redondos de plata" ,
     "price": 1500,
-    "image": "../public/img/aro2.jpg" ,
+    "image": "/img/aro2.jpg" ,
     "category": "Aros" ,
     "color": " "
     },
@@ -52,7 +52,7 @@
     "name": "Aros Lyon",
     "description": "Aros de acero quirurgico con dijes de fundición." ,
     "price": 900,
-    "image": "../public/img/aro3.jpg" ,
+    "image": "/img/aro3.jpg" ,
     "category": "Aros" ,
     "color": " "
     },
@@ -61,7 +61,7 @@
     "name": "Cinturón Venecia" ,
     "description": "Cinturón de eco cuero" ,
     "price": 1300 ,
-    "image":"../public/img/cinto.jpg" ,
+    "image":"/img/cinto.jpg" ,
     "category": "Cinturones",
     "color": "Negro "
     },
@@ -70,7 +70,7 @@
     "name": "Cinturón Venecia" ,
     "description": "Cinturón de eco cuero" ,
     "price": 1300 ,
-    "image":"../public/img/cinto.jpg" ,
+    "image":"/img/cinto.jpg" ,
     "category": "Cinturones",
     "color": " Camel "
     },
@@ -79,7 +79,7 @@
     "name": "Cinturón Roma" ,
     "description": "Cinturón de eco cuero con hebilla plateada",
     "price": 1300 ,
-    "image": "../public/img/cinto2.jpg" ,
+    "image": "/img/cinto2.jpg" ,
     "category": "Cinturones" ,
     "color": "Negro "
     },
@@ -88,7 +88,7 @@
     "name": "Cinturón Roma" ,
     "description": "Cinturón de eco cuero con hebilla plateada",
     "price": 1300 ,
-    "image": "../public/img/cinto2.jpg" ,
+    "image": "/img/cinto2.jpg" ,
     "category": "Cinturones" ,
     "color": "Camel "
     },
@@ -97,7 +97,7 @@
     "name": "Cinturón Florencia" ,
     "description":"Cinturón de cuero con hebilla dorada" ,
     "price": 2500 ,
-    "image": "../public/img/cinto3.jpg",
+    "image": "/img/cinto3.jpg",
     "category": "Cinturones" ,
     "color": "Negro "
     },
@@ -106,7 +106,7 @@
     "name": "Cinturón Florencia" ,
     "description":"Cinturón de cuero con hebilla dorada" ,
     "price": 2500 ,
-    "image": "../public/img/cinto3.jpg",
+    "image": "/img/cinto3.jpg",
     "category": "Cinturones" ,
     "color": "Camel "
     },
@@ -115,7 +115,7 @@
     "name": "Cinturón Milán",
     "description": "Cinturón de cuero trenzado con hebilla forrada"  ,
     "price": 3000 ,
-    "image": "../public/img/cinto4.jpg" ,
+    "image": "/img/cinto4.jpg" ,
     "category":"Cinturones" ,
     "color": "Negro "
     },
@@ -124,7 +124,7 @@
     "name": "Cinturón Milán",
     "description": "Cinturón de cuero trenzado con hebilla forrada"  ,
     "price": 3000 ,
-    "image": "../public/img/cinto4.jpg" ,
+    "image": "/img/cinto4.jpg" ,
     "category":"Cinturones" ,
     "color": " Camel "
     },
@@ -133,7 +133,7 @@
     "name":"Cinturón Turín",
     "description": "Cinturón de eco cuero trenzado" ,
     "price": 1800 ,
-    "image":"../public/img/cintoC.jpg",
+    "image":"/img/cintoC.jpg",
     "category":"Cinturones" ,
     "color": "Negro "
     },
@@ -142,7 +142,7 @@
     "name":"Cinturón Turín",
     "description": "Cinturón de eco cuero trenzado" ,
     "price": 1800 ,
-    "image":"../public/img/cintoC.jpg",
+    "image":"/img/cintoC.jpg",
     "category":"Cinturones" ,
     "color": "Camel "
     },
@@ -151,7 +151,7 @@
     "name": "Collar Sevilla" ,
     "description": "Collar de acero quirurgico con dije en plata" ,
     "price": 1200 ,
-    "image": "../public/img/collar.jpg" ,
+    "image": "/img/collar.jpg" ,
     "category": "Collares",
     "color": " "
     },
@@ -160,7 +160,7 @@
     "name": "Collar Barcelona" ,
     "description": "Collar de perlas simple" ,
     "price": 800,
-    "image": "../public/img/collar1.jpg" ,
+    "image": "/img/collar1.jpg" ,
     "category":"Collares" ,
     "color": " "
     },
@@ -169,7 +169,7 @@
     "name":"Collar Bilbao" ,
     "description": "Collar de perlas choker",
     "price": 1100 ,
-    "image":"../public/img/collar3.jpg" ,
+    "image":"/img/collar3.jpg" ,
     "category":"Collares" ,
     "color": " "
     },
@@ -178,7 +178,7 @@
     "name": "Collar San Sebastián",
     "description": "Collar de plata con pequeños accesorios" ,
     "price":1800 ,
-    "image": "../public/img/collar4.jpg",
+    "image": "/img/collar4.jpg",
     "category":"Collares" ,
     "color": " "
     },
@@ -187,7 +187,7 @@
     "name": "Pulsera Brujas" ,
     "description": "Pulsera de plata y perlas" ,
     "price": 850 ,
-    "image":"../public/img/pulsera.jpg" ,
+    "image":"/img/pulsera.jpg" ,
     "category":"Pulseras" ,
     "color": " "
     },
@@ -196,7 +196,7 @@
     "name":"Pulsera Bruselas" ,
     "description": "Pulsera de plata" ,
     "price":700,
-    "image": "../public/img/pulsera2.jpg" ,
+    "image": "/img/pulsera2.jpg" ,
     "category":"Pulseras" ,
     "color": " "
     }

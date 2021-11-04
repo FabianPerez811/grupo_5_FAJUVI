@@ -16,7 +16,6 @@ const productController = {
         const producto = products.find(product => {
             return product.id == id; 
 		})
-        
         res.render('detalleProducto' ,{productSend:producto})
     },
     agregado: (req,res) =>{ // accion de agregar prod   
