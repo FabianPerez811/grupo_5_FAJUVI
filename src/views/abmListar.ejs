@@ -22,9 +22,8 @@
             <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
           </a>
         </div>
-        <div class="link-panel">
-          <i class="fas fa-home"></i>
-          <div>Inicio</div>
+        <div class="link-panel">          
+          <a href="/"><i class="fas fa-home"></i>Inicio</a>          
         </div>
         <div>
           <div class="titulo-panel">Administrar</div>
@@ -50,10 +49,15 @@
           </div>
         </div>
       </div>
-      <div class="panel-abm">        
-        <div class="titulo">
-          Productos
-         </div>
+      <div class="panel-abm">
+        <div class="caja-crearProducto">
+          <div class="titulo">
+            Productos
+           </div>
+           <div class="icono-crear">
+            <a href="/products/create"><i class="fas fa-plus-circle"></i></a>
+           </div>           
+        </div> 
          <% for(i = 0; i < productos.length; i++) { %>
           <div class="tarjeta-producto">
             <div class="check-producto">
@@ -74,7 +78,7 @@
               </div>
               <div class="caja-editar">
                 <a href="/products/<%= productos[i].id%>/edit"><i class="fas fa-pen"></i></a>
-                <a href=""> <i class="fas fa-trash-alt"></i></a> 
+                <a href="#"> <i class="fas fa-trash-alt"></i></a> 
               </div>
           </div> 
           <% } %>            

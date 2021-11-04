@@ -243,6 +243,7 @@ footer li .far {
 
   .usuarios-escritorio {
     display: flex;
+    align-items: center;
   }
 
   .usuarios-escritorio a {

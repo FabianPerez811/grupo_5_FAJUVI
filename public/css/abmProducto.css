@@ -22,6 +22,21 @@ main {
   padding: 5px;
 }
 
+.caja-crearProducto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icono-crear {
+  margin: 20px 30px;
+  font-size: 18px;
+}
+
+.icono-crear a {
+  color: #71a2ae;
+}
+
 .agregar-producto {
   padding: 0px 20px;
 }
@@ -168,9 +183,8 @@ main {
   margin-right: 5px;
 }
 
-.total-stock.cero{
+.total-stock.cero {
   background-color: rgba(235, 119, 90, 0.733);
-
 }
 
 .caja-descripcion .precio {
@@ -198,7 +212,8 @@ main {
   }
   .boton-hamburguesa {
     display: none;
-  }
+  }  
+
   .cabecera-administrador {
     display: flex;
     align-items: center;
@@ -221,6 +236,10 @@ main {
   .panel-abm {
     flex-grow: 1;
     padding: 0px 20px;
+  }
+
+  .icono-crear {
+    display: none;
   }
 
   input.precio,
@@ -256,6 +275,17 @@ main {
     padding: 6px 12px;
     align-items: center;
     transition: color 0.5s;
+  }
+
+  .link-panel a {
+    text-decoration: none;
+    color: #2a2c25;
+    transition: color 0.5s;
+  }
+
+  .link-panel a:hover {
+    color: #9fbfc8;
+    cursor: pointer;
   }
 
   .link-productos a {
