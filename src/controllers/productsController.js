@@ -1,4 +1,8 @@
 const path = require ('path');
+const fs = require('fs')
+
+const productsFilePath = path.join(__dirname, '../../data/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const productController = {
     productos: (req, res) => // listado de productos
@@ -8,7 +12,11 @@ const productController = {
         {res.render ('agregarProducto')
     },
     detalle: (req, res) => { //muestra detalle product
-        res.render ('detalleProducto')
+        const id = req.params.id;
+        const producto = products.find(product => {
+			return product.id == id;
+		})
+        res.render ('detalleProducto' , {productSend:producto})
     },
     agregado: (req,res) =>{ // accion de agregar prod   
           //ABM de agregado de producto
