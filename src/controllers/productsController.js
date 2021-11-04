@@ -8,9 +8,6 @@ const productController = {
     productos: (req, res) => // listado de productos
         {res.render('productos')
     },
-    crear: (req, res) => // muestra pantalla crear
-        {res.render ('agregarProducto')
-    },
     detalle: (req, res) => { //muestra detalle product
         const id = req.params.id;
         const producto = products.find(product => {
@@ -18,9 +15,21 @@ const productController = {
 		})
         res.render('detalleProducto' ,{productSend:producto})
     },
+    crear: (req, res) => // muestra pantalla crear
+        {res.render ('agregarProducto')
+    },
     agregado: (req,res) =>{ // accion de agregar prod   
-          //ABM de agregado de producto
-          //rediceccionar
+          let newProduct = {
+			id: 22222, //products[products.length -1].id + 1,
+            name: req.body.nombre,
+            description: req.body.descripcion,
+            price: req.body.precio,
+            image: "/img/aro2.jpg" , //-------PENDIENTE--------
+            category: req.body.categoria ,
+		}
+            products.push(newProduct);
+            fs.writeFileSync(productsFilePath, JSON.stringify(products,null," "))
+          res.render('productos')
     }, 
     bmproducto: (req, res) => {
         // mostrar detalle de prod a editar
