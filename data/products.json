@@ -8,7 +8,8 @@
     "category":"Anillos",
     "color": " ",
     "size": "S"
-    },{
+    },
+    {
     "id": "320482864-4",
     "name": "Anillo Manhattan",
     "description": "Anillo de plata modelo rombo" ,
@@ -17,7 +18,8 @@
     "category":"Anillos",
     "color": " ",
     "size": "M"
-    }, {
+    },
+    {
     "id": "320482864-5",
     "name": "Anillo Manhattan",
     "description": "Anillo de plata modelo rombo" ,
@@ -26,7 +28,8 @@
     "category":"Anillos",
     "color": " ",
     "size": "L"
-    },{
+    },
+    {
     "id": "182344157-2",
     "name": "Aros Paris" ,
     "description": "Aros de acero quirurgico",
@@ -34,7 +37,8 @@
     "image": "../public/img/aro.jpg" ,
     "category": "Aros" ,
     "color": " "
-    },{
+    },
+    {
     "id": "884625649-2",
     "name": "Aros Marsella" ,
     "description": "Aros redondos de plata" ,
@@ -42,7 +46,8 @@
     "image": "../public/img/aro2.jpg" ,
     "category": "Aros" ,
     "color": " "
-    },{
+    },
+    {
     "id": "131384019-X",
     "name": "Aros Lyon",
     "description": "Aros de acero quirurgico con dijes de fundición." ,
@@ -50,7 +55,8 @@
     "image": "../public/img/aro3.jpg" ,
     "category": "Aros" ,
     "color": " "
-    },{
+    },
+    {
     "id": "276914343-2",
     "name": "Cinturón Venecia" ,
     "description": "Cinturón de eco cuero" ,
@@ -58,7 +64,8 @@
     "image":"../public/img/cinto.jpg" ,
     "category": "Cinturones",
     "color": "Negro "
-    },{
+    },
+    {
     "id": "276914343-3",
     "name": "Cinturón Venecia" ,
     "description": "Cinturón de eco cuero" ,
@@ -66,7 +73,8 @@
     "image":"../public/img/cinto.jpg" ,
     "category": "Cinturones",
     "color": " Camel "
-    },{
+    },
+    {
     "id": "134137434-2",
     "name": "Cinturón Roma" ,
     "description": "Cinturón de eco cuero con hebilla plateada",
@@ -74,7 +82,8 @@
     "image": "../public/img/cinto2.jpg" ,
     "category": "Cinturones" ,
     "color": "Negro "
-    },{
+    },
+    {
     "id": "134137434-3",
     "name": "Cinturón Roma" ,
     "description": "Cinturón de eco cuero con hebilla plateada",
@@ -82,7 +91,8 @@
     "image": "../public/img/cinto2.jpg" ,
     "category": "Cinturones" ,
     "color": "Camel "
-    },{
+    },
+    {
     "id": "292730861-5",
     "name": "Cinturón Florencia" ,
     "description":"Cinturón de cuero con hebilla dorada" ,
@@ -90,7 +100,8 @@
     "image": "../public/img/cinto3.jpg",
     "category": "Cinturones" ,
     "color": "Negro "
-    },{
+    },
+    {
     "id": "292730861-6",
     "name": "Cinturón Florencia" ,
     "description":"Cinturón de cuero con hebilla dorada" ,
@@ -98,7 +109,8 @@
     "image": "../public/img/cinto3.jpg",
     "category": "Cinturones" ,
     "color": "Camel "
-    },{
+    },
+    {
     "id": "236689048-5",
     "name": "Cinturón Milán",
     "description": "Cinturón de cuero trenzado con hebilla forrada"  ,
@@ -106,7 +118,8 @@
     "image": "../public/img/cinto4.jpg" ,
     "category":"Cinturones" ,
     "color": "Negro "
-    },{
+    },
+    {
     "id": "236689048-6",
     "name": "Cinturón Milán",
     "description": "Cinturón de cuero trenzado con hebilla forrada"  ,
@@ -114,7 +127,8 @@
     "image": "../public/img/cinto4.jpg" ,
     "category":"Cinturones" ,
     "color": " Camel "
-    },{
+    },
+    {
     "id": "113993865-6",
     "name":"Cinturón Turín",
     "description": "Cinturón de eco cuero trenzado" ,
@@ -122,7 +136,8 @@
     "image":"../public/img/cintoC.jpg",
     "category":"Cinturones" ,
     "color": "Negro "
-    },{
+    },
+    {
     "id": "113993865-7",
     "name":"Cinturón Turín",
     "description": "Cinturón de eco cuero trenzado" ,
@@ -130,7 +145,8 @@
     "image":"../public/img/cintoC.jpg",
     "category":"Cinturones" ,
     "color": "Camel "
-    },{
+    },
+    {
     "id": "607129825-3",
     "name": "Collar Sevilla" ,
     "description": "Collar de acero quirurgico con dije en plata" ,
@@ -138,7 +154,8 @@
     "image": "../public/img/collar.jpg" ,
     "category": "Collares",
     "color": " "
-     },{
+    },
+    {
     "id": "949030403-4",
     "name": "Collar Barcelona" ,
     "description": "Collar de perlas simple" ,
@@ -146,7 +163,8 @@
     "image": "../public/img/collar1.jpg" ,
     "category":"Collares" ,
     "color": " "
-    },{
+    },
+    {
     "id": "065196473-3",
     "name":"Collar Bilbao" ,
     "description": "Collar de perlas choker",
@@ -154,7 +172,8 @@
     "image":"../public/img/collar3.jpg" ,
     "category":"Collares" ,
     "color": " "
-    },{
+    },
+    {
     "id": "230068690-2",
     "name": "Collar San Sebastián",
     "description": "Collar de plata con pequeños accesorios" ,
@@ -162,7 +181,8 @@
     "image": "../public/img/collar4.jpg",
     "category":"Collares" ,
     "color": " "
-    },{
+    },
+    {
     "id": "110635187-8",
     "name": "Pulsera Brujas" ,
     "description": "Pulsera de plata y perlas" ,
@@ -170,7 +190,8 @@
     "image":"../public/img/pulsera.jpg" ,
     "category":"Pulseras" ,
     "color": " "
-    },{
+    },
+    {
     "id": "743112894-0",
     "name":"Pulsera Bruselas" ,
     "description": "Pulsera de plata" ,

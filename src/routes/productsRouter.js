@@ -8,7 +8,7 @@ router.get('/:id', productsController.detalle) // vista detalle prod
 router.post('/agregar', productsController.agregado) // metodo de agregar product
 router.get('/:id/bmproducto', productsController.bmproducto)// vista editar producto
 router.put('/:id', productsController.editar) // metodo de edicion de producto
-router.delete('/:id', productsController.eliminar)
+router.delete('/:id', productsController.eliminar) // metodo de borrado de producto
 router.get ('/carritoProductos', productsController.carrito); // vista de carrito de product
 
 
