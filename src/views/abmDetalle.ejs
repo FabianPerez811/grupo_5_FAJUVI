@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head')  %> 
+  <link rel="stylesheet" href="/css/abmProducto.css" /> 
+
+</head>
+
+  <body>
+    <header>
+      <div class="boton-hamburguesa">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="cabecera-administrador">
+        <i class="fas fa-user"></i>
+        <div>Mi cuenta</div>
+      </div>
+    </header>
+    <main>
+      <div class="panel-administrador">
+        <div class="logo-panel">
+          <a href="/">
+            <img src="img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
+          </a>
+        </div>
+        <div class="link-panel">
+          <i class="fas fa-home"></i>
+          <div>Inicio</div>
+        </div>
+        <div>
+          <div class="titulo-panel">Administrar</div>
+          <div class="link-panel">
+            <i class="fas fa-search-dollar"></i>
+            <div>Ventas</div>
+          </div>
+          <div class="link-panel">
+            <i class="fas fa-tags"></i>
+            <div class="link-productos">
+              <a href="/products/create">Agregar Productos</a>
+            </div>
+          </div>
+          <div class="link-panel">
+            <i class="fas fa-list-ul"></i>
+            <div class="link-productos">
+              <a href="/products">Lista de Productos</a>
+            </div>
+          </div>
+          <div class="link-panel">
+            <i class="fas fa-user-friends"></i>
+            <div>Clientes</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-abm">
+        <p class="titulo">Detalle de producto: <strong> <%= detalleDeProducto.id%> </strong> </p>
+
+      </div>
+    </main>
+    <%-  include('./partials/footer')  %> 
+  </body>
+</html>

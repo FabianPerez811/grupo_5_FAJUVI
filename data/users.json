@@ -5,7 +5,7 @@
     "lastName": "MacCrann",
     "email": "lmaccrann0@harvard.edu",
     "password": "LOIxrO4Y3Raf",
-    "category": null,
+    "category": "administrador",
     "image": null
   },
   {
@@ -14,7 +14,7 @@
     "lastName": "Drance",
     "email": "xdrance1@gmpg.org",
     "password": "d0C05hlOKRU",
-    "category": null,
+    "category": "cliente",
     "image": null
   },
   {
@@ -23,7 +23,7 @@
     "lastName": "Livens",
     "email": "jlivens2@rediff.com",
     "password": "iyO4f83SiZG",
-    "category": null,
+    "category": "administrador",
     "image": null
   },
   {
@@ -32,7 +32,7 @@
     "lastName": "Standbridge",
     "email": "gstandbridge3@creativecommons.org",
     "password": "7kcU3oGu",
-    "category": null,
+    "category": "cliente",
     "image": null
   },
   {
@@ -41,7 +41,7 @@
     "lastName": "Cowans",
     "email": "ccowans4@boston.com",
     "password": "zYc7lk3Cy",
-    "category": null,
+    "category": "administrador",
     "image": null
   },
   {
@@ -50,7 +50,7 @@
     "lastName": "Kenealy",
     "email": "mkenealy5@moonfruit.com",
     "password": "inRGgt3wzTF",
-    "category": null,
+    "category": "cliente",
     "image": null
   },
   {
@@ -59,7 +59,7 @@
     "lastName": "Wickersley",
     "email": "dwickersley6@apple.com",
     "password": "jeVvtFZICFa",
-    "category": null,
+    "category": "cliente",
     "image": null
   },
   {
@@ -68,7 +68,7 @@
     "lastName": "Casillas",
     "email": "lcasillas7@huffingtonpost.com",
     "password": "eIdze4",
-    "category": null,
+    "category": "cliente",
     "image": null
   },
   {
@@ -77,7 +77,7 @@
     "lastName": "Attwill",
     "email": "jattwill8@issuu.com",
     "password": "kqkm2H9L",
-    "category": null,
+    "category": "cliente",
     "image": null
   },
   {
@@ -86,7 +86,7 @@
     "lastName": "Warre",
     "email": "awarre9@europa.eu",
     "password": "mZgquGDCpE",
-    "category": null,
+    "category": "cliente",
     "image": null
   }
 ]

@@ -88,17 +88,6 @@
   "popular": false
  },
  {
-  "id": "113993865-6",
-  "name": "Cinturón Turín",
-  "description": "Cinturón de eco cuero trenzado",
-  "price": 1800,
-  "image": "/img/cintoC.jpg",
-  "category": "Cinturones",
-  "color": "Negro",
-  "size": "S",
-  "popular": false
- },
- {
   "id": "607129825-3",
   "name": "Collar Sevilla",
   "description": "Collar de acero quirurgico con dije en plata",
@@ -126,17 +115,6 @@
   "description": "Collar de perlas choker",
   "price": 1100,
   "image": "/img/collar3.jpg",
-  "category": "Collares",
-  "color": " ",
-  "size": "S",
-  "popular": false
- },
- {
-  "id": "230068690-2",
-  "name": "Collar San Sebastián",
-  "description": "Collar de plata con pequeños accesorios",
-  "price": 1800,
-  "image": "/img/collar4.jpg",
   "category": "Collares",
   "color": " ",
   "size": "S",
