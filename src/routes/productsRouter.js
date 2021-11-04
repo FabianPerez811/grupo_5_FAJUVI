@@ -1,19 +1,21 @@
-const express = require ('express');
+const express = require('express');
 const router = express.Router();
 const productsController = require('../controllers/productsController');
 
-router.get ('/productos', productsController.productos); // vista listado productos
+//RUTAS USUARIO ECOMMERCE:
 
-router.get ('/agregar', productsController.crear); // vista de crear prod
+router.get('/productos', productsController.productos); // vista listado productos ecommerce
+router.get('/productos/:id', productsController.detalle) // vista detalle prod
+router.get('/carritoProductos', productsController.carrito); // vista de carrito de producto
 
-router.get('/:id', productsController.detalle) // vista detalle prod
+//RUTAS CRUD ADMINISTRADOR:
 
-router.post('/agregar', productsController.agregado) // metodo de agregar product
+router.get('/products', productsController.abmListar)// vista listar todos los productos
+router.get('/products/create', productsController.abmCrear); // vista de crear productos
+router.get('/products/:id', productsController.abmDetalle) // vista detalle prodoctos
+router.post('/products', productsController.abmCreado) // metodo de agregar productos
+router.get('/products/:id/edit', productsController.abmEditar) // vista de edicion de producto
+router.put('/products/:id', productsController.abmEditado) // metodo de editar producto
+router.delete('/products/:id', productsController.abmEliminar) // metodo de borrado de producto
 
-router.get('/:id/bmproducto', productsController.bmproducto)// vista editar producto
-router.put('/:id', productsController.editar) // metodo de edicion de producto
-router.delete('/:id', productsController.eliminar) // metodo de borrado de producto
-router.get ('/carritoProductos', productsController.carrito); // vista de carrito de product
-
-
-module.exports = router;    
+module.exports = router;

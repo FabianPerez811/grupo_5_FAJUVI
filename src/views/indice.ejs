@@ -24,108 +24,22 @@
         <span class="circulo"></span>
       </div>
     <main>
-      <h3 class="titulo-destacado">Productos destacados</h3>
+      <h3 class="titulo-destacado">Productos más vendidos</h3>
       <section class="productos-destacados">
-        <article>
-          <div class="caja-imagen">
-            <a href="/detalle">
-              <img src="img/collar.jpg" alt="imagen de collar" />
-            </a>
-          </div>
-          <h4 class="producto">Collar Luna</h4>
-          <p class="precio">$5.000</p>
-          <p class="cuotas">6 Cuotas sin interés de $833,33</p>
-        </article>
-        <article>
-          <div class="caja-imagen">
-            <a href="/detalle">
-              <img src="img/collar3.jpg" alt="imagen de collar" />
-            </a>
-          </div>
-          <h4 class="producto">Collar Perlas</h4>
-          <p class="precio">$4.500</p>
-          <p class="cuotas">6 Cuotas sin interés de $750</p>
-        </article>
-        <article>
-          <div class="caja-imagen">
-            <a href="/detalle">
-              <img src="img/aro.jpg" alt="imagen de Aro" />
-            </a>
-          </div>
-          <h4 class="producto">Aro Gota</h4>
-          <p class="precio">$2.550</p>
-          <p class="cuotas">6 Cuotas sin interés de $425</p>
-        </article>
-        <article>
-          <div class="caja-imagen">
-            <a href="/detalle">
-              <img src="img/pulsera.jpg" alt="imagen de pulsera" />
-            </a>
-          </div>
-          <h4 class="producto">Pulsera Calia</h4>
-          <p class="precio">$1.500</p>
-          <p class="cuotas">6 Cuotas sin interés de $250</p>
-        </article>
-        <article>
-          <div class="caja-imagen">
-            <a href="/detalle">
-              <img src="img/cinto.jpg" alt="imagen de cinto" />
-            </a>
-          </div>
-          <h4 class="producto">Cinto Black</h4>
-          <p class="precio">$4.000</p>
-          <p class="cuotas">6 Cuotas sin interés de $666,67</p>
-        </article>
-        <article>
-          <div class="caja-imagen">
-            <a href="/detalle">
-              <img src="img/aro2.jpg" alt="imagen de aros" />
-            </a>
-          </div>
-          <h4 class="producto">Aro Florencia</h4>
-          <p class="precio">$3.660</p>
-          <p class="cuotas">6 Cuotas sin interés de $610</p>
-        </article>
-        <article>
-          <div class="caja-imagen">
-            <a href="/detalle">
-              <img src="img/anillo.jpg" alt="imagen de anillo" />
-            </a>            
-          </div>
-          <h4 class="producto">Anillo Mia</h4>
-          <p class="precio">$4.800</p>
-          <p class="cuotas">6 Cuotas sin interés de $800</p>
-        </article>
-        <article>
-          <div class="caja-imagen">
-            <a href="/detalle">
-              <img src="img/aro3.jpg" alt="imagen de aros" />
-            </a>
-          </div>
-          <h4 class="producto">Aro Col</h4>
-          <p class="precio">$2750</p>
-          <p class="cuotas">6 Cuotas sin interés de $458,33</p>
-        </article>
-        <article>
-          <div class="caja-imagen">
-            <a href="/detalle">
-              <img src="img/pulsera2.jpg" alt="imagen de pulsera" />
-            </a>
-          </div>
-          <h4 class="producto">Pulsera Esclava</h4>
-          <p class="precio">$3.060</p>
-          <p class="cuotas">6 Cuotas sin interés de $510</p>
-        </article>
-        <article>
-          <div class="caja-imagen">
-            <a href="/detalle">
-              <img src="img/collar4.png" alt="imagen de collar" />
-            </a>
-          </div>
-          <h4 class="producto">Cadena Luz</h4>
-          <p class="precio">$2.040</p>
-          <p class="cuotas">6 Cuotas sin interés de $340</p>
-        </article>
+        <% for(i = 0; i < productosPopulares.length; i++) { %>
+
+          <article>
+            <div class="caja-imagen">
+              <a href="/productos/<%= productosPopulares[i].id %>">
+                <img src="<%= productosPopulares[i].image %>" alt="imagen de collar" />
+              </a>
+            </div>
+            <h4 class="producto"><%= productosPopulares[i].name %></h4>
+            <p class="precio">$<%= productosPopulares[i].price %></p>
+            <p class="cuotas">6 Cuotas sin interés de $<%= productosPopulares[i].price / 6 %></p>
+          </article>
+  
+          <% } %>
       </section>
       <div class="boton-mas-productos">
         <a href="/productos">

@@ -6,28 +6,9 @@
   "price": 700,
   "image": "/img/anillo.jpg",
   "category": "Anillos",
-  "color": " ",
-  "size": "S"
- },
- {
-  "id": "320482864-4",
-  "name": "Anillo Manhattan",
-  "description": "Anillo de plata modelo rombo",
-  "price": 700,
-  "image": "/img/anillo.jpg",
-  "category": "Anillos",
-  "color": " ",
-  "size": "M"
- },
- {
-  "id": "320482864-5",
-  "name": "Anillo Manhattan",
-  "description": "Anillo de plata modelo rombo",
-  "price": 700,
-  "image": "/img/anillo.jpg",
-  "category": "Anillos",
-  "color": " ",
-  "size": "L"
+  "color": "",
+  "size": "S",
+  "popular": true
  },
  {
   "id": "182344157-2",
@@ -36,7 +17,9 @@
   "price": 1100,
   "image": "/img/aro.jpg",
   "category": "Aros",
-  "color": " "
+  "color": " ",
+  "size": "S",
+  "popular": false
  },
  {
   "id": "884625649-2",
@@ -45,7 +28,9 @@
   "price": 1500,
   "image": "/img/aro2.jpg",
   "category": "Aros",
-  "color": " "
+  "color": " ",
+  "size": "S",
+  "popular": true
  },
  {
   "id": "131384019-X",
@@ -54,16 +39,9 @@
   "price": 900,
   "image": "/img/aro3.jpg",
   "category": "Aros",
-  "color": " "
- },
- {
-  "id": "276914343-2",
-  "name": "Cinturón Venecia",
-  "description": "Cinturón de eco cuero",
-  "price": 1300,
-  "image": "/img/cinto.jpg",
-  "category": "Cinturones",
-  "color": "Negro "
+  "color": " ",
+  "size": "S",
+  "popular": true
  },
  {
   "id": "276914343-3",
@@ -72,7 +50,9 @@
   "price": 1300,
   "image": "/img/cinto.jpg",
   "category": "Cinturones",
-  "color": " Camel "
+  "color": "Camel",
+  "size": "S",
+  "popular": true
  },
  {
   "id": "134137434-2",
@@ -81,16 +61,9 @@
   "price": 1300,
   "image": "/img/cinto2.jpg",
   "category": "Cinturones",
-  "color": "Negro "
- },
- {
-  "id": "134137434-3",
-  "name": "Cinturón Roma",
-  "description": "Cinturón de eco cuero con hebilla plateada",
-  "price": 1300,
-  "image": "/img/cinto2.jpg",
-  "category": "Cinturones",
-  "color": "Camel "
+  "color": "Negro",
+  "size": "S",
+  "popular": false
  },
  {
   "id": "292730861-5",
@@ -99,16 +72,9 @@
   "price": 2500,
   "image": "/img/cinto3.jpg",
   "category": "Cinturones",
-  "color": "Negro "
- },
- {
-  "id": "292730861-6",
-  "name": "Cinturón Florencia",
-  "description": "Cinturón de cuero con hebilla dorada",
-  "price": 2500,
-  "image": "/img/cinto3.jpg",
-  "category": "Cinturones",
-  "color": "Camel "
+  "color": "Negro",
+  "size": "S",
+  "popular": false
  },
  {
   "id": "236689048-5",
@@ -117,16 +83,9 @@
   "price": 3000,
   "image": "/img/cinto4.jpg",
   "category": "Cinturones",
-  "color": "Negro "
- },
- {
-  "id": "236689048-6",
-  "name": "Cinturón Milán",
-  "description": "Cinturón de cuero trenzado con hebilla forrada",
-  "price": 3000,
-  "image": "/img/cinto4.jpg",
-  "category": "Cinturones",
-  "color": " Camel "
+  "color": "Negro",
+  "size": "S",
+  "popular": false
  },
  {
   "id": "113993865-6",
@@ -135,16 +94,9 @@
   "price": 1800,
   "image": "/img/cintoC.jpg",
   "category": "Cinturones",
-  "color": "Negro "
- },
- {
-  "id": "113993865-7",
-  "name": "Cinturón Turín",
-  "description": "Cinturón de eco cuero trenzado",
-  "price": 1800,
-  "image": "/img/cintoC.jpg",
-  "category": "Cinturones",
-  "color": "Camel "
+  "color": "Negro",
+  "size": "S",
+  "popular": false
  },
  {
   "id": "607129825-3",
@@ -153,7 +105,9 @@
   "price": 1200,
   "image": "/img/collar.jpg",
   "category": "Collares",
-  "color": " "
+  "color": " ",
+  "size": "S",
+  "popular": false
  },
  {
   "id": "949030403-4",
@@ -162,7 +116,9 @@
   "price": 800,
   "image": "/img/collar1.jpg",
   "category": "Collares",
-  "color": " "
+  "color": " ",
+  "size": "S",
+  "popular": false
  },
  {
   "id": "065196473-3",
@@ -171,7 +127,9 @@
   "price": 1100,
   "image": "/img/collar3.jpg",
   "category": "Collares",
-  "color": " "
+  "color": " ",
+  "size": "S",
+  "popular": false
  },
  {
   "id": "230068690-2",
@@ -180,7 +138,9 @@
   "price": 1800,
   "image": "/img/collar4.jpg",
   "category": "Collares",
-  "color": " "
+  "color": " ",
+  "size": "S",
+  "popular": false
  },
  {
   "id": "110635187-8",
@@ -189,15 +149,9 @@
   "price": 850,
   "image": "/img/pulsera.jpg",
   "category": "Pulseras",
-  "color": " "
- },
- {
-  "id": "743112894-0",
-  "name": "Pulsera Bruselas",
-  "description": "Pulsera de plata",
-  "price": 700,
-  "image": "/img/pulsera2.jpg",
-  "category": "Pulseras",
-  "color": " "
+  "color": " ",
+  "size": "S",
+  "popular": true
  }
+
 ]
