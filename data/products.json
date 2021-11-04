@@ -4,7 +4,7 @@
     "name": "Anillo Manhattan",
     "description": "Anillo de plata modelo rombo" ,
     "price": 700,
-    "image":"../public/img/anillo.jpg" ,
+    "image":"/img/anillo.jpg" ,
     "category":"Anillos",
     "color": " ",
     "size": "S"

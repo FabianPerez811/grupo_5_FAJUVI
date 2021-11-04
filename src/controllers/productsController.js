@@ -14,9 +14,10 @@ const productController = {
     detalle: (req, res) => { //muestra detalle product
         const id = req.params.id;
         const producto = products.find(product => {
-			return product.id == id;
+            return product.id == id; 
 		})
-        res.render ('detalleProducto' , {productSend:producto})
+        
+        res.render('detalleProducto' ,{productSend:producto})
     },
     agregado: (req,res) =>{ // accion de agregar prod   
           //ABM de agregado de producto
