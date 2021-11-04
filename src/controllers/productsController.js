@@ -21,7 +21,7 @@ const productController = {
         res.render ('carritoProductos')
     },
     abmCrear: (req, res) => // muestra pantalla crear
-        {res.render ('agregarProducto')
+        {res.render ('abmCrear')
     },
     abmCreado: (req,res) =>{ // accion de agregar prod   
           let newProduct = {
@@ -34,24 +34,28 @@ const productController = {
 		}
             products.push(newProduct);
             fs.writeFileSync(productsFilePath, JSON.stringify(products,null," "))
-          res.render('bmProducto')
+          res.render('abmListar')
     }, 
     abmListar: (req, res) => { 
-        res.render('bmProducto')
+        res.render('abmListar', {productos:products})
     },
     abmEditar: (req, res) => {
-        // metodo de edicion de prod
+        const id = req.params.id;
+        const producto = products.find(product => {
+            return product.id == id; 
+		})
+        res.render('abmEditar', {productoAEditar:producto});
     },
     abmEliminar:  (req, res) => {
         // metodo de eliminacion de prod
     },
 
     abmDetalle:(req, res) => {
-        res.render ('agregarProducto')
+        res.render ('abmCrear')//cambiar la url, la puse para q no se rompa!
     },
 
     abmEditado:(req,res) => {
-        
+
     }
     
 }
