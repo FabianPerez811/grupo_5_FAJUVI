@@ -35,7 +35,7 @@ const productController = {
         }
         products.push(newProduct);
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "))
-        res.render('abmListar')
+        res.render('abmListar', {productos:products})
     },
     abmListar: (req, res) => {
         res.render('abmListar', { productos: products })
@@ -49,6 +49,7 @@ const productController = {
     },
     abmEliminar: (req, res) => {
         // metodo de eliminacion de prod
+        // redirect - res.render('abmListar')
     },
 
     abmDetalle: (req, res) => {
@@ -60,7 +61,8 @@ const productController = {
     },
 
     abmEditado: (req, res) => {
-
+        // agregar metodo
+        // redirect - res.render('abmListar')
     }
 
 }
