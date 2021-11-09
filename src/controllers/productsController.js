@@ -3,7 +3,7 @@ const fs = require('fs')
 
 const productsFilePath = path.join(__dirname, '../../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const productController = {
     productos: (req, res) => {
         // le pasamos a la vista el array de productos que obtuvimos a partir
@@ -30,7 +30,7 @@ const productController = {
             name: req.body.nombre,
             description: req.body.descripcion,
             price: req.body.precio,
-            image: "/img/aro2.jpg", //-------PENDIENTE--------
+            image: req.body.foto, 
             category: req.body.categoria,
         }
         products.push(newProduct);
@@ -78,7 +78,7 @@ const productController = {
             name: req.body.nombre,
             description: req.body.descripcion,
             price: req.body.precio,
-            image:  productToEdit.image,
+            image:  productToEdit.image, //chequear
             category: req.body.categoria,
             size: req.body.talle,
             popular: false
