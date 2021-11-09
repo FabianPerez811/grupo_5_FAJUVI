@@ -205,6 +205,24 @@ main {
   cursor: pointer;
 }
 
+.action-button.delete{
+  background-color: white;
+  border:none;
+}
+
+.box-detalleProducto{
+  margin: 5px 30px 50px 30px;
+  font-size: 16px;
+}
+
+.item-detalleProducto{
+  padding: 5px 0px;
+}
+
+.form-botones{
+  padding:0px 20px;
+}
+
 @media (min-width: 768px) {
   main {
     display: flex;
