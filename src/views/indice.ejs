@@ -36,7 +36,7 @@
             </div>
             <h4 class="producto"><%= productosPopulares[i].name %></h4>
             <p class="precio">$<%= productosPopulares[i].price %></p>
-            <p class="cuotas">6 Cuotas sin interés de $<%= productosPopulares[i].price / 6 %></p>
+            <p class="cuotas">6 Cuotas sin interés de $<%= (productosPopulares[i].price / 6).toFixed(2) %></p>
           </article>
   
           <% } %>
