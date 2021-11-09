@@ -30,3 +30,18 @@ Asimismo, creemos que nos puede ayudar a optimizar los resultados tener una comu
 Por otro lado, notamos un muy bien clima de trabajo y comunicación, por lo que nos gustaría generar espacios y momentos de encuentro más alla de lo estrictamente referido al proyecto.
 
 
+# Retrospectiva Sprint 3:
+Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/app/board/o9J_lk9od6w=/)
+
+En esta oportunidad, decidimos sostener la dinámica sugerida "Estrella de mar" analizando las mismas 5 variables con las que habiamos trabajado anteriormente. 
+
+Podrán encontrar:
+ - Start doing: lo que creemos que deberíamos incorporar para afianzar el trabajo.
+ - More of: lo que debemos realizar en mayor medida, idealmente estará nutrido de "Start doing"
+ - Keep doing: lo que ya realizamos y debemos sostener.
+ - Less of: lo que no nos beneficia y deberíamos dejar de lado.
+ - Stop doing: lo que nos dificulta el cumplimiento de los objetivos propuestos.
+
+En esta tercera retrospectiva concluimos que si bien es una fortaleza la organización pudiendo así lograr una división de tareas clara y organizada debemos empezar a evaluar la posibilidad de asignar tareas en conjunto. Creemos que de esta forma podremos fortalecer el aprendizaje de los temas abordados y lograr mejores resultados en el proyecto. Continua siendo el tablero de Trello nuestro gran aliado.
+Asimismo, creemos necesario empezar a chequear y revisar todas las tareas asignadas a cada uno de los integrantes para lograr asi abordar los temas de manera consistente. 
+Por otro lado, hemos logrado fortalecer la comunicación en el grupo compartiendo los procesos de trabajo de cada uno. Sin embargo, consideramos que es necesario continuar trabajando en este punto.
