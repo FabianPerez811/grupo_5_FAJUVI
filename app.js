@@ -1,7 +1,7 @@
 // ************ Require's ************
 const express = require('express');
 const path = require('path')
-//const methodOverride = require('method-override'); // Para poder usar los métodos PUT y DELETE
+const methodOverride = require('method-override'); // Para poder usar los métodos PUT y DELETE
 
 // ************ express() -
 const app = express();
@@ -10,7 +10,7 @@ const app = express();
 app.use(express.static(path.resolve(__dirname, "./public")));
 app.use(express.urlencoded({ extended: false })); // para poder usar post
 app.use(express.json()); // para poder usar post
-//app.use(methodOverride('_method')); // Para poder usar los métodos PUT y DELETE
+app.use(methodOverride('_method')); // Para poder usar los métodos PUT y DELETE
 
 // ************ Template Engine - (don't touch) ************
 app.set('view engine' , 'ejs');

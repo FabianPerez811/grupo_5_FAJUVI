@@ -55,6 +55,10 @@
       <div class="panel-abm">
         <p class="titulo">Detalle de producto: <strong> <%= detalleDeProducto.id%> </strong> </p>
 
+        <form action="/products/<%= detalleDeProducto.id%>?_method=DELETE" method="POST" style="display: inline-flex">
+          <button type="submit" class="action-button delete"><a href="#"> <i class="fas fa-trash-alt"></i></a> </button>
+        </form>
+
       </div>
     </main>
     <%-  include('./partials/footer')  %> 

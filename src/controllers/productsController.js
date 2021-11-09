@@ -49,7 +49,15 @@ const productController = {
     },
     abmEliminar: (req, res) => {
         // metodo de eliminacion de prod
-        // redirect - res.render('abmListar')
+        let id = req.params.id;
+
+		let finalProducts = products.filter(product =>{
+			return product.id != id;
+		})
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts,null," "))
+		res.render('abmListar', { productos: finalProducts })
+        
     },
 
     abmDetalle: (req, res) => {
@@ -62,8 +70,7 @@ const productController = {
 
     abmEditado: (req, res) => {
         // agregar metodo
-        // redirect - res.render('abmListar')
-    }
+    },
 
 }
 
