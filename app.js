@@ -19,8 +19,10 @@ app.set ('views' , './src/views');
 // ************ Route System require and use() - (don't touch) ************
 const mainRouter = require ('./src/routes/mainRouter')
 const productsRouter = require ('./src/routes/productsRouter')
+const userRouter = require ('./src/routes/userRouter')
 
 app.use('/', mainRouter);
+app.use('/', userRouter);
 app.use('/', productsRouter);
 
 // ************ Set the server to listen - (don't touch) ************

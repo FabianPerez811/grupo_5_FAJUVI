@@ -11,16 +11,7 @@ const mainController = {
             return producto.popular == true; 
         })
         res.render ('indice',{productosPopulares:productoPopulares});
-    },   
-
-    acceso:(req, res) => {
-        res.render ('acceso')
-    },
-        
-    registro: (req, res) => {
-        res.render ('registro') 
-    },
-    
+    },      
 }
 
 module.exports = mainController;
