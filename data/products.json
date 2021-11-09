@@ -1,123 +1,128 @@
 [
-    {
-     "id": "1A",
-     "name": "Anillo Manhattan",
-     "description": "Anillo de plata modelo rombo",
-     "price": 700,
-     "image": "/img/anillo.jpg",
-     "category": "Anillos",
-     "size": "S",
-     "popular": true
-    },
-    {
-     "id": "2A",
-     "name": "Aros Paris",
-     "description": "Aros de acero quirurgico",
-     "price": 1100,
-     "image": "/img/aro.jpg",
-     "category": "Aros",
-     "size": "S",
-     "popular": false
-    },
-    {
-     "id": "2B",
-     "name": "Aros Marsella",
-     "description": "Aros redondos de plata",
-     "price": 1500,
-     "image": "/img/aro2.jpg",
-     "category": "Aros",
-     "size": "S",
-     "popular": true
-    },
-    {
-     "id": "2C",
-     "name": "Aros Lyon",
-     "description": "Aros de acero quirurgico con dijes de fundición.",
-     "price": 900,
-     "image": "/img/aro3.jpg",
-     "category": "Aros",
-     "size": "S",
-     "popular": true
-    },
-    {
-     "id": "3A",
-     "name": "Cinturón Venecia",
-     "description": "Cinturón de eco cuero",
-     "price": 1300,
-     "image": "/img/cinto.jpg",
-     "category": "Cinturones",
-     "size": "S",
-     "popular": true
-    },
-    {
-     "id": "3B",
-     "name": "Cinturón Roma",
-     "description": "Cinturón de eco cuero con hebilla plateada",
-     "price": 1300,
-     "image": "/img/cinto2.jpg",
-     "category": "Cinturones",
-     "size": "S",
-     "popular": false
-    },
-    {
-     "id": "3C",
-     "name": "Cinturón Florencia",
-     "description": "Cinturón de cuero con hebilla dorada",
-     "price": 2500,
-     "image": "/img/cinto3.jpg",
-     "category": "Cinturones",
-     "size": "S",
-     "popular": false
-    },
-    {
-     "id": "3D",
-     "name": "Cinturón Milán",
-     "description": "Cinturón de cuero trenzado con hebilla forrada",
-     "price": 3000,
-     "image": "/img/cinto4.jpg",
-     "category": "Cinturones",
-     "size": "S",
-     "popular": false
-    },
-    {
-     "id": "4A",
-     "name": "Collar Sevilla",
-     "description": "Collar de acero quirurgico con dije en plata",
-     "price": 1200,
-     "image": "/img/collar.jpg",
-     "category": "Collares",
-     "size": "S",
-     "popular": false
-    },
-    {
-     "id": "4B",
-     "name": "Collar Barcelona",
-     "description": "Collar de perlas simple",
-     "price": 800,
-     "image": "/img/collar1.jpg",
-     "category": "Collares",
-     "size": "S",
-     "popular": false
-    },
-    {
-     "id": "4C",
-     "name": "Collar Bilbao",
-     "description": "Collar de perlas choker",
-     "price": 1100,
-     "image": "/img/collar3.jpg",
-     "category": "Collares",
-     "size": "S",
-     "popular": false
-    },
-    {
-     "id": "5A",
-     "name": "Pulsera Brujas",
-     "description": "Pulsera de plata y perlas",
-     "price": 850,
-     "image": "/img/pulsera.jpg",
-     "category": "Pulseras",
-     "size": "S",
-     "popular": true
-    }
-    
-   ]
+ {
+  "id": "1A",
+  "name": "Anillo Manhattan ",
+  "description": "Anillo de plata modelo rombo",
+  "price": "700",
+  "image": "/img/anillo.jpg",
+  "category": "seleccionar",
+  "size": [
+   "xs",
+   "s",
+   "m",
+   "l",
+   "xl"
+  ],
+  "popular": false
+ },
+ {
+  "id": "2A",
+  "name": "Aros Paris",
+  "description": "Aros de acero quirurgico",
+  "price": 1100,
+  "image": "/img/aro.jpg",
+  "category": "Aros",
+  "size": "S",
+  "popular": false
+ },
+ {
+  "id": "2B",
+  "name": "Aros Marsella",
+  "description": "Aros redondos de plata",
+  "price": 1500,
+  "image": "/img/aro2.jpg",
+  "category": "Aros",
+  "size": "S",
+  "popular": true
+ },
+ {
+  "id": "2C",
+  "name": "Aros Lyon",
+  "description": "Aros de acero quirurgico con dijes de fundición.",
+  "price": 900,
+  "image": "/img/aro3.jpg",
+  "category": "Aros",
+  "size": "S",
+  "popular": true
+ },
+ {
+  "id": "3A",
+  "name": "Cinturón Venecia",
+  "description": "Cinturón de eco cuero",
+  "price": 1300,
+  "image": "/img/cinto.jpg",
+  "category": "Cinturones",
+  "size": "S",
+  "popular": true
+ },
+ {
+  "id": "3B",
+  "name": "Cinturón Roma",
+  "description": "Cinturón de eco cuero con hebilla plateada",
+  "price": 1300,
+  "image": "/img/cinto2.jpg",
+  "category": "Cinturones",
+  "size": "S",
+  "popular": false
+ },
+ {
+  "id": "3C",
+  "name": "Cinturón Florencia",
+  "description": "Cinturón de cuero con hebilla dorada",
+  "price": 2500,
+  "image": "/img/cinto3.jpg",
+  "category": "Cinturones",
+  "size": "S",
+  "popular": false
+ },
+ {
+  "id": "3D",
+  "name": "Cinturón Milán",
+  "description": "Cinturón de cuero trenzado con hebilla forrada",
+  "price": 3000,
+  "image": "/img/cinto4.jpg",
+  "category": "Cinturones",
+  "size": "S",
+  "popular": false
+ },
+ {
+  "id": "4A",
+  "name": "Collar Sevilla",
+  "description": "Collar de acero quirurgico con dije en plata",
+  "price": 1200,
+  "image": "/img/collar.jpg",
+  "category": "Collares",
+  "size": "S",
+  "popular": false
+ },
+ {
+  "id": "4B",
+  "name": "Collar Barcelona",
+  "description": "Collar de perlas simple",
+  "price": 800,
+  "image": "/img/collar1.jpg",
+  "category": "Collares",
+  "size": "S",
+  "popular": false
+ },
+ {
+  "id": "4C",
+  "name": "Collar Bilbao",
+  "description": "Collar de perlas choker",
+  "price": 1100,
+  "image": "/img/collar3.jpg",
+  "category": "Collares",
+  "size": "S",
+  "popular": false
+ },
+ {
+  "id": "5A",
+  "name": "Pulsera Brujas",
+  "description": "Pulsera de plata y perlas",
+  "price": 850,
+  "image": "/img/pulsera.jpg",
+  "category": "Pulseras",
+  "size": "S",
+  "popular": true
+ }
+]

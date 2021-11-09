@@ -55,7 +55,7 @@
       <div class="panel-abm">
         <p class="titulo">Editar producto: <strong> <%= productoAEditar.id%> </strong> </p>
        
-        <form class="agregar-producto" action="/products/<%= productoAEditar.id%>" method="post" >
+        <form class="agregar-producto" action="/products/<%= productoAEditar.id%>?_method=PUT" method="post" >
           <div class="tarjeta">
             <div>
               <p class="subtitulo">Nombre y descripción</p>
@@ -106,15 +106,15 @@
           </div>
           <div class="tarjeta checkbox">
             <p class="subtitulo">Seleccionar talle</p>
-            <input type="checkbox" id="xs" name="xs" value="xs" />
+            <input type="checkbox" id="xs" name="talle" value="xs" />
             <label for="xs">XS</label>
-            <input type="checkbox" id="s" name="s" value="s" />
+            <input type="checkbox" id="s" name="talle" value="s" />
             <label for="s">S</label>
-            <input type="checkbox" id="m" name="m" value="m" />
+            <input type="checkbox" id="m" name="talle" value="m" />
             <label for="">M</label>
-            <input type="checkbox" id="l" name="l" value="l" />
+            <input type="checkbox" id="l" name="talle" value="l" />
             <label for="l">L</label>
-            <input type="checkbox" id="xl" name="xl" value="xl" />
+            <input type="checkbox" id="xl" name="talle" value="xl" />
             <label for="xl">XL</label>
           </div>
           <div class="boton-publicar">

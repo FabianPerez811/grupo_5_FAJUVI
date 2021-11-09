@@ -40,15 +40,7 @@ const productController = {
     abmListar: (req, res) => {
         res.render('abmListar', { productos: products })
     },
-    abmEditar: (req, res) => {
-        const id = req.params.id;
-        const producto = products.find(product => {
-            return product.id == id;
-        })
-        res.render('abmEditar', { productoAEditar: producto });
-    },
     abmEliminar: (req, res) => {
-        // metodo de eliminacion de prod
         let id = req.params.id;
 
 		let finalProducts = products.filter(product =>{
@@ -67,9 +59,39 @@ const productController = {
         })
         res.render('abmDetalle', { detalleDeProducto: producto });
     },
-
+    abmEditar: (req, res) => {
+        const id = req.params.id;
+        const producto = products.find(product => {
+            return product.id == id;
+        })
+        res.render('abmEditar', { productoAEditar: producto });
+    },
     abmEditado: (req, res) => {
         // agregar metodo
+        let id = req.params.id;
+
+        let productToEdit = products.find( product =>{
+			return product.id == id;
+		})
+        let editedProduct ={
+			id: id,
+            name: req.body.nombre,
+            description: req.body.descripcion,
+            price: req.body.precio,
+            image:  productToEdit.image,
+            category: req.body.categoria,
+            size: req.body.talle,
+            popular: false
+		}
+        	/* modificamos le array*/
+		products.forEach((producto, index) => {
+			if(producto.id == id){
+				products[index]=editedProduct;
+			}
+		});
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(products,null," "))
+		res.redirect('/products/')
     },
 
 }
