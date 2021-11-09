@@ -207,6 +207,10 @@ main {
   cursor: pointer;
 }
 
+.caja-editar {
+  display: flex;
+}
+
 .action-button.delete {
   background-color: white;
   border: none;

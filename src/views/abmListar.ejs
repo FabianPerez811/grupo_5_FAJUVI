@@ -79,7 +79,7 @@
               <div class="caja-editar">
                 <a href="/products/<%= productos[i].id%>/edit"><i class="fas fa-pen"></i></a>
                 
-                <form action="/products/?_method=DELETE" method="POST" style="display: inline-flex">
+                <form action="/products/<%= productos[i].id%>?_method=DELETE" method="POST">
                   <button type="submit" class="action-button delete"><a href="#"><i class="fas fa-trash-alt"></i></a> </button>
                 </form>
                 

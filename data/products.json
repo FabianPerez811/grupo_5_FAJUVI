@@ -1,15 +1,5 @@
 [
  {
-  "id": "2A",
-  "name": "Aros Paris",
-  "description": "Aros de acero quirurgico",
-  "price": 1100,
-  "image": "/img/aro.jpg",
-  "category": "Aros",
-  "size": "S",
-  "popular": false
- },
- {
   "id": "2B",
   "name": "Aros Marsella",
   "description": "Aros redondos de plata",
