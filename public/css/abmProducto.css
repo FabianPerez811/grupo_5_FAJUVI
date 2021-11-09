@@ -110,6 +110,7 @@ main {
   border-radius: 5px;
   transition: background-color 0.5s;
   margin: 10px 0px;
+  cursor: pointer;
 }
 
 .cancelar {
@@ -125,6 +126,7 @@ main {
   border-radius: 5px;
   padding: 15px;
   transition: background-color 0.5s;
+  cursor: pointer;
 }
 
 .boton-cancelar:hover {
@@ -205,22 +207,22 @@ main {
   cursor: pointer;
 }
 
-.action-button.delete{
+.action-button.delete {
   background-color: white;
-  border:none;
+  border: none;
 }
 
-.box-detalleProducto{
+.box-detalleProducto {
   margin: 5px 30px 50px 30px;
   font-size: 16px;
 }
 
-.item-detalleProducto{
+.item-detalleProducto {
   padding: 5px 0px;
 }
 
-.form-botones{
-  padding:0px 20px;
+.form-botones {
+  padding: 0px 20px;
 }
 
 @media (min-width: 768px) {
@@ -230,7 +232,7 @@ main {
   }
   .boton-hamburguesa {
     display: none;
-  }  
+  }
 
   .cabecera-administrador {
     display: flex;
