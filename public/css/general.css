@@ -20,6 +20,23 @@ body {
   color: white;
 }
 
+.cabecera-usuario {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px 15px;
+}
+
+.cabecera-usuario img {
+  width: 25px;
+}
+
+.nombreUsuario {
+  font-size: 12px;
+  padding: 0px 5px;
+  color: #6d6f74;
+}
+
 .cabecera-principal {
   display: flex;
   align-items: center;
@@ -174,7 +191,6 @@ footer li .fas,
 footer li .far {
   font-size: 20px;
   padding: 5px;
-  
 }
 
 .caja-copyright {
@@ -194,6 +210,10 @@ footer li .far {
 
 @media (min-width: 768px) {
   /* #region ----------- HEADER----------- */
+  .cabecera-usuario {
+    margin-right: 25px;
+  }
+
   .cabecera-principal .fa-bars {
     display: none;
   }
