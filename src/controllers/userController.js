@@ -13,6 +13,10 @@ acceso:(req, res) => {
 registro: (req, res) => {
     res.render ('registro') 
 },
+
+perfil: (req, res) => {
+    res.render ('perfil') 
+},
 }
 
 module.exports = userController;

@@ -14,5 +14,6 @@ router.get ('/registro', userController.registro);
 
 //Perfil de Usuario:
 //router.get('/perfil/', autenticacionMiddleware, userController.perfil);
+router.get('/perfil', userController.perfil);
 
 module.exports = router;
