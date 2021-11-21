@@ -16,6 +16,9 @@ router.post ('/acceso', userController.procesoAcceso);
 //router.get ('/registro', usuarioMiddleware, userController.registro);
 router.get ('/registro', userController.registro);
 
+//Procesar el registro
+router.post ('/registro', userController.procesoRegistro);
+
 //Perfil de Usuario:
 //router.get('/perfil/', autenticacionMiddleware, userController.perfil);
 router.get('/perfil', userController.perfil);

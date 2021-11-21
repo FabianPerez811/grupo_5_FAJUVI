@@ -7,9 +7,14 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
   
 
 const userController = {
+
 registro: (req, res) => {
     res.render ('registro') 
 }, 
+
+procesoRegistro: (req, res) => {
+    return res.send ('Esto es un post')
+},
 
 acceso:(req, res) => {
     res.render ('acceso')
