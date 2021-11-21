@@ -1,92 +1,11 @@
 [
-  {
-    "id": 1,
-    "firstName": "Lemmie",
-    "lastName": "MacCrann",
-    "email": "lmaccrann0@harvard.edu",
-    "password": "LOIxrO4Y3Raf",
-    "category": "administrador",
-    "image": null
-  },
-  {
-    "id": 2,
-    "firstName": "Xena",
-    "lastName": "Drance",
-    "email": "xdrance1@gmpg.org",
-    "password": "d0C05hlOKRU",
-    "category": "cliente",
-    "image": null
-  },
-  {
-    "id": 3,
-    "firstName": "Jessalin",
-    "lastName": "Livens",
-    "email": "jlivens2@rediff.com",
-    "password": "iyO4f83SiZG",
-    "category": "administrador",
-    "image": null
-  },
-  {
-    "id": 4,
-    "firstName": "Gypsy",
-    "lastName": "Standbridge",
-    "email": "gstandbridge3@creativecommons.org",
-    "password": "7kcU3oGu",
-    "category": "cliente",
-    "image": null
-  },
-  {
-    "id": 5,
-    "firstName": "Christoph",
-    "lastName": "Cowans",
-    "email": "ccowans4@boston.com",
-    "password": "zYc7lk3Cy",
-    "category": "administrador",
-    "image": null
-  },
-  {
-    "id": 6,
-    "firstName": "Murielle",
-    "lastName": "Kenealy",
-    "email": "mkenealy5@moonfruit.com",
-    "password": "inRGgt3wzTF",
-    "category": "cliente",
-    "image": null
-  },
-  {
-    "id": 7,
-    "firstName": "Dorelia",
-    "lastName": "Wickersley",
-    "email": "dwickersley6@apple.com",
-    "password": "jeVvtFZICFa",
-    "category": "cliente",
-    "image": null
-  },
-  {
-    "id": 8,
-    "firstName": "Lizabeth",
-    "lastName": "Casillas",
-    "email": "lcasillas7@huffingtonpost.com",
-    "password": "eIdze4",
-    "category": "cliente",
-    "image": null
-  },
-  {
-    "id": 9,
-    "firstName": "Janette",
-    "lastName": "Attwill",
-    "email": "jattwill8@issuu.com",
-    "password": "kqkm2H9L",
-    "category": "cliente",
-    "image": null
-  },
-  {
-    "id": 10,
-    "firstName": "Antonietta",
-    "lastName": "Warre",
-    "email": "awarre9@europa.eu",
-    "password": "mZgquGDCpE",
-    "category": "cliente",
-    "image": null
-  }
+ {
+  "id": 1,
+  "firstName": "juan",
+  "lastName": "cvbnm",
+  "email": "gmdm97@gmail.com",
+  "password": "juansecofsj",
+  "category": "cliente",
+  "image": null
+ }
 ]
