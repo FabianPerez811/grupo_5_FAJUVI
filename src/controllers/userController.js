@@ -13,7 +13,7 @@ registro: (req, res) => {
 }, 
 
 procesoRegistro: (req, res) => {
-    return res.send ('Esto es un post')
+    return res.send (req.body)
 },
 
 acceso:(req, res) => {
