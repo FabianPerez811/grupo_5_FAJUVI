@@ -7,5 +7,23 @@
   "password": "juansecofsj",
   "category": "cliente",
   "image": null
+ },
+ {
+  "id": 2,
+  "firstName": "fabian",
+  "lastName": "perez",
+  "email": "dakdjam@fdaf",
+  "password": "fabianpa",
+  "category": "cliente",
+  "image": null
+ },
+ {
+  "id": 3,
+  "firstName": "fafafa",
+  "lastName": "fafafa",
+  "email": "dakdjam@fdaf",
+  "password": "fabianpa",
+  "category": "cliente",
+  "image": "1637537102741_img.jpg"
  }
 ]

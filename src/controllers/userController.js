@@ -19,7 +19,7 @@ procesoRegistro: (req, res) => { //crear usuario
         email: req.body.email,
         password: req.body.password,
         category: req.body.catUsuario,
-        image: null
+        image: req.file.filename,
     }
     users.push(newUser);
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "))
