@@ -26,7 +26,7 @@ const productController = {
     },
     abmCreado: (req, res) => { // accion de agregar prod   
         let newProduct = {
-            id: 22222, //products[products.length -1].id + 1,
+            id: products[products.length -1].id + 1,
             name: req.body.nombre,
             description: req.body.descripcion,
             price: req.body.precio,

@@ -23,6 +23,11 @@
             <p>Iniciar Sesión</p>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required />
+
+            <% if (locals.errors && errors.email) { %>
+              <div> <%=errors.email.msj %> </div>
+            <% } %>
+
             <label for="password">Contraseña</label>
             <input
               type="password"

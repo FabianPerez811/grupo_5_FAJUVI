@@ -8,6 +8,10 @@ const autenticacionMiddleware = require('../middlewares/autenticacionMiddleware'
 //router.get ('/acceso', usuarioMiddleware,userController.acceso);
 router.get ('/acceso', userController.acceso);
 
+//proceso de login
+//router.get ('/acceso', usuarioMiddleware,userController.acceso);
+router.post ('/acceso', userController.procesoAcceso);
+
 //Formulario de registro:
 //router.get ('/registro', usuarioMiddleware, userController.registro);
 router.get ('/registro', userController.registro);

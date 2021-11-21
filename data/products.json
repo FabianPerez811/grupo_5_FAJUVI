@@ -1,6 +1,6 @@
 [
  {
-  "id": "2B",
+  "id": "1",
   "name": "Aros Marsella",
   "description": "Aros redondos de plata",
   "price": 1500,
@@ -10,7 +10,7 @@
   "popular": true
  },
  {
-  "id": "2C",
+  "id": "2",
   "name": "Aros Lyon",
   "description": "Aros de acero quirurgico con dijes de fundición.",
   "price": 900,
@@ -20,7 +20,7 @@
   "popular": true
  },
  {
-  "id": "3A",
+  "id": "3",
   "name": "Cinturón Venecia",
   "description": "Cinturón de eco cuero",
   "price": 1300,
@@ -30,7 +30,7 @@
   "popular": true
  },
  {
-  "id": "3B",
+  "id": "4",
   "name": "Cinturón Roma",
   "description": "Cinturón de eco cuero con hebilla plateada",
   "price": 1300,
@@ -40,7 +40,7 @@
   "popular": false
  },
  {
-  "id": "3C",
+  "id": "5",
   "name": "Cinturón Florencia",
   "description": "Cinturón de cuero con hebilla dorada",
   "price": 2500,
@@ -50,7 +50,7 @@
   "popular": false
  },
  {
-  "id": "3D",
+  "id": "6",
   "name": "Cinturón Milán",
   "description": "Cinturón de cuero trenzado con hebilla forrada",
   "price": 3000,
@@ -60,7 +60,7 @@
   "popular": false
  },
  {
-  "id": "4A",
+  "id": "7",
   "name": "Collar Sevilla",
   "description": "Collar de acero quirurgico con dije en plata",
   "price": 1200,
@@ -70,7 +70,7 @@
   "popular": false
  },
  {
-  "id": "4B",
+  "id": "8",
   "name": "Collar Barcelona",
   "description": "Collar de perlas simple",
   "price": 800,
@@ -80,7 +80,7 @@
   "popular": false
  },
  {
-  "id": "4C",
+  "id": "9",
   "name": "Collar Bilbao",
   "description": "Collar de perlas choker",
   "price": 1100,
@@ -90,7 +90,7 @@
   "popular": false
  },
  {
-  "id": "5A",
+  "id": "10",
   "name": "Pulsera Brujas",
   "description": "Pulsera de plata y perlas",
   "price": 850,
