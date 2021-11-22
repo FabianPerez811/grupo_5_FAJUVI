@@ -4,6 +4,7 @@ const User = require('../../Models/Users.js')
 
 const usersFilePath = path.join(__dirname, '../../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+const {validationResult} = require('express-validator')
 
 const userController = {
 
@@ -12,6 +13,12 @@ registro: (req, res) => {
 }, 
 
 procesoRegistro: (req, res) => { //crear usuario
+   const resultadoValidacion = validationResult(req);
+    if(resultadoValidacion.errors.length >0){
+        return res.render('registro',{
+            errors: resultadoValidacion.mapped(),
+        })
+    }
     let newUser = {
         id: User.generarID(),
         firstName: req.body.nombre,

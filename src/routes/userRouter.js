@@ -4,6 +4,8 @@ const userController = require('../controllers/userController');
 const path = require('path');
 const multer = require('multer');
 
+const validacionRegistro = require('../../middlewares/validacionRegistro')
+
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, './public/img/img_users');
@@ -13,7 +15,7 @@ const storage = multer.diskStorage({
         let filename = `${Date.now()}_img${path.extname(file.originalname)}`;
         cb(null, filename); 
     },
-    
+     
  });
  const upload = multer({ storage: storage });
 
@@ -33,7 +35,7 @@ router.post ('/acceso', userController.procesoAcceso);
 router.get ('/registro', userController.registro);
 
 //Procesar el registro
-router.post ('/registro', upload.single('fotoPerfil') ,userController.procesoRegistro);
+router.post ('/registro', upload.single('fotoPerfil') ,validacionRegistro , userController.procesoRegistro);
 
 //Perfil de Usuario:
 //router.get('/perfil/', autenticacionMiddleware, userController.perfil);
