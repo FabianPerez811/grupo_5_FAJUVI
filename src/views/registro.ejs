@@ -18,47 +18,69 @@
       </section>
       <section class="registro">
         <form action="/registro" method="POST" class="formulario-registro" enctype="multipart/form-data">
-          <div>
-            <% if (locals.errors) { %>
-              <% for( let error in errors ) { %>
-                <p> <%= errors[error].msg  %>  </p>
-              <% } %>
-            <% } %>
-          </div>
           <div class="caja-registro">
-
             <p>Creá tu cuenta</p>
-            <label for="nombre">Nombre</label>             
+            <div >
+            </div> 
+            <label for="nombre">Nombre</label>  
+
+            <% if (locals.errors && errors.nombre) { %>
+                <p id="msj_error"> <%= errors.nombre.msg  %>  </p>          
+            <% } %>     
+
             <div>
-              <input type="text" name="nombre" id="nombre"  />
+              <input type="text" name="nombre" id="nombre" value="<%= locals.oldData ? oldData.nombre : null  %>" />
             </div>             
             <label for="nombre">Apellido</label>
+            <% if (locals.errors && errors.apellido) { %>
+              <p id="msj_error"> <%= errors.apellido.msg %>  </p>          
+            <% } %>  
             <div>
-              <input type="text" name="apellido" id="apellido"  />
+              <input type="text" name="apellido" id="apellido"  value="<%= locals.oldData ? oldData.apellido : null  %>"/>
             </div> 
             <label for="email">Email</label>
             <div>
-              <input type="email" name="email" id="email"  />
+              <% if (locals.errors && errors.email) { %>
+                <p id="msj_error"> <%= errors.email.msg %>  </p>          
+              <% } %>  
+              <input type="email" name="email" id="email"  value="<%= locals.oldData ? oldData.email : null  %>"/>
             </div>
             <div class="cajaFlexUsuario">
               <div class="inputIMG">
                 <label for="fotoPerfil">Foto de Perfil</label>
+                <% if (locals.errors && errors.fotoPerfil) { %>
+                  <p id="msj_error"> <%= errors.fotoPerfil.msg %>  </p>          
+                <% } %>  
                 <div class="imagenPerfil">
                   <input class="inputImagen" type="file" name="fotoPerfil" id="fotoPerfil"  />
                 </div>
               </div>
               <div class="categoriaUsuario">
                 <label for="nombre">Categoría</label></br>
-                <select name="catUsuario" id="catUsuario" >
-                  <option value="seleccionar">Seleccionar usuario</option>
-                  <option value="administrador">Administrador</option>
-                  <option value="cliente">Cliente</option>
+                <% if (locals.errors && errors.catUsuario) { %>
+                  <p id="msj_error"> <%= errors.catUsuario.msg %>  </p>          
+                <% } %>
+
+                <select name="catUsuario" id="catUsuario" value="<%= locals.oldData ? oldData.catUsuario : null  %>">
+                  <option value=""> <%= locals.oldData && oldData.catUsuario ?  oldData.catUsuario : 'Seleccione una categoria'%> </option>
+                  
+                  <% let categorias = ['Administrador', 'Cliente',] %> 
+                  
+                  <% for( const cat of categorias ) { %>
+                    <option 
+                          value=" <%= cat %>"  <%= locals.oldData && (cat === oldData.catUsuario) ? 'selected' : null%> 
+                          ><%= cat %></option>
+                  <% } %>
+                
                 </select>
               </div> 
             </div>             
             <div class="contraseña">
               <div class="contraseña1">
                 <label for="password">CONTRASEÑA</label>
+                <% if (locals.errors && errors.password) { %>
+                  <p id="msj_error"> <%= errors.password.msg %>  </p>          
+                <% } %> 
                 <div>
                   <input
                       type="password"
@@ -70,6 +92,9 @@
               </div>
               <div class="contraseña2">
                   <label for="password2">REPETÍ CONTRASEÑA</label>
+                  <% if (locals.errors && errors.password2) { %>
+                    <p id="msj_error"> <%= errors.password2.msg %>  </p>          
+                  <% } %> 
                   <div>
                     <input
                       type="password"

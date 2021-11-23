@@ -9,7 +9,6 @@ const validacionRegistro = require('../../middlewares/validacionRegistro')
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, './public/img/img_users');
-
     },
     filename: (req, file, cb) => {
         let filename = `${Date.now()}_img${path.extname(file.originalname)}`;
@@ -35,7 +34,7 @@ router.post ('/acceso', userController.procesoAcceso);
 router.get ('/registro', userController.registro);
 
 //Procesar el registro
-router.post ('/registro', upload.single('fotoPerfil') ,validacionRegistro , userController.procesoRegistro);
+router.post ('/registro', upload.single('fotoPerfil') ,validacionRegistro, userController.procesoRegistro);
 
 //Perfil de Usuario:
 //router.get('/perfil/', autenticacionMiddleware, userController.perfil);
