@@ -1,7 +1,7 @@
 const path = require ('path');
 const fs = require('fs')
 const User = require('../../Models/Users.js')
-
+const bcryptjs = require('bcryptjs')
 const usersFilePath = path.join(__dirname, '../../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const {validationResult} = require('express-validator')
@@ -26,7 +26,7 @@ procesoRegistro: (req, res) => { //crear usuario
         firstName: req.body.nombre,
         lastName: req.body.apellido,
         email: req.body.email,
-        password: req.body.password,
+        password:bcryptjs.hashSync(req.body.password , 10)  ,
         category: req.body.catUsuario,
         image: req.file.filename,
     }
