@@ -1,4 +1,4 @@
-# Retrospectiva Sprint 1:
+# Retrospectiva Sprint 2:
 
 Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/app/board/o9J_lxDECC0=/)
 
@@ -13,10 +13,10 @@ Del primer punto se desprende el segundo, no debemos dejar pasar mucho tiempo pa
 Por último, en lo que respecta al punto 3, consideramos seguir trabajando de una manera focalizada con una clara división de tareas, apoyándonos en nuestro tablero de Trello. Continuar organizando reuniones semanales para clarificar dudas y charlar sobre aspectos claves del Sprint. Respetar los tiempos de cada miembro de los equipos y colaborar cuando surjan dudas en el desarrollo de las tareas.
 
 
-# Retrospectiva Sprint 2:
+# Retrospectiva Sprint 3:
 Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/welcomeonboard/SFlYZjNtMDBnQkZqMmxTZDY3aEZ5YlBiUWVzdHdTWkV2VEJMVGFmM1RHTUJzUlhiVVFxc05pY1NtVVBjSDV2MHwzMDc0NDU3MzYzODI5Mjk0MzMw?invite_link_id=988292318190)
 
-Para nuestro segundo sprint decidimos aplicar la dinámica sugerida "Estrella de mar". 
+Para nuestro tercer sprint decidimos aplicar la dinámica sugerida "Estrella de mar". 
 En este esquema analizamos 5 variables buscando así poder optimizar nuestro trabajo y, en consecuencia, el producto del mismo. 
 Podrán encontrar:
  - Start doing: lo que creemos que deberíamos incorporar para afianzar el trabajo.
@@ -30,7 +30,7 @@ Asimismo, creemos que nos puede ayudar a optimizar los resultados tener una comu
 Por otro lado, notamos un muy bien clima de trabajo y comunicación, por lo que nos gustaría generar espacios y momentos de encuentro más alla de lo estrictamente referido al proyecto.
 
 
-# Retrospectiva Sprint 3:
+# Retrospectiva Sprint 4:
 Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/app/board/o9J_lk9od6w=/)
 
 En esta oportunidad, decidimos sostener la dinámica sugerida "Estrella de mar" analizando las mismas 5 variables con las que habiamos trabajado anteriormente. 
@@ -45,3 +45,10 @@ Podrán encontrar:
 En esta tercera retrospectiva concluimos que si bien es una fortaleza la organización pudiendo así lograr una división de tareas clara y organizada debemos empezar a evaluar la posibilidad de asignar tareas en conjunto. Creemos que de esta forma podremos fortalecer el aprendizaje de los temas abordados y lograr mejores resultados en el proyecto. Continua siendo el tablero de Trello nuestro gran aliado.
 Asimismo, creemos necesario empezar a chequear y revisar todas las tareas asignadas a cada uno de los integrantes para lograr asi abordar los temas de manera consistente. 
 Por otro lado, hemos logrado fortalecer la comunicación en el grupo compartiendo los procesos de trabajo de cada uno. Sin embargo, consideramos que es necesario continuar trabajando en este punto.
+
+# Retrospectiva Sprint 5:
+Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/app/board/o9J_lk9od6w=/)
+
+En nuestro quinto Sprint nos encontramos con algunas dificultades vinculadas con los temas teóricos a resolver. Previendo esta situación, la división de tareas se realizó en equipo. Creemos que esta nueva modalidad representa una fortaleza y un avance en el grupo. Confiamos en que esto nos ayudará a abordar los pedidos de mejor manera.
+Asimismo, seguimos trabajando de manera organizada y responsable para poder responder a todos los requerimientos del Sprint en tiempo y forma.
+Continuaremos buscando fortalecer la comunicación diaria y fluida en el equipo para poder acompañar los diferentes procesos de producción. 
