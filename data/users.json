@@ -7,5 +7,14 @@
   "password": "juansecoftdsmdtm",
   "category": "cliente",
   "image": "1637537444691_img.jpg"
+ },
+ {
+  "id": 2,
+  "firstName": "juan",
+  "lastName": "seco",
+  "email": "juansecof97@gmail.com",
+  "password": "$2a$10$I9xtoSMbKqABuwYk6GMfPe8h0/c4JU/fFkGjGfT3Wedvf8p7EUiRW",
+  "category": " Administrador",
+  "image": "1637699472656_img.png"
  }
 ]

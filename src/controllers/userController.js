@@ -15,7 +15,7 @@ registro: (req, res) => {
 procesoRegistro: (req, res) => { //crear usuario
    const resultadoValidacion = validationResult(req);
 
-    if(resultadoValidacion.errors.length >0){
+    if(resultadoValidacion.errors.length > 0){
         return res.render('registro',{
             errors: resultadoValidacion.mapped(),
             oldData: req.body,
