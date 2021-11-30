@@ -16,5 +16,14 @@
   "password": "$2a$10$8b6CyUah/VDUlVwKz8w87OzWvPznHc6fq6s1f5VTMJIX0zmI/oury",
   "category": " Administrador",
   "image": "1638228434353_img.jpg"
+ },
+ {
+  "id": 3,
+  "firstName": "Viki",
+  "lastName": "Barrionuevo",
+  "email": "vikibarrionuevo@gmail.com",
+  "password": "$2a$10$jeBfGZkdnPaGOiC1P0oQguXcO6hKyeXXHLW3w17g1/RXOhv8ro42i",
+  "category": " Administrador",
+  "image": "1638281704377_img.png"
  }
 ]

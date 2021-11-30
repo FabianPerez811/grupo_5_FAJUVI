@@ -28,11 +28,13 @@ app.set ('views' , './src/views');
 const mainRouter = require ('./src/routes/mainRouter')
 const productsRouter = require ('./src/routes/productsRouter')
 const userRouter = require ('./src/routes/userRouter')
+const adminRouter = require ('./src/routes/adminRouter')
 
 
 app.use('/', mainRouter);
 app.use('/', userRouter);
-app.use('/', productsRouter);
+app.use('/products', productsRouter);
+app.use('/admin', adminRouter);
 
 // ************ Set the server to listen - (don't touch) ************
 app.listen(3030, () => {
