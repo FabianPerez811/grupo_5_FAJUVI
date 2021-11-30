@@ -18,9 +18,9 @@ const upload = multer({ storage })
 
 //RUTAS USUARIO ECOMMERCE:
 
+router.get('/cart', productsController.carrito); // vista de carrito de producto
 router.get('/list', productsController.productos); // vista listado productos ecommerce
-router.get('/:id', productsController.detalle) // vista detalle prod
-router.get('/carritoProductos', productsController.carrito); // vista de carrito de producto
+router.get('/:id', productsController.detalle); // vista detalle prod
 
 
 module.exports = router;
