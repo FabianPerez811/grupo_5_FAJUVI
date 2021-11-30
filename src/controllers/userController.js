@@ -46,7 +46,7 @@ procesoRegistro: (req, res) => { //crear usuario
     }
     users.push(newUser);
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "))
-    res.redirect('acceso')
+    res.redirect('/user/sign-in')
 
 },
 
@@ -63,7 +63,7 @@ procesoAcceso: (req,res) =>{
             delete userToLog.password
             req.session.userLogged = userToLog;
 
-            res.redirect('perfil')
+            return res.redirect('/user/profile')
         }return res.render('acceso',{errors:{password:{ msg: 'Contraseña incorrecta.'}}});
     }
     return res.render('acceso',{errors:{email:{ msg: 'No exite el mail.'}}});

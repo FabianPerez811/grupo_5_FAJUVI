@@ -10,10 +10,12 @@
       <div class="boton-hamburguesa">
         <i class="fas fa-bars"></i>
       </div>
-      <div class="cabecera-administrador">
-        <i class="fas fa-user"></i>
-        <div>Mi cuenta</div>
-      </div>
+      <a class= "miCuenta" href="/user/profile"> 
+        <div class="cabecera-administrador">               
+          <i class="fas fa-user"></i>
+          <div>Mi cuenta</div>        
+        </div>
+      </a>
     </header>
     <main>
       <div class="panel-administrador">
@@ -34,13 +36,13 @@
           <div class="link-panel">
             <i class="fas fa-tags"></i>
             <div class="link-productos">
-              <a href="/products/create">Agregar Productos</a>
+              <a href="/admin/products/create">Agregar Productos</a>
             </div>
           </div>
           <div class="link-panel">
             <i class="fas fa-list-ul"></i>
             <div class="link-productos">
-              <a href="/products">Lista de Productos</a>
+              <a href="/admin/products">Lista de Productos</a>
             </div>
           </div>
           <div class="link-panel">
@@ -55,7 +57,7 @@
             Productos
            </div>
            <div class="icono-crear">
-            <a href="/products/create"><i class="fas fa-plus-circle"></i></a>
+            <a href="/admin/products/create"><i class="fas fa-plus-circle"></i></a>
            </div>           
         </div> 
          <% for(i = 0; i < productos.length; i++) { %>
@@ -64,7 +66,7 @@
               <i class="fas fa-check-square"></i>
             </div>
               <div class="caja-imagen">          
-                <a href="/products/<%= productos[i].id%>">
+                <a href="/admin/products/<%= productos[i].id%>">
                   <img src="<%= productos[i].image %>" alt="<%= productos[i].name %>" />
                 </a>
               </div>
@@ -77,10 +79,10 @@
                 <p class="precio"><strong>Precio</strong> $ <%= productos[i].price %></p>
               </div>
               <div class="caja-editar">
-                <a href="/products/<%= productos[i].id%>/edit"><i class="fas fa-pen"></i></a>
+                <a href="/admin/products/<%= productos[i].id%>/edit"><i class="fas fa-pen"></i></a>
                 
-                <form action="/products/<%= productos[i].id%>?_method=DELETE" method="POST">
-                  <button type="submit" class="action-button delete"><a href="#"><i class="fas fa-trash-alt"></i></a> </button>
+                <form action="/admin/products/<%= productos[i].id%>?_method=DELETE" method="POST">
+                  <button type="submit" class="action-button delete"><i class="fas fa-trash-alt"></i></button>
                 </form>
                 
               </div>

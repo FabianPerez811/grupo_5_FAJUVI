@@ -5,7 +5,9 @@
     <div class="cabecera-usuario">
       <% if (locals.isLogged) { %>
         <div>
-          <img src="/img/img_users/<%= locals.userLogged.image %> " alt="foto_usuario">
+          <a href="/user/profile">
+            <img src="/img/img_users/<%= locals.userLogged.image %> " alt="foto_usuario">
+          </a>          
         </div>
         <div class="nombreUsuario">
           Hola <%= locals.userLogged.firstName %> 
@@ -22,16 +24,16 @@
         </form>
       </div>     
       <div class="caja-iconos">
-        <a href="/acceso" class="iconoRegistro"><i class="fas fa-user-alt"></i></a>        
-        <a href="/products"><i class="fas fa-users-cog"></i></a> 
+        <a href="/user/sign-in" class="iconoRegistro"><i class="fas fa-user-alt"></i></a>        
+        <a href="/admin/products"><i class="fas fa-users-cog"></i></a> 
       </div>
       
       <div class="usuarios-escritorio">   
         <% if (!locals.isLogged) { %>     
-        <a href="/acceso">Iniciar Sesión</a>
-        <a href="/registro" >Crear Cuenta</a>
-        <a href="/products"><i class="fas fa-users-cog"></i></a> 
+        <a href="/user/sign-in">Iniciar Sesión</a>
+        <a href="/user/sign-up" >Crear Cuenta</a>
         <% }%>
+        <a href="/admin/products"><i class="fas fa-users-cog"></i></a> 
       </div>
     </div>
     <div class="cabecera-logo">
@@ -41,8 +43,8 @@
     </div>  
     <nav class="barra-nav"> 
       <a href="/"><i class="fas fa-home"></i>Inicio</a>             
-      <a href="/productos"><i class="fas fa-list"></i>Productos</a>
-      <a href="/carritoProductos"><i class="fas fa-shopping-cart"></i>Carrito</a>         
+      <a href="/products/list"><i class="fas fa-list"></i>Productos</a>
+      <a href="/products/cart"><i class="fas fa-shopping-cart"></i>Carrito</a>         
     </nav>
  
 </header>

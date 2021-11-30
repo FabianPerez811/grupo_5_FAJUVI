@@ -23,16 +23,19 @@ app.use(usuarioLogueadoMiddleware)
 // ************ Template Engine - (don't touch) ************
 app.set('view engine' , 'ejs');
 app.set ('views' , './src/views');
+app.set ('views' , './src/views/users');
 
 // ************ Route System require and use() - (don't touch) ************
 const mainRouter = require ('./src/routes/mainRouter')
 const productsRouter = require ('./src/routes/productsRouter')
 const userRouter = require ('./src/routes/userRouter')
+const adminRouter = require ('./src/routes/adminRouter')
 
 
 app.use('/', mainRouter);
-app.use('/', userRouter);
-app.use('/', productsRouter);
+app.use('/user', userRouter);
+app.use('/products', productsRouter);
+app.use('/admin', adminRouter);
 
 // ************ Set the server to listen - (don't touch) ************
 app.listen(3030, () => {

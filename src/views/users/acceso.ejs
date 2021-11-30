@@ -2,23 +2,23 @@
 <html lang="en">
 
   <head>
-    <%- include('./partials/head')  %> 
+    <%- include('../partials/head')  %> 
     <link rel="stylesheet" href="/css/acceso.css" />
   </head>
 
   <body>
-    <%-  include('./partials/header')  %> 
+    <%-  include('../partials/header')  %> 
     <main>
       <section class="posicion">
         <hr />
         <ul>
           <li><a href="/">Inicio</a></li>
           <li><i class="fas fa-chevron-right"></i></li>
-          <li><a href="/perfil">Iniciar Sesión</a></li>
+          <li><a href="/user/profile">Iniciar Sesión</a></li>
         </ul>
       </section>
       <section class="acceso">     
-        <form action="/acceso" method="POST" class="formulario-sesion">
+        <form action="/user/sign-in" method="POST" class="formulario-sesion">
           <div class="caja-sesion">
             <p>Iniciar Sesión</p>
             <label for="email">Email</label>
@@ -51,11 +51,11 @@
         </form>       
       </section>
       <div class="crear-cuenta">
-        <a href="/registro">¿No tenés una cuenta?</a>
+        <a href="/user/sign-up">¿No tenés una cuenta?</a>
         <button class="boton-crear" type="submit">Crear Cuenta</button>
       </div>
     </main>
-    <%-  include('./partials/footer')  %> 
+    <%-  include('../partials/footer')  %> 
   </body>
 </html>
 

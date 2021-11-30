@@ -146,6 +146,10 @@ nav a:hover {
   color: #2a2c25;
 }
 
+.miCuenta {
+  text-decoration: none;
+  color: #6d6f74;
+}
 /* #endregion ----------- HEADER----------- */
 
 /* #region ----------- FOOTER----------- */

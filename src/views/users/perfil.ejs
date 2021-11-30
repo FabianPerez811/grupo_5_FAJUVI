@@ -2,19 +2,19 @@
 <html lang="en">
 
   <head>
-    <%- include('./partials/head')  %> 
+    <%- include('../partials/head')  %> 
     <link rel="stylesheet" href="/css/perfilUsuario.css" />
   </head>
 
   <body>
-    <%-  include('./partials/header')  %> 
+    <%-  include('../partials/header')  %> 
     <main>
       <section class="posicion">
         <hr />
         <ul>
           <li><a href="/">Inicio</a></li>
           <li><i class="fas fa-chevron-right"></i></li>
-          <li><a href="/perfil">Mi cuenta</a></li>
+          <li><a href="/user/profile">Mi cuenta</a></li>
         </ul>
       </section>
       <h3 class="titulo-destacado"> Mi Cuenta</h3>
@@ -29,6 +29,6 @@
         </div> 
       </div> 
     </main>
-    <%-  include('./partials/footer')  %> 
+    <%-  include('../partials/footer')  %> 
   </body>
 </html>

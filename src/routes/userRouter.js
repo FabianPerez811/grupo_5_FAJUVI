@@ -22,23 +22,20 @@ const usuarioMiddleware = require('../../middlewares/usuarioMiddleware');
 const autenticacionMiddleware = require('../../middlewares/autenticacionMiddleware');
 
 //Formulario de login
-router.get ('/acceso', usuarioMiddleware,userController.acceso);
-
+router.get ('/sign-in', usuarioMiddleware,userController.acceso);
 
 //proceso de login
-router.post('/acceso', userController.procesoAcceso);
- 
+router.post('/sign-in', userController.procesoAcceso); 
 
 //Formulario de registro:
-router.get ('/registro', usuarioMiddleware, userController.registro);
-
+router.get ('/sign-up', usuarioMiddleware, userController.registro);
 
 //Procesar el registro
-router.post ('/registro', upload.single('fotoPerfil') ,validacionRegistro, userController.procesoRegistro);
+router.post ('/sign-up', upload.single('fotoPerfil') ,validacionRegistro, userController.procesoRegistro);
 
 //Perfil de Usuario:
-router.get('/perfil/', autenticacionMiddleware, userController.perfil);
+router.get('/profile', autenticacionMiddleware, userController.perfil);
 
-router.post('/perfil', userController.cerrrarSesion);
+router.post('/profile', userController.cerrrarSesion);
 
 module.exports = router;
