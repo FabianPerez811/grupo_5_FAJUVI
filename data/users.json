@@ -7,5 +7,14 @@
   "password": "juansecoftdsmdtm",
   "category": "cliente",
   "image": "1637537444691_img.jpg"
+ },
+ {
+  "id": 2,
+  "firstName": "Fabian",
+  "lastName": "Perez",
+  "email": "muse@gmail.com",
+  "password": "$2a$10$BzksrXAZ66mKmoJT7V1hM.tOED75UpCf9XR5HnbSCenjpMuxv8sFi",
+  "category": " Cliente",
+  "image": "1638119206594_img.jpg"
  }
 ]
