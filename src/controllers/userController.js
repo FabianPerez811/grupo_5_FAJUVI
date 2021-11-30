@@ -63,6 +63,8 @@ procesoAcceso: (req,res) =>{
             delete userToLog.password
             req.session.userLogged = userToLog;
 
+                if(req.body.remember)
+
             return res.redirect('/user/profile')
         }return res.render('acceso',{errors:{password:{ msg: 'Contraseña incorrecta.'}}});
     }
