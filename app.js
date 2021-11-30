@@ -32,7 +32,7 @@ const adminRouter = require ('./src/routes/adminRouter')
 
 
 app.use('/', mainRouter);
-app.use('/', userRouter);
+app.use('/user', userRouter);
 app.use('/products', productsRouter);
 app.use('/admin', adminRouter);
 

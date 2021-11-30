@@ -14,7 +14,7 @@
         <ul>
           <li><a href="/">Inicio</a></li>
           <li><i class="fas fa-chevron-right"></i></li>
-          <li><a href="/perfil">Mi cuenta</a></li>
+          <li><a href="/user/profile">Mi cuenta</a></li>
         </ul>
       </section>
       <h3 class="titulo-destacado"> Mi Cuenta</h3>
@@ -26,7 +26,7 @@
             <div class="titulo">Mis datos</div>
             <div><i class="fas fa-user"></i><%= user.firstName%> <%= user.lastName %> </div>
             <div><i class="fas fa-envelope"></i><%= user.email%></div>       
-            <form action="/perfil" method="post">
+            <form action="/user/profile" method="post">
               <button type="submit" > Cerrar Sesion </button>
             </form>
      
