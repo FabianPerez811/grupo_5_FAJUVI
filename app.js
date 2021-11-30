@@ -3,6 +3,7 @@ const express = require('express');
 const session = require('express-session');
 const path = require('path')
 const methodOverride = require('method-override'); // Para poder usar los métodos PUT y DELETE
+const usuarioLogueadoMiddleware = require('./middlewares/usuarioLogueadoMiddleware'); 
 
 // ************ express() -
 const app = express();
@@ -17,6 +18,7 @@ app.use(session({      // configurando session
     resave:false,
     saveUninitialized:false,
 })); 
+app.use(usuarioLogueadoMiddleware)
 
 // ************ Template Engine - (don't touch) ************
 app.set('view engine' , 'ejs');
@@ -26,6 +28,7 @@ app.set ('views' , './src/views');
 const mainRouter = require ('./src/routes/mainRouter')
 const productsRouter = require ('./src/routes/productsRouter')
 const userRouter = require ('./src/routes/userRouter')
+
 
 app.use('/', mainRouter);
 app.use('/', userRouter);
