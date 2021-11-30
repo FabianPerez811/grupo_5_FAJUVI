@@ -16,5 +16,14 @@
   "password": "$2a$10$8b6CyUah/VDUlVwKz8w87OzWvPznHc6fq6s1f5VTMJIX0zmI/oury",
   "category": " Administrador",
   "image": "1638228434353_img.jpg"
+ },
+ {
+  "id": 3,
+  "firstName": "vir",
+  "lastName": "ascarate",
+  "email": "viriascarate@hotmail.com",
+  "password": "$2a$10$pOpYrrocLdn5.X3SPsdLuuCYDLpmtNgISDnv.agfEW7YXdoXjcdHu",
+  "category": " Administrador",
+  "image": "1638276700861_img.jpg"
  }
 ]
