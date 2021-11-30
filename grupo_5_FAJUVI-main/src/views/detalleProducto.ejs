@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <%- include('./partials/head')  %> 
+    <link rel="stylesheet" href="/css/detalleProducto.css" /> 
+  </head>
+
+  <body>
+    
+    <%-  include('./partials/header')  %> 
+
+    <main>
+      <section class="posicion">
+        <hr />
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><i class="fas fa-chevron-right"></i></li>
+          <li><a href="#">Detalle de Producto</a></li>
+        </ul>
+      </section>
+      <section class="detalle-producto-flex">
+        <div class="fotos-producto">
+          <img src= <%=productSend.image%> alt="Cinto negro" />
+          <div class="opciones-producto">
+            <img src="/img/image.png" alt="Cinto negro" />
+            <img src="/img/image.png" alt="Cinto negro" />
+            <img src="/img/image.png" alt="Cinto negro" />
+          </div>
+        </div>
+        <div class="carrusel-circulo">
+          <span class="circulo"></span>
+          <span class="circulo"></span>
+          <span class="circulo"></span>
+        </div>
+        <div class="info-producto">
+          <h3 class="nombre-producto"><%= productSend.name  %> </h3>
+          <p class="dp-precio">$<%= productSend.price%></p>
+          <p class="dp-cuotas">
+            <i class="fas fa-credit-card"></i>
+            3 cuotas sin interés de
+            <strong>$ <%= productSend.price/3 %> </strong>
+          </p>
+          <p class="dp-descuento">
+            <i class="fas fa-money-bill"></i>
+            <strong>10% de descuento</strong>
+            pagando con Transferencia Bancaria
+          </p>
+          <a href="#" class="dp-mediosPago">Ver medios de pago</a>
+          <hr class="linea" />
+          <div class="box-select">
+            <p>Medidas:</p>
+            <select name="medidas">
+              <option value="seleccione" selected>Seleccione una opción</option>
+              <option value="85">80</option>
+              <option value="90">90</option>
+              <option value="85">95</option>
+              <option value="90">100</option>
+            </select>
+          </div>
+          <hr class="linea" />
+          <button class="boton-agregar">Agregar al carrito</button>
+          <div class="caja-cp">
+            <p>Entregas para el CP: 5021</p>
+            <button class="boton-cp">Cambiar CP</button>
+          </div>
+          <div>
+            <div class="titulo-envio">
+              <i class="fas fa-truck"></i>
+              <p>Envío a domicilio</p>
+            </div>
+            <div class="detalle-envio">
+              <p>
+                Correo Argentino -Envío a domicilio. Llega el jueves 30/10
+              </p>
+              <p><strong>$400,00</strong></p>
+            </div>
+          </div>
+          <div>
+            <div class="titulo-envio">
+              <i class="fas fa-store"></i>
+              <p>Nuestro local</p>
+            </div>
+            <div class="detalle-envio">
+              <p>
+                Punto de Entrega - Rafael Nuñez 5000 Cba Capital. L a V de 9 a
+                16hs.
+              </p>
+              <p><strong>Gratis</strong></p>
+            </div>
+          </div>
+          <div class="compartir-redes">
+            <p>Compartir:</p>
+            <div>
+              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-pinterest"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-facebook"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="informacion-producto">
+        <div><%= productSend.name%></div>
+        <p>
+          <%= productSend.description%>
+          <br />
+          <strong>Composición:</strong>
+          100% cuero vacuno
+        </p>
+      </section>
+      <hr />
+    </main>
+
+    <%-  include('./partials/footer')  %> 
+  
+  </body>
+</html>

@@ -1,0 +1,209 @@
+.opciones-producto {
+  display: none;
+}
+
+.detalle-producto-flex {
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+  padding: 10px;
+}
+
+.fotos-producto img {
+  width: 100%;
+}
+
+.carrusel-circulo {
+  text-align: center;
+  margin: 5px;
+}
+
+.circulo {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.circulo:hover {
+  background-color: #71a2ae;
+}
+
+.nombre-producto {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dp-precio {
+  font-size: 24px;
+  font-weight: bold;
+  color: #83aeb8;
+}
+
+.dp-cuotas {
+  text-transform: uppercase;
+}
+
+.dp-descuento {
+  margin-bottom: 30px;
+}
+
+.dp-mediosPago {
+  color: #2a2c25;
+}
+
+.linea {
+  border-top: 1px dashed #d6d6d6;
+  margin: 15px 0;
+}
+
+.box-select select {
+  text-decoration: none;
+  border: 1px solid #9fbfc8;
+  padding: 12px 16px;
+}
+
+.box-select p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.boton-agregar {
+  text-transform: uppercase;
+  background-color: #9fbfc8;
+  color: white;
+  padding: 15px;
+  border: none;
+  width: 100%;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.caja-cp {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  justify-content: space-between;
+}
+
+.boton-cp {
+  text-transform: uppercase;
+  background-color: #6d6f74;
+  color: white;
+  border: none;
+  height: 35px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.titulo-envio {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.titulo-envio i {
+  margin-right: 5px;
+}
+
+.detalle-envio {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px 10px;
+  border: 1px solid #d6d6d6;
+  justify-content: space-between;
+}
+
+.detalle-envio p {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.compartir-redes {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin: 20px 0px;
+}
+
+.compartir-redes i {
+  font-size: 14px;
+}
+
+.informacion-producto {
+  text-align: left;
+  padding: 10px;
+}
+
+.informacion-producto div {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.informacion-producto p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+@media (min-width: 768px) {
+  .carrusel-circulo {
+    display: none;
+  }
+
+  .opciones-producto {
+    display: flex;
+    justify-content: center;
+  }
+
+  .detalle-producto-flex {
+    flex-flow: row;
+    justify-content: center;
+  }
+
+  .fotos-producto {
+    width: 40%;
+    margin-right: 15px;
+  }
+
+  .info-producto {
+    margin-left: 15px;
+  }
+
+  .nombre-producto {
+    font-size: 20px;
+  }
+
+  .opciones-producto img {
+    width: 31%;
+    margin: 0 5px;
+  }
+
+  .boton-agregar {
+    transform: background-color 0.5s;
+  }
+
+  .boton-agregar:hover {
+    background-color: #71a2ae;
+  }
+
+  .informacion-producto {
+    padding: 30px;
+  }
+
+
+}
+
+@media (min-width: 1280px) {
+  /* Escribir acá css que impacta solamente en DESKTOP */
+}

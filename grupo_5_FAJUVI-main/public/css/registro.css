@@ -1,0 +1,164 @@
+#msj_error{
+  font-size: 10px;
+  color: red;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.registro {
+  margin-top: 30px;
+}
+
+form p {
+  padding: 15px;
+  margin-top: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #6d6f74;
+}
+
+form {
+  font-size: 16px;
+  color: #6d6f74;
+  text-transform: uppercase;
+}
+
+.formulario-registro input {
+  margin: 10px 0px;
+  width: 100%;
+  padding: 10px 20px;
+  border: white;
+}
+
+.cajaFlexUsuario {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputIMG input.inputImagen {
+  padding: 10px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.inputImagen::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.inputImagen::before {
+  content: 'Selecciona una foto de perfil';
+  background-color: white;
+  display: inline-block;
+  padding: 10px 5px;
+  cursor: pointer;
+  font-family: 'Roboto';
+  width: 100%;
+}
+
+.categoriaUsuario select {
+  margin: 10px 0px;
+  background-color: white;
+  border: none;
+  padding: 10px 5px;
+  width: 100%;
+  font-family: 'Roboto';
+  cursor: pointer;
+  color: #6d6f74;
+}
+
+.caja-registro {
+  max-width: 90%;
+  padding: 0px 10px;
+  background-color: #d6d6d6;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.politica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 13px;
+  color: #2a2c25;
+  text-transform: none;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.politica input.radioPolitica {
+  width: 25px;
+}
+
+.boton-iniciar {
+  text-align: center;
+}
+
+.boton-crear,
+.boton-sesion {
+  text-transform: uppercase;
+  background-color: #9fbfc8;
+  color: white;
+  padding: 15px;
+  border: none;
+  margin: 10px;
+  max-width: 80%;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+
+.boton-crear:hover {
+  background-color: #71a2ae;
+}
+
+.boton-sesion {
+  background-color: #6d6f74;
+}
+
+.boton-sesion:hover {
+  background-color: #2a2c25;
+}
+
+.registro-inicSesion {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  align-items: center;
+}
+
+a {
+  color: #2a2c25;
+}
+
+@media (min-width: 768px) {
+  .caja-registro {
+    max-width: 60%;
+    box-shadow: 5px -5px #f6f3f3;
+  }
+
+  .contraseña {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contraseña1,
+  .contraseña2 {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .caja-registro {
+    max-width: 50%;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head')  %> 
+  <link rel="stylesheet" href="/css/abmProducto.css" /> 
+
+</head>
+  
+  
+
+  <body>
+    <header>
+      <div class="boton-hamburguesa">
+        <i class="fas fa-bars"></i>
+      </div>
+      <a class= "miCuenta" href="/user/profile"> 
+        <div class="cabecera-administrador">               
+          <i class="fas fa-user"></i>
+          <div>Mi cuenta</div>        
+        </div>
+      </a>
+    </header>
+    <main>
+      <div class="panel-administrador">
+        <div class="logo-panel">
+          <a href="/">
+            <img src="/img/Logo-Fajuvi.png" alt="Logo Fajuvi" />
+          </a>
+        </div>
+        <div class="link-panel">
+          <i class="fas fa-home"></i>
+          <div>Inicio</div>
+        </div>
+        <div>
+          <div class="titulo-panel">Administrar</div>
+          <div class="link-panel">
+            <i class="fas fa-search-dollar"></i>
+            <div>Ventas</div>
+          </div>
+          <div class="link-panel">
+            <i class="fas fa-tags"></i>
+            <div class="link-productos">
+              <a href="/admin/products/create">Agregar Productos</a>
+            </div>
+          </div>
+          <div class="link-panel">
+            <i class="fas fa-list-ul"></i>
+            <div class="link-productos">
+              <a href="/admin/products">Lista de Productos</a>
+            </div>
+          </div>
+          <div class="link-panel">
+            <i class="fas fa-user-friends"></i>
+            <div>Clientes</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-abm">
+        <p class="titulo">Agregar un producto</p>
+       
+        <form class="agregar-producto" action="/admin/products" method="post" enctype="multipart/form-data">
+          <div class="tarjeta">
+            <div>
+              <p class="subtitulo">Nombre y descripción</p>
+            </div>
+            <div class="caja-tarjeta">
+              <label for="nombre">Nombre</label>
+              <br />
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Ej: Aro mariposa"
+                required
+              />
+            </div>
+            <div class="caja-tarjeta">
+              <label for="descripcion">Descripción</label>
+              <br />
+              <textarea name="descripcion" id="descripcion" cols="30" rows="4" required></textarea>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <p class="subtitulo">Precio</p>
+            <div class="caja-tarjeta">
+              <label for="precio">Precio</label>
+              <br />
+              <input class="precio" type="text" name="precio" required />
+            </div>
+          </div>
+          <div class="tarjeta">
+            <p class="subtitulo">Fotos</p>
+            <input type="file" id="foto" name="foto" />
+            <div class="caja-informacion">
+              Tamaño mínimo recomendado: ancho y alto 1024px
+            </div>
+          </div>
+          <div class="tarjeta">
+            <p class="subtitulo">Categoría</p>
+            <div class="caja-tarjeta">
+              <select name="categoria" id="categoria" required>
+                <option value="seleccionar">Seleccionar categoría</option>
+                <option value="pulsera">Pulseras</option>
+                <option value="aro">Aros</option>
+                <option value="cinturon">Cinturones</option>
+                <option value="anillo">Anillos</option>
+              </select>
+            </div>
+          </div>
+          <div class="tarjeta checkbox">
+            <p class="subtitulo">Seleccionar talle</p>
+            <input type="checkbox" id="xs" name="xs" value="xs" />
+            <label for="xs">XS</label>
+            <input type="checkbox" id="s" name="s" value="s" />
+            <label for="s">S</label>
+            <input type="checkbox" id="m" name="m" value="m" />
+            <label for="">M</label>
+            <input type="checkbox" id="l" name="l" value="l" />
+            <label for="l">L</label>
+            <input type="checkbox" id="xl" name="xl" value="xl" />
+            <label for="xl">XL</label>
+          </div>
+          <div class="boton-publicar">
+            <button class="publicar" type="submit">Publicar producto</button>
+          </div>
+          <div class="boton-cancelar">
+            <a href="/admin/products" class="cancelar">Cancelar</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <%-  include('./partials/footer')  %> 
+  </body>
+</html>

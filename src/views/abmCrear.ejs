@@ -14,10 +14,12 @@
       <div class="boton-hamburguesa">
         <i class="fas fa-bars"></i>
       </div>
-      <div class="cabecera-administrador">
-        <i class="fas fa-user"></i>
-        <div>Mi cuenta</div>
-      </div>
+      <a class= "miCuenta" href="/user/profile"> 
+        <div class="cabecera-administrador">               
+          <i class="fas fa-user"></i>
+          <div>Mi cuenta</div>        
+        </div>
+      </a>
     </header>
     <main>
       <div class="panel-administrador">
@@ -39,13 +41,13 @@
           <div class="link-panel">
             <i class="fas fa-tags"></i>
             <div class="link-productos">
-              <a href="/products/create">Agregar Productos</a>
+              <a href="/admin/products/create">Agregar Productos</a>
             </div>
           </div>
           <div class="link-panel">
             <i class="fas fa-list-ul"></i>
             <div class="link-productos">
-              <a href="/products">Lista de Productos</a>
+              <a href="/admin/products">Lista de Productos</a>
             </div>
           </div>
           <div class="link-panel">
@@ -57,7 +59,7 @@
       <div class="panel-abm">
         <p class="titulo">Agregar un producto</p>
        
-        <form class="agregar-producto" action="/products" method="post" enctype="multipart/form-data">
+        <form class="agregar-producto" action="/admin/products" method="post" enctype="multipart/form-data">
           <div class="tarjeta">
             <div>
               <p class="subtitulo">Nombre y descripción</p>
@@ -122,7 +124,7 @@
             <button class="publicar" type="submit">Publicar producto</button>
           </div>
           <div class="boton-cancelar">
-            <a href="/products" class="cancelar">Cancelar</a>
+            <a href="/admin/products" class="cancelar">Cancelar</a>
           </div>
         </form>
       </div>

@@ -18,26 +18,24 @@ const storage = multer.diskStorage({
  });
  const upload = multer({ storage: storage });
 
-/*const clienteMiddleware = require('../middlewares/usuarioMiddleware');
-const autenticacionMiddleware = require('../middlewares/autenticacionMiddleware');*/
+const usuarioMiddleware = require('../../middlewares/usuarioMiddleware');
+const autenticacionMiddleware = require('../../middlewares/autenticacionMiddleware');
 
 //Formulario de login
-//router.get ('/acceso', usuarioMiddleware,userController.acceso);
-router.get ('/acceso', userController.acceso);
+router.get ('/sign-in', usuarioMiddleware,userController.acceso);
 
 //proceso de login
-//router.get ('/acceso', usuarioMiddleware,userController.acceso);
-router.post ('/acceso', userController.procesoAcceso);
+router.post('/sign-in', userController.procesoAcceso); 
 
 //Formulario de registro:
-//router.get ('/registro', usuarioMiddleware, userController.registro);
-router.get ('/registro', userController.registro);
+router.get ('/sign-up', usuarioMiddleware, userController.registro);
 
 //Procesar el registro
-router.post ('/registro', upload.single('fotoPerfil') ,validacionRegistro, userController.procesoRegistro);
+router.post ('/sign-up', upload.single('fotoPerfil') ,validacionRegistro, userController.procesoRegistro);
 
 //Perfil de Usuario:
-//router.get('/perfil/', autenticacionMiddleware, userController.perfil);
-router.get('/perfil', userController.perfil);
+router.get('/profile', autenticacionMiddleware, userController.perfil);
+
+router.post('/profile', userController.cerrrarSesion);
 
 module.exports = router;
