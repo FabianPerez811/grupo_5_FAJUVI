@@ -25,7 +25,7 @@
             <input type="email" name="email" id="email" required />
 
             <% if (locals.errors && errors.email) { %>
-              <div id="msj_error"> <%= errors.email.msg %> </div>
+              <div> <%=errors.email.msj %> </div>
             <% } %>
 
             <label for="password">Contraseña</label>
@@ -35,9 +35,6 @@
               id="password"
               minlength="8"
             />
-            <% if (locals.errors && errors.password) { %>
-              <div id="msj_error"> <%= errors.password.msg %> </div>
-            <% } %>
           </div>
           <div class="mantenerSesion">
             <input class="iniciada"

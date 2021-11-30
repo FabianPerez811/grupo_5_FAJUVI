@@ -31,9 +31,9 @@ const User = {
         return userFound;
       },
     
-    findByMail:function (mail) {
+    findByMail:function (email) {
         let allUsers= this.findAll();
-        let userFound = allUsers.find(user => user.mail == mail)
+        let userFound = allUsers.find(user => user.email == email)
         return userFound;
       },
 

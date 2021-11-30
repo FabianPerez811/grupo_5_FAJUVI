@@ -1,20 +1,20 @@
 [
  {
   "id": 1,
-  "firstName": "juan s",
-  "lastName": "seco",
-  "email": "juansecof97@gmail.com",
-  "password": "juansecoftdsmdtm",
-  "category": "cliente",
-  "image": "1637537444691_img.jpg"
- },
- {
-  "id": 2,
   "firstName": "juan",
   "lastName": "seco",
   "email": "juansecof97@gmail.com",
-  "password": "$2a$10$I9xtoSMbKqABuwYk6GMfPe8h0/c4JU/fFkGjGfT3Wedvf8p7EUiRW",
+  "password": "$2a$10$OCl5LsEyZwzJp8CmSctWUeFJHdEbdZK2lAXDhznUESCZU9vr9YW7y",
   "category": " Administrador",
-  "image": "1637699472656_img.png"
+  "image": "1638227005938_img.png"
+ },
+ {
+  "id": 2,
+  "firstName": "gonzalo",
+  "lastName": "seco",
+  "email": "gonza@gmail.com",
+  "password": "$2a$10$8b6CyUah/VDUlVwKz8w87OzWvPznHc6fq6s1f5VTMJIX0zmI/oury",
+  "category": " Administrador",
+  "image": "1638228434353_img.jpg"
  }
 ]
