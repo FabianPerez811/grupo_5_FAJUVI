@@ -23,6 +23,7 @@ app.use(usuarioLogueadoMiddleware)
 // ************ Template Engine - (don't touch) ************
 app.set('view engine' , 'ejs');
 app.set ('views' , './src/views');
+app.set ('views' , './src/views/users');
 
 // ************ Route System require and use() - (don't touch) ************
 const mainRouter = require ('./src/routes/mainRouter')
