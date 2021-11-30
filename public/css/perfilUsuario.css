@@ -39,6 +39,24 @@
   font-weight: bold;
   background-color: #d6d6d6;
   color: #2a2c25;
+  margin-bottom: 10px;
+}
+
+.cerrarPerfil {
+  text-transform: uppercase;
+  background-color: #9fbfc8;
+  color: white;
+  padding: 15px;
+  border: none;
+  margin: 30px 10px;
+  max-width: 80%;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+
+.cerrarPerfil:hover {
+  background-color: #71a2ae;
 }
 
 @media (min-width: 768px) {
@@ -49,12 +67,11 @@
     justify-content: center;
   }
 
-  .caja-datos{
-      width: 30%;
+  .caja-datos {
+    width: 30%;
   }
 
   .imagen-usuario img {
     margin-bottom: 0px;
   }
-
 }

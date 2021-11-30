@@ -5,7 +5,9 @@
     <div class="cabecera-usuario">
       <% if (locals.isLogged) { %>
         <div>
-          <img src="/img/img_users/<%= locals.userLogged.image %> " alt="foto_usuario">
+          <a href="/user/profile">
+            <img src="/img/img_users/<%= locals.userLogged.image %> " alt="foto_usuario">
+          </a>          
         </div>
         <div class="nombreUsuario">
           Hola <%= locals.userLogged.firstName %> 

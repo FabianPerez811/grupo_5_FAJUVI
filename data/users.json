@@ -22,26 +22,8 @@
   "firstName": "Viki",
   "lastName": "Barrionuevo",
   "email": "vikibarrionuevo@gmail.com",
-  "password": "$2a$10$jeBfGZkdnPaGOiC1P0oQguXcO6hKyeXXHLW3w17g1/RXOhv8ro42i",
+  "password": "$2a$10$NXxzFV40.xjZbgw40BqUWuylre.P1ASlg9TBfujHTg/cfUFyodhrK",
   "category": " Administrador",
-  "image": "1638281704377_img.png"
- },
- {
-  "id": 4,
-  "firstName": "Victoria",
-  "lastName": "Barrionuevo",
-  "email": "victoriabarrionuevo@hotmail.com",
-  "password": "$2a$10$F0NwX9AxIx9ZrhBCWKVe5e0yBCp9aPgySoqWA.7HeR93rOUvm44.i",
-  "category": " Administrador",
-  "image": "1638295456465_img.png"
- },
- {
-  "id": 5,
-  "firstName": "Nicolas",
-  "lastName": "Parodi",
-  "email": "ncparodi@gmail.com",
-  "password": "$2a$10$m0dsPa59IICoLnZEKhXb7eahqldNPhGzHJdLSKYTA67SiqQgHz3P6",
-  "category": " Administrador",
-  "image": "1638295944191_img.png"
+  "image": "1638300002754_img.png"
  }
 ]
