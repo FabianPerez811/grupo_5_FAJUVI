@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -20,12 +20,16 @@
       <h3 class="titulo-destacado"> Mi Cuenta</h3>
       <div class="box-datosUsuario">
         <div class="imagen-usuario">
-            <img src="/img/perfil.jpg" alt="">
+            <img src="/img/img_users/<%= user.image%>" alt="">
         </div>
         <div class="caja-datos">
             <div class="titulo">Mis datos</div>
-            <div><i class="fas fa-user"></i>María Lopez</div>
-            <div><i class="fas fa-envelope"></i>mlopez@gmail.com</div>            
+            <div><i class="fas fa-user"></i><%= user.firstName%> <%= user.lastName %> </div>
+            <div><i class="fas fa-envelope"></i><%= user.email%></div>       
+            <form action="/user/profile" method="post">
+              <button class="cerrarPerfil"type="submit" > Cerrar Sesion </button>
+            </form>
+     
         </div> 
       </div> 
     </main>

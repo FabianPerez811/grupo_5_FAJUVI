@@ -1,18 +1,14 @@
 // ************ Require's ************
 const express = require('express');
 const session = require('express-session');
-const cookies = require('cookie-parser');
 const path = require('path')
 const methodOverride = require('method-override'); // Para poder usar los métodos PUT y DELETE
 const usuarioLogueadoMiddleware = require('./middlewares/usuarioLogueadoMiddleware'); 
-
 
 // ************ express() -
 const app = express();
 
 // ************ Middlewares - (don't touch) ************
-
-
 app.use(express.static(path.resolve(__dirname, "./public")));
 app.use(express.urlencoded({ extended: false })); // para poder usar post
 app.use(express.json()); // para poder usar post
@@ -22,13 +18,11 @@ app.use(session({      // configurando session
     resave:false,
     saveUninitialized:false,
 })); 
-app.use(cookies());
-app.use(usuarioLogueadoMiddleware);
+app.use(usuarioLogueadoMiddleware)
 
 // ************ Template Engine - (don't touch) ************
 app.set('view engine' , 'ejs');
 app.set ('views' , './src/views');
-app.set ('views' , './src/views/users');
 
 // ************ Route System require and use() - (don't touch) ************
 const mainRouter = require ('./src/routes/mainRouter')
