@@ -25,5 +25,14 @@
   "password": "$2a$10$NXxzFV40.xjZbgw40BqUWuylre.P1ASlg9TBfujHTg/cfUFyodhrK",
   "category": " Administrador",
   "image": "1638300002754_img.png"
+ },
+ {
+  "id": 4,
+  "firstName": "Fabian",
+  "lastName": "Perez",
+  "email": "fnperez8@gmail.com",
+  "password": "$2a$10$asAOwa9hf..8H/N.vxAgau5lUOEqM620kflVwB/kn4A33wOsRtTbS",
+  "category": " Administrador",
+  "image": "1638913546374_img.jpg"
  }
 ]
