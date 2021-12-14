@@ -5,6 +5,12 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
+        },
+        cartId:{
+            type:dataTypes.INTEGER
+        },
+        productId:{
+            type:dataTypes.INTEGER
         }
 
     };

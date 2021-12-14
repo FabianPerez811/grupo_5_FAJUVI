@@ -18,9 +18,12 @@ module.exports = (sequelize, dataTypes) => {
         password: {
             type: dataTypes.STRING
         },
-        /*profileImage: {
+        profileImage: {
             type: dataTypes.STRING
-        },*/
+        },
+        roleId: {
+            type: dataTypes.INTEGER
+        },
         deleted: {
             type: dataTypes.BOOLEAN
         }

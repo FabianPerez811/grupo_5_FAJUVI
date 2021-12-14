@@ -9,20 +9,26 @@ module.exports = (sequelize, dataTypes) => {
         name: {
             type: dataTypes.STRING
         },
-        description: {
-            type: dataTypes.STRING
-        },
         price: {
             type: dataTypes.INTEGER
         },
-        /*image: {
+        description: {
             type: dataTypes.STRING
-        },*/
-        size:{
+        },
+        image: {
+            type: dataTypes.STRING
+        },
+        popular:{
+            type: dataTypes.BOOLEAN
+        },
+        sizeId:{
+            type: dataTypes.INTEGER
+        },
+        categoryId:{
             type: dataTypes.INTEGER
         },
         deleted: {
-            type: dataTypes.BOOLEAN
+            type: dataTypes.INTEGER
         }
 
     };
