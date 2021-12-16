@@ -7,13 +7,14 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true
         },
         size:{
-            type:dataTypes.STRING
+            type:dataTypes.STRING,
+            allowNull: false
         }
 
     };
 
     let config = {
-        tableName: "Sizes",
+        tableName: "sizes",
         timestamps: false
     }
     const Size = sequelize.define(alias, cols, config);

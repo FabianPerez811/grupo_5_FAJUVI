@@ -7,13 +7,14 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true
         },
         role:{
-            type:dataTypes.STRING
+            type:dataTypes.STRING,
+            allowNull: false
         }
 
     };
 
     let config = {
-        tableName: "Roles",
+        tableName: "roles",
         timestamps: false
     }
     const Role = sequelize.define(alias, cols, config);

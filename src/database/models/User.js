@@ -19,10 +19,12 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING
         },
         profileImage: {
-            type: dataTypes.STRING
+            type: dataTypes.STRING,
+            allowNull: false
         },
         roleId: {
-            type: dataTypes.INTEGER
+            type: dataTypes.INTEGER,
+            allowNull: false
         },
         deleted: {
             type: dataTypes.BOOLEAN
@@ -31,7 +33,7 @@ module.exports = (sequelize, dataTypes) => {
     };
 
     let config = {
-        tableName: "Users",
+        tableName: "users",
         timestamps: false
     }
     const User = sequelize.define(alias, cols, config);

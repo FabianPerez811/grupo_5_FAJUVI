@@ -7,13 +7,14 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true
         },
         category:{
-            type:dataTypes.STRING
+            type:dataTypes.STRING,
+            allowNull: false
         }
 
     };
 
     let config = {
-        tableName: "Categories",
+        tableName: "categories",
         timestamps: false
     }
     const Category = sequelize.define(alias, cols, config);

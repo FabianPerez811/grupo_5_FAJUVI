@@ -7,13 +7,16 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true
         },
         name: {
-            type: dataTypes.STRING
+            type: dataTypes.STRING,
+            allowNull: false
         },
         price: {
-            type: dataTypes.INTEGER
+            type: dataTypes.INTEGER,
+            allowNull: false
         },
         description: {
-            type: dataTypes.STRING
+            type: dataTypes.STRING,
+            allowNull: false
         },
         image: {
             type: dataTypes.STRING
@@ -28,13 +31,14 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.INTEGER
         },
         deleted: {
-            type: dataTypes.INTEGER
+            type: dataTypes.INTEGER,
+            allowNull: false
         }
 
     };
 
     let config = {
-        tableName: "Products",
+        tableName: "products",
         timestamps: false
     }
     const Product = sequelize.define(alias, cols, config);
