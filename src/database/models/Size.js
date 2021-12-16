@@ -13,7 +13,7 @@ module.exports = (sequelize, dataTypes) => {
     };
 
     let config = {
-        tableName: "sizes",
+        tableName: "Sizes",
         timestamps: false
     }
     const Size = sequelize.define(alias, cols, config);
