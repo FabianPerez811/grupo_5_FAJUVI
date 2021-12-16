@@ -19,7 +19,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING
         },
         popular:{
-            type: dataTypes.BOOLEAN
+            type: dataTypes.INTEGER
         },
         sizeId:{
             type: dataTypes.INTEGER

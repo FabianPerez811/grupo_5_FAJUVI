@@ -29,30 +29,50 @@ CREATE TABLE 'Products' (
     'sizeId' INT NOT NULL,
     'categoryId' INT NOT NULL,
     'deleted' INT NOT NULL
-    PRIMARY KEY ('id')
+    PRIMARY KEY ('id'),
+    CONSTRAINT fk_sizeId
+    FOREIGN KEY (sizeId)
+        REFERENCES Sizes(id),
+    CONSTRAINT fk_categoryId
+    FOREIGN KEY (categoryId)
+        REFERENCES Categories(id)
 )
 
 CREATE TABLE 'cartsProducts' (
     'id' INT NOT NULL AUTO_INCREMENT,
     'cartId' INT NOT NULL,
     'productId' INT NOT NULL,
-    PRIMARY KEY ('id')
+    PRIMARY KEY ('id'),
+    CONSTRAINT fk_cartId
+    FOREIGN KEY (cartId)
+        REFERENCES Carts(id),
+    CONSTRAINT fk_productId
+    FOREIGN KEY (productId)
+        REFERENCES Products(id)
 )
 CREATE TABLE 'Users' (
     'id' INT NOT NULL AUTO_INCREMENT,
     'firstName' VARCHAR(255) NOT NULL,
     'lasName' VARCHAR(255) NOT NULL,
     'email' VARCHAR(50) NOT NULL,
-    'password' VARCHAR(255) NOT NULL,
+    'password' VARCHAR(255) NOT NULL,    
+    'profileImage' VARCHAR(255) NOT NULL,
     'roleId' INT NOT NULL,
-    PRIMARY KEY ('id')
+    'deleted' INT NOT NULL,
+    PRIMARY KEY ('id'),
+    CONSTRAINT fk_roleId
+    FOREIGN KEY (roleId)
+        REFERENCES Roles(id)
 )
 
 CREATE TABLE 'Carts' (
     'id' INT NOT NULL AUTO_INCREMENT,
     'userId' INT NOT NULL,
     'totalPrice' INT NOT NULL,
-    PRIMARY KEY ('id')
+    PRIMARY KEY ('id'),
+    CONSTRAINT fk_userId
+    FOREIGN KEY (userId)
+        REFERENCES Users(id)
 )
 
 
