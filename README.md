@@ -48,4 +48,4 @@
 
 - ### Diagrama Base de Datos:
 
-(public/img/diagramaBD.png)
+  ![Diagrama BD](public/img/diagramaBD.png)
