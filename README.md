@@ -44,4 +44,8 @@
 
 - ### Logo:
 
-  ![FAJUVI Logo](img/Logo-Fajuvi.png)
+  ![FAJUVI Logo](public/img/Logo-Fajuvi.png)
+
+- ### Diagrama Base de Datos:
+
+(public/img/diagramaBD.png)
