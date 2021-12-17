@@ -20,10 +20,13 @@ module.exports = (sequelize, dataTypes) => {
     const Size = sequelize.define(alias, cols, config);
 
     Size.associate = function(models) {
-        Size.hasMany(models.Products, {
-            as: "sizeProducts",
-            foreignKey: "sizeId"
-        })
+        Sizes.belongsToMany(models.Products, {
+            as: 'products',
+            through: 'products_sizes',
+            foreignKey:'sizeId',
+            otherKey:'productId',
+            timestamps:false
+        });
     }
 
     return Size;

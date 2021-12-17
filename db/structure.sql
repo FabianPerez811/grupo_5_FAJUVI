@@ -1,15 +1,9 @@
-CREATE DATABASE IF NOT EXISTS `fajuviDB`;
-USE `fajuviDB`;
+CREATE DATABASE IF NOT EXISTS `fajuvi_db`;
+USE `fajuvi_db`;
 
 CREATE TABLE `categories`(
     `id` INT NOT NULL AUTO_INCREMENT,
     `category` VARCHAR(50) NOT NULL,
-    PRIMARY KEY (`id`)
-);
-
-CREATE TABLE `sizes`(
-    `id` INT NOT NULL AUTO_INCREMENT,
-    `size` VARCHAR(50) NOT NULL,
     PRIMARY KEY (`id`)
 );
 
@@ -19,22 +13,37 @@ CREATE TABLE `roles`(
     PRIMARY KEY (`id`)
 );
 
+CREATE TABLE `sizes`(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `size` VARCHAR(50) NOT NULL,
+    PRIMARY KEY (`id`)
+);
+
 CREATE TABLE `products` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(255) NOT NULL,
     `price` INT NOT NULL,
     `description` VARCHAR(255) NOT NULL,
     `image` VARCHAR(255),
-    `sizeId` INT,
     `categoryId` INT,
     `deleted` INT NOT NULL,
     PRIMARY KEY (`id`),
-    CONSTRAINT `fk_sizeId`
-    FOREIGN KEY (`sizeId`)
-        REFERENCES `sizes`(`id`),
     CONSTRAINT `fk_categoryId`
     FOREIGN KEY (`categoryId`)
         REFERENCES `categories`(`id`)
+);
+
+CREATE TABLE `products_sizes`(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `productId` INT NOT NULL,
+    `sizeId` INT NOT NULL,
+    PRIMARY KEY (`id`),
+    CONSTRAINT `fk_prodId`
+    FOREIGN KEY (`productId`)
+        REFERENCES `products`(`id`),        
+    CONSTRAINT `fk_szId`
+    FOREIGN KEY (`sizeId`)
+        REFERENCES `sizes`(`id`)
 );
 
 CREATE TABLE `users` (
@@ -74,8 +83,6 @@ CREATE TABLE `cartsProducts` (
     FOREIGN KEY (`productId`)
         REFERENCES `products`(`id`)
 );
-
-
 
 
 

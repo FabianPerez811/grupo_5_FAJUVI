@@ -35,14 +35,14 @@ const productController = {
         res.render('abmCrear')
     },
 
-    abmCreado: function (req, res) { // accion de agregar prod   
+    abmCreado: function (req, res) { 
+        console.log(req.body);// accion de agregar prod   
         db.Products.create({
             name: req.body.nombre,
             price: req.body.precio,
             description: req.body.descripcion,
             image: req.body.foto,
-            //sizeId: req.body.??,
-            category: req.body.categoria,
+            categoryId: req.body.categoria,
             deleted: 0
         }).then(function () {
             console.log('Creado OK');

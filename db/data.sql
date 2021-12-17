@@ -28,12 +28,12 @@ INSERT INTO fajuviDB.sizes(size) VALUES
 INSERT INTO fajuviDB.roles(role) VALUES
 ("Administrador"), ("Cliente");
 
-INSERT INTO fajuviDB.products(name, price, description, image, sizeId, categoryId, deleted) VALUES
-("Aros Marsellas", 1500, "Aros enchapados en plata", "/img/aro2.jpg", NULL, 2, 0),
-("Aros Lyon", 900, "Aros fantasía", "/img/aro3.jpg", NULL, 2, 0),
-("Cinturón Venecia", 1300, "Cinturón simil cuero negro", "/img/cinto.jpg", 2, 3, 0),
-("Cinturón Roma", 1300, "Cinturón simil cuero marrón","/img/cinto2.jpg", 1, 3, 0),
-("Cinturón Florencia", 2500, "Cinturón de cuero negro", "/img/cinto3.jpg", 1, 3, 0);
+INSERT INTO fajuviDB.products(name, price, description, image, categoryId, deleted) VALUES
+("Aros Marsellas", 1500, "Aros enchapados en plata", "/img/aro2.jpg", 2, 0),
+("Aros Lyon", 900, "Aros fantasía", "/img/aro3.jpg", 2, 0),
+("Cinturón Venecia", 1300, "Cinturón simil cuero negro", "/img/cinto.jpg", 3, 0),
+("Cinturón Roma", 1300, "Cinturón simil cuero marrón","/img/cinto2.jpg", 3, 0),
+("Cinturón Florencia", 2500, "Cinturón de cuero negro", "/img/cinto3.jpg", 3, 0);
 
 INSERT INTO fajuviDB.users(firstName, lastName, email, password, profileImage, roleId, deleted) VALUES 
 ("María Victoria", "Barrionuevo", "vikibarrionuevo@gmail.com", "1234", "1638300002754_img.png", 1, 0),

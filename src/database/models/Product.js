@@ -24,9 +24,6 @@ module.exports = (sequelize, dataTypes) => {
         popular:{
             type: dataTypes.INTEGER
         },
-        sizeId:{
-            type: dataTypes.INTEGER
-        },
         categoryId:{
             type: dataTypes.INTEGER
         },
@@ -47,15 +44,18 @@ module.exports = (sequelize, dataTypes) => {
         Product.belongsTo(models.Categories, {
             as: "category",
             foreignKey: "categoryId"
-        }),
-        Product.belongsTo(models.Sizes, {
-            as: "sizeProducts",
-            foreignKey: "sizeId"
-        }),
+        });
         Product.hasMany(models.CartsProducts, {
             as: "cartProducts",
             foreignKey: "productId" 
-        })
+        });
+        Product.belongsToMany(models.Sizes, {
+            as: 'sizes',
+            through: 'products_sizes',
+            foreignKey:'productId',
+            otherKey:'sizeId',
+            timestamps:false
+        });
     }
 
     return Product;
