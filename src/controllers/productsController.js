@@ -27,18 +27,24 @@ const productController = {
     {
         res.render('abmCrear')
     },
-    abmCreado: (req, res) => { // accion de agregar prod   
-        let newProduct = {
-            id: products[products.length -1].id + 1,
+    abmCreado: function (req, res) { // accion de agregar prod   
+        db.Products.create({
             name: req.body.nombre,
-            description: req.body.descripcion,
             price: req.body.precio,
+            description: req.body.descripcion,            
             image: req.body.foto, 
+            //popular: req.body.??,
+            //sizeId: req.body.??,
             category: req.body.categoria,
-        }
-        products.push(newProduct);
-        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "))
-        res.render('abmListar', {productos:products})
+            deleted: 0
+        }).then(function() {
+            console.log('Creado OK');
+            return res.redirect('/admin/products');
+        }, function (error) {
+            console.log('error al crear el product: ' + error)
+        });
+
+        
     },
     abmListar: (req, res) => {
         db.Products.findAll()
