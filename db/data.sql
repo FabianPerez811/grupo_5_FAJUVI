@@ -19,6 +19,9 @@ ALTER TABLE fajuviDB.carts AUTO_INCREMENT=1;
 DELETE FROM fajuviDB.cartsProducts;
 ALTER TABLE fajuviDB.cartsProducts AUTO_INCREMENT=1;
 
+DELETE FROM fajuviDB.products_sizes;
+ALTER TABLE fajuviDB.products_sizes AUTO_INCREMENT=1;
+
 INSERT INTO fajuviDB.categories(category) VALUES
 ("Pulseras"), ("Aros"), ("Cinturones"), ("Anillos");
 
@@ -46,3 +49,6 @@ INSERT INTO fajuviDB.carts(userId, totalPrice) VALUES
 
 INSERT INTO fajuviDB.cartsProducts(cartId, productID) VALUES 
 (1, 1), (2, 3), (3, 2), (4,1);
+
+INSERT INTO fajuviDB.products_sizes(productId, sizeID) VALUES
+(3,1),(3,3),(4,1),(4,3); 

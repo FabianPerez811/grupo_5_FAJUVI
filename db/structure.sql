@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS `fajuvi_db`;
-USE `fajuvi_db`;
+CREATE DATABASE IF NOT EXISTS `fajuviDB`;
+USE `fajuviDB`;
 
 CREATE TABLE `categories`(
     `id` INT NOT NULL AUTO_INCREMENT,
