@@ -25,7 +25,6 @@ CREATE TABLE `products` (
     `price` INT NOT NULL,
     `description` VARCHAR(255) NOT NULL,
     `image` VARCHAR(255),
-    `popular` INT,
     `sizeId` INT,
     `categoryId` INT,
     `deleted` INT NOT NULL,

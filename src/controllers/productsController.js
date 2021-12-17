@@ -32,8 +32,7 @@ const productController = {
             name: req.body.nombre,
             price: req.body.precio,
             description: req.body.descripcion,            
-            image: req.body.foto, 
-            //popular: req.body.??,
+            image: req.body.foto,
             //sizeId: req.body.??,
             category: req.body.categoria,
             deleted: 0
@@ -65,20 +64,18 @@ const productController = {
         
     },
 
-    abmDetalle: (req, res) => {
-        const id = req.params.id;
-        const producto = products.find(product => {
-            return product.id == id;
-        })
-        res.render('abmDetalle', { detalleDeProducto: producto });
+    abmDetalle: function(req, res){
+        db.Products.findByPk(req.params.id)
+            .then(function(product){
+                return res.render("abmDetalle", {detalleDeProducto: product});
+            });
     },
-    abmEditar: (req, res) => {
-        const id = req.params.id;
-        const producto = products.find(product => {
-            return product.id == id;
-        })
-        res.render('abmEditar', { productoAEditar: producto });
-    },
+    abmEditar: function(req, res){
+        db.Products.findByPk(req.params.id)
+            .then(function(product){
+                return res.render('abmEditar', { productoAEditar: product });
+            })
+    },    
     abmEditado: (req, res) => {
         // agregar metodo
         let id = req.params.id;
