@@ -1,9 +1,12 @@
 const path = require('path');
-const fs = require('fs')
+const fs = require('fs');
+
+const db = require("../database/models");
 
 const productsFilePath = path.join(__dirname, '../../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
 const productController = {
     productos: (req, res) => {
         // le pasamos a la vista el array de productos que obtuvimos a partir
@@ -38,7 +41,11 @@ const productController = {
         res.render('abmListar', {productos:products})
     },
     abmListar: (req, res) => {
-        res.render('abmListar', { productos: products })
+        db.Products.findAll()
+            .then(function(listProducts){
+                return res.render('abmListar', { productos: listProducts })
+            })
+        
     },
     abmEliminar: (req, res) => {
         let id = req.params.id;

@@ -29,16 +29,16 @@ INSERT INTO fajuviDB.roles(role) VALUES
 ("Administrador"), ("Cliente");
 
 INSERT INTO fajuviDB.products(name, price, description, image, popular, sizeId, categoryId, deleted) VALUES
-("Aros Marsellas", 1500, "Aros enchapados en plata", NULL, NULL, NULL, 2, 0),
-("Aros Lyon", 900, "Aros fantasía", NULL, NULL, NULL, 2, 0),
-("Cinturón Venecia", 1300, "Cinturón simil cuero negro", NULL, NULL, 2, 3, 0),
-("Cinturón Roma", 1300, "Cinturón simil cuero marrón", NULL, NULL, 1, 3, 0),
-("Cinturón Florencia", 2500, "Cinturón de cuero negro", NULL, NULL, 1, 3, 0);
+("Aros Marsellas", 1500, "Aros enchapados en plata", "/img/aro2.jpg", NULL, NULL, 2, 0),
+("Aros Lyon", 900, "Aros fantasía", "/img/aro3.jpg", NULL, NULL, 2, 0),
+("Cinturón Venecia", 1300, "Cinturón simil cuero negro", "/img/cinto.jpg", NULL, 2, 3, 0),
+("Cinturón Roma", 1300, "Cinturón simil cuero marrón","/img/cinto2.jpg", NULL, 1, 3, 0),
+("Cinturón Florencia", 2500, "Cinturón de cuero negro", "/img/cinto3.jpg", NULL, 1, 3, 0);
 
 INSERT INTO fajuviDB.users(firstName, lastName, email, password, profileImage, roleId, deleted) VALUES 
-("María Victoria", "Barrionuevo", "vikibarrionuevo@gmail.com", "1234", NULL, 1, 0),
-("Juan", "Seco", "juan@gmail.com", "123456", NULL, 1, 0),
-("Fabian", "Perez", "fabip@gmail.com", "hola456", NULL, 1, 0),
+("María Victoria", "Barrionuevo", "vikibarrionuevo@gmail.com", "1234", "1638300002754_img.png", 1, 0),
+("Juan", "Seco", "juan@gmail.com", "123456", "1638227005938_img.png", 1, 0),
+("Fabian", "Perez", "fabip@gmail.com", "hola456", "1638913546374_img.jpg", 1, 0),
 ("Virginia", "Ascárate", "virginiaasc@gmail.com", "9876hola", NULL, 1, 0);
 
 INSERT INTO fajuviDB.carts(userId, totalPrice) VALUES 
