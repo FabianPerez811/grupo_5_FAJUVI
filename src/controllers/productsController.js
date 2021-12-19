@@ -1,27 +1,24 @@
-const path = require('path');
-const fs = require('fs');
-
 const db = require("../database/models");
 
-const productsFilePath = path.join(__dirname, '../../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-
 const productController = {
-    //muestra el listado del home:
-    productos: (req, res) => {
-        // le pasamos a la vista el array de productos que obtuvimos a partir
-        // del JSON.
-        res.render('productos', { productos: products })
+    //muestra al usuario el listado de todos los productos disponibles: 
+    productos: function (req, res) {
+        db.Products.findAll().then(function (productos) {
+            return res.render("productos", { productos: productos });
+        });
     },
 
     //muestra al usuario el detalle de un producto: 
-    detalle: (req, res) => {
-        const id = req.params.id;
-        const producto = products.find(product => {
-            return product.id == id;
-        })
-        res.render('detalleProducto', { productSend: producto })
+    detalle: function (req, res) {
+        db.Products.findByPk(req.params.id)
+            .then(function (producto) {
+                if (producto) {
+                    return res.render('detalleProducto', { productSend: producto });
+                } else {
+                    return res.render('error', { mensaje: "El producto " + req.params.id + " no existe" });
+                }
+
+            });
     },
 
     //muestra la vista del carrito de compras:
@@ -35,8 +32,7 @@ const productController = {
         res.render('abmCrear')
     },
 
-    abmCreado: function (req, res) {
-        console.log(req.body);// accion de agregar prod   
+    abmCreado: function (req, res) {// accion de agregar prod   
         db.Products.create({
             name: req.body.nombre,
             price: req.body.precio,
@@ -44,11 +40,15 @@ const productController = {
             image: req.body.foto,
             categoryId: req.body.categoria,
             deleted: 0
-        }).then(function () {
-            console.log('Creado OK');
-            return res.redirect('/admin/products');
+        }).then(function (producto) {
+            const talles = req.body.talle ? req.body.talle : [];
+            producto.setSizes(talles)
+                .then(function () {
+                    return res.redirect('/admin/products');
+                });
+
         }, function (error) {
-            console.log('error al crear el product: ' + error)
+            console.log('error al crear el producto: ' + error)
         });
     },
 
@@ -71,30 +71,44 @@ const productController = {
             include: [{ association: "category" }, { association: "sizes" }]
         })
             .then(function (product) {
-                console.log(product.sizes[0].size);
-                return res.render('abmEditar', { productoAEditar: product });
+                if (product) {
+                    const productSizes = product.sizes.map(function (size) {
+                        return size.id;
+                    });
+                    return res.render('abmEditar', { productoAEditar: product, sizes: productSizes });
+                } else {
+                    return res.render("error", { mensaje: "No se encontró el producto " + req.params.id });
+                }
+            }).catch(function (error) {
+                console.log(error);
             })
     },
 
     abmEditado: function (req, res) {
-        db.Products.update({
-            name: req.body.nombre,
-            price: req.body.precio,
-            description: req.body.descripcion,
-            image: req.body.foto,
-            //sizeId: req.body.??,
-            category: req.body.categoria,
-            deleted: 0
-        }, {
-            where: {
-                id: req.params.id
-            }
-        });
 
-        return res.redirect('/admin/products/' + req.params.id + '/edit');
+        db.Products.findByPk(req.params.id).then(function (product) {
+
+            const talles = req.body.talle ? req.body.talle : [];
+            product.setSizes(talles).then(function () {
+                db.Products.update({
+                    name: req.body.nombre,
+                    price: req.body.precio,
+                    description: req.body.descripcion,
+                    image: req.body.foto,
+                    category: req.body.categoria,
+                    deleted: 0
+                }, {
+                    where: {
+                        id: req.params.id
+                    }
+                });
+            }).then(function () {
+                return res.redirect('/admin/products/' + req.params.id + '/edit');
+            });
+        });
     },
 
-    abmEliminar: function (req, res) {
+    abmEliminar: function (req, res) {//hacer softDeleted
         db.Products.destroy({
             where: {
                 id: req.params.id

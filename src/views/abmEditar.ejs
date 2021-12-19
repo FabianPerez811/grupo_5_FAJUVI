@@ -108,15 +108,15 @@
           </div>
           <div class="tarjeta checkbox">
             <p class="subtitulo">Seleccionar talle</p>
-            <input type="checkbox" id="xs" name="talle" value="xs"/>
+            <input type="checkbox" id="xs" name="talle[]" value="1" <%= sizes.includes(1) ? "checked" : "" %> />
             <label for="xs">XS</label>
-            <input type="checkbox" id="s" name="talle" value="s" />
+            <input type="checkbox" id="s" name="talle[]" value="2" <%= sizes.includes(2) ? "checked" : "" %> />
             <label for="s">S</label>
-            <input type="checkbox" id="m" name="talle" value="m" />
+            <input type="checkbox" id="m" name="talle[]" value="3" <%= sizes.includes(3) ? "checked" : "" %> />
             <label for="">M</label>
-            <input type="checkbox" id="l" name="talle" value="l" />
+            <input type="checkbox" id="l" name="talle[]" value="4" <%= sizes.includes(4) ? "checked" : "" %> />
             <label for="l">L</label>
-            <input type="checkbox" id="xl" name="talle" value="xl" />
+            <input type="checkbox" id="xl" name="talle[]" value="5" <%= sizes.includes(5) ? "checked" : "" %> />
             <label for="xl">XL</label>
           </div>
           <div class="boton-publicar">
