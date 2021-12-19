@@ -34,5 +34,14 @@
   "password": "$2a$10$asAOwa9hf..8H/N.vxAgau5lUOEqM620kflVwB/kn4A33wOsRtTbS",
   "category": " Administrador",
   "image": "1638913546374_img.jpg"
+ },
+ {
+  "id": 5,
+  "firstName": "Maria",
+  "lastName": "Barrionuevo",
+  "email": "victoriabarrionuevo@hotmail.com",
+  "password": "$2a$10$jU9xy4jorb1Z5YUkM7cL1.KbMtfRgvzTXyJ9PXnun8EHc5ncPmqMq",
+  "category": " Administrador",
+  "image": "1639939467841_img.png"
  }
 ]

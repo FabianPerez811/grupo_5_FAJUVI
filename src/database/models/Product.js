@@ -21,10 +21,7 @@ module.exports = (sequelize, dataTypes) => {
         image: {
             type: dataTypes.STRING
         },
-        popular:{
-            type: dataTypes.INTEGER
-        },
-        categoryId:{
+        categoryId: {
             type: dataTypes.INTEGER
         },
         deleted: {
@@ -40,28 +37,24 @@ module.exports = (sequelize, dataTypes) => {
     }
     const Product = sequelize.define(alias, cols, config);
 
-    Product.associate = function(models) {
+    Product.associate = function (models) {
         Product.belongsTo(models.Categories, {
             as: "category",
             foreignKey: "categoryId"
         });
-        Product.hasMany(models.CartsProducts, {
-            as: "cartProducts",
-            foreignKey: "productId" 
-        });
         Product.belongsToMany(models.Sizes, {
             as: 'sizes',
             through: 'products_sizes',
-            foreignKey:'productId',
-            otherKey:'sizeId',
-            timestamps:false
+            foreignKey: 'productId',
+            otherKey: 'sizeId',
+            timestamps: false
         });
         Product.belongsToMany(models.Carts, {
             as: 'carts',
             through: 'cartsProducts',
-            foreignKey:'productId',
-            otherKey:'cartsId',
-            timestamps:false
+            foreignKey: 'productId',
+            otherKey: 'cartsId',
+            timestamps: false
         });
     }
 

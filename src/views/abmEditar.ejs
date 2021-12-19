@@ -99,16 +99,16 @@
             <div class="caja-tarjeta">
               <select name="categoria" id="categoria" required>
                 <option value="seleccionar">Seleccionar categoría</option>
-                <option value="pulsera">Pulseras</option>
-                <option value="aro">Aros</option>
-                <option value="cinturon">Cinturones</option>
-                <option value="anillo">Anillos</option>
+                <option value="pulsera" <%= productoAEditar.category.id == 1 ? "selected" : "" %> >Pulseras</option>
+                <option value="aro" <%= productoAEditar.category.id == 2 ? "selected" : "" %> >Aros</option>
+                <option value="cinturon" <%= productoAEditar.category.id == 3 ? "selected" : "" %> >Cinturones</option>
+                <option value="anillo" <%= productoAEditar.category.id == 4 ? "selected" : "" %> >Anillos</option>
               </select>
             </div>
           </div>
           <div class="tarjeta checkbox">
             <p class="subtitulo">Seleccionar talle</p>
-            <input type="checkbox" id="xs" name="talle" value="xs" />
+            <input type="checkbox" id="xs" name="talle" value="xs"/>
             <label for="xs">XS</label>
             <input type="checkbox" id="s" name="talle" value="s" />
             <label for="s">S</label>

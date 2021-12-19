@@ -14,9 +14,9 @@ const productController = {
         // del JSON.
         res.render('productos', { productos: products })
     },
-    
+
     //muestra al usuario el detalle de un producto: 
-    detalle: (req, res) => { 
+    detalle: (req, res) => {
         const id = req.params.id;
         const producto = products.find(product => {
             return product.id == id;
@@ -35,7 +35,7 @@ const productController = {
         res.render('abmCrear')
     },
 
-    abmCreado: function (req, res) { 
+    abmCreado: function (req, res) {
         console.log(req.body);// accion de agregar prod   
         db.Products.create({
             name: req.body.nombre,
@@ -67,8 +67,11 @@ const productController = {
     },
 
     abmEditar: function (req, res) {
-        db.Products.findByPk(req.params.id)
+        db.Products.findByPk(req.params.id, {
+            include: [{ association: "category" }, { association: "sizes" }]
+        })
             .then(function (product) {
+                console.log(product.sizes[0].size);
                 return res.render('abmEditar', { productoAEditar: product });
             })
     },
@@ -91,15 +94,15 @@ const productController = {
         return res.redirect('/admin/products/' + req.params.id + '/edit');
     },
 
-    abmEliminar: function(req,res){
+    abmEliminar: function (req, res) {
         db.Products.destroy({
             where: {
-                id:req.params.id
+                id: req.params.id
             }
         })
 
         return res.redirect('/admin/products/')
-    }    
+    }
 }
 
 module.exports = productController;

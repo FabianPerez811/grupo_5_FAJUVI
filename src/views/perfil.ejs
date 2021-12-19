@@ -23,13 +23,15 @@
             <img src="/img/img_users/<%= user.image%>" alt="">
         </div>
         <div class="caja-datos">
+          <div class="perfil-editar">
             <div class="titulo">Mis datos</div>
-            <div><i class="fas fa-user"></i><%= user.firstName%> <%= user.lastName %> </div>
-            <div><i class="fas fa-envelope"></i><%= user.email%></div>       
-            <form action="/user/profile" method="post">
-              <button class="cerrarPerfil"type="submit" > Cerrar Sesion </button>
-            </form>
-     
+            <div><a href="#"></a><i class="fas fa-user-edit"></i></div>
+          </div>            
+          <div><i class="fas fa-user"></i><%= user.firstName%> <%= user.lastName %> </div>
+          <div><i class="fas fa-envelope"></i><%= user.email%></div>       
+          <form action="/user/profile" method="post">
+            <button class="cerrarPerfil"type="submit" > Cerrar Sesion </button>
+          </form>     
         </div> 
       </div> 
     </main>

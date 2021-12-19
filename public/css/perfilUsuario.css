@@ -34,12 +34,17 @@
   padding-right: 8px;
 }
 
+.perfil-editar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  background-color: #d6d6d6;
+}
+
 .caja-datos .titulo {
   font-size: 16px;
   font-weight: bold;
-  background-color: #d6d6d6;
   color: #2a2c25;
-  margin-bottom: 10px;
 }
 
 .cerrarPerfil {

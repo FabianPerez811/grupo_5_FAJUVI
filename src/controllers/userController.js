@@ -77,7 +77,8 @@ perfil: (req, res) => {
 cerrrarSesion:(req, res) => {
     req.session.destroy();
     return res.redirect('/')
-},
+}
+
 }
 
 module.exports = userController;
