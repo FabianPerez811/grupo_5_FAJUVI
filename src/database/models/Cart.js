@@ -6,12 +6,12 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        userId:{
-            type:dataTypes.INTEGER,
+        userId: {
+            type: dataTypes.INTEGER,
             allowNull: false
         },
-        totalPrice:{
-            type:dataTypes.INTEGER,
+        totalPrice: {
+            type: dataTypes.INTEGER,
             allowNull: false
         }
 
@@ -23,15 +23,22 @@ module.exports = (sequelize, dataTypes) => {
     }
     const Cart = sequelize.define(alias, cols, config);
 
-    Cart.associate = function(models) {
+    Cart.associate = function (models) {
         Cart.belongsTo(models.Users, {
             as: "carts",
             foreignKey: "userId"
-        }),
+        });
         Cart.hasMany(models.CartsProducts, {
             as: "cartsCartsProducts",
             foreignKey: "cartId"
-        })
+        });
+        Cart.belongsToMany(models.Products, {
+            as: 'products',
+            through: 'cartsProducts',
+            foreignKey: 'cartId',
+            otherKey: 'productsId',
+            timestamps: false
+        });
 
     }
 
