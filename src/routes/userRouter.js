@@ -23,13 +23,11 @@ const autenticacionMiddleware = require('../../middlewares/autenticacionMiddlewa
 
 //Formulario de login
 router.get ('/sign-in', usuarioMiddleware,userController.acceso);
-
 //proceso de login
 router.post('/sign-in', userController.procesoAcceso); 
 
 //Formulario de registro:
 router.get ('/sign-up', usuarioMiddleware, userController.registro);
-
 //Procesar el registro
 router.post ('/sign-up', upload.single('fotoPerfil') ,validacionRegistro, userController.procesoRegistro);
 

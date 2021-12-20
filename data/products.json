@@ -1,15 +1,5 @@
 [
  {
-  "id": "1",
-  "name": "Aros Marsella",
-  "description": "Aros redondos de plata",
-  "price": 1500,
-  "image": "/img/aro2.jpg",
-  "category": "Aros",
-  "size": "S",
-  "popular": true
- },
- {
   "id": "2",
   "name": "Aros Lyon",
   "description": "Aros de acero quirurgico con dijes de fundición.",
