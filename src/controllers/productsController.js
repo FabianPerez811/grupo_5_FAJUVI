@@ -85,6 +85,7 @@ const productController = {
     },
 
     abmEditado: function (req, res) {
+        console.log(req.file);
 
         db.Products.findByPk(req.params.id).then(function (product) {
 
@@ -94,7 +95,7 @@ const productController = {
                     name: req.body.nombre,
                     price: req.body.precio,
                     description: req.body.descripcion,
-                    image: req.body.foto,
+                    image: "/img/" + req.file.filename,
                     category: req.body.categoria,
                     deleted: 0
                 }, {
