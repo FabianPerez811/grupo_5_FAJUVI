@@ -39,7 +39,7 @@ router.post('/profile', userController.cerrrarSesion);
 //Formulario de edicion usuario
 router.get('/editUser', autenticacionMiddleware, userController.editarUsuario);
 
-router.post('/editUser', userController.editadoUsuario);
+router.post('/editUser',upload.single('fotoPerfil'), userController.editadoUsuario);
 
 
 

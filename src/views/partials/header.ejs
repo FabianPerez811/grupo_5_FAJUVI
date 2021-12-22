@@ -32,8 +32,9 @@
         <% if (!locals.isLogged) { %>     
         <a href="/user/sign-in">Iniciar Sesión</a>
         <a href="/user/sign-up" >Crear Cuenta</a>
-        <% }%>
+        <% }else{%>
         <a href="/admin/products"><i class="fas fa-users-cog"></i></a> 
+        <% }%>
       </div>
     </div>
     <div class="cabecera-logo">

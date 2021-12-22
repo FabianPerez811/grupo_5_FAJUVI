@@ -96,8 +96,30 @@ editarUsuario:(req, res) => {
    res.render('editarUsuario',{user:req.session.userLogged})
 },
 editadoUsuario:(req, res) => {
+
+    let userEdited = {
+        firstName: req.body.nombre,
+        lastName: req.body.apellido,
+        email: req.body.email,
+        profileImage: req.file.filename ? req.file.filename : req.session.userLogged.profileImage 
+    }
+   /* console.log(req.session.userLogged);
+    req.session.userToLog = userEdited
+
+    console.log(userEdited);
+    console.log(req.session.userLogged.profileImage);
+    console.log(req.session.userLogged);*/
     
-    res.render('editarUsuario',{user:req.session.userLogged})
+    db.Users.update(
+        userEdited
+    ,{
+        where:{
+            id:req.session.userLogged.id
+        }
+    }).then(()=>{
+        
+        res.render('perfil',{user:userEdited})
+    })
  },
 
 }
