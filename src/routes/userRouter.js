@@ -24,7 +24,7 @@ const autenticacionMiddleware = require('../../middlewares/autenticacionMiddlewa
 //Formulario de login
 router.get ('/sign-in', usuarioMiddleware,userController.acceso);
 //proceso de login
-router.post('/sign-in', userController.procesoAcceso); 
+router.post('/sign-in', upload.single('fotoPerfil'), userController.procesoAcceso); 
 
 //Formulario de registro:
 router.get ('/sign-up', usuarioMiddleware, userController.registro);
@@ -35,5 +35,7 @@ router.post ('/sign-up', upload.single('fotoPerfil') ,validacionRegistro, userCo
 router.get('/profile', autenticacionMiddleware, userController.perfil);
 
 router.post('/profile', userController.cerrrarSesion);
+
+router.get('/editUser', autenticacionMiddleware, userController.editarUsuario);
 
 module.exports = router;

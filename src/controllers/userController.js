@@ -4,7 +4,8 @@ const User = require('../../Models/Users.js')
 const bcryptjs = require('bcryptjs')
 const usersFilePath = path.join(__dirname, '../../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-const {validationResult} = require('express-validator')
+const {validationResult} = require('express-validator');
+const db = require('../database/models/index.js');
 
 const userController = {
 
@@ -22,32 +23,36 @@ procesoRegistro: (req, res) => { //crear usuario
         })
     }
 
-    let userDB = User.findByMail(req.body.email);
-
-    if(userDB){
-        return res.render('registro',{
-            errors:{ 
-                email:{
-                     msg:'Este mail ya esta registrado'
-                    }
-                },
-            oldData: req.body   
-        });
-    }
-
-    let newUser = {
-        id: User.generarID(),
-        firstName: req.body.nombre,
-        lastName: req.body.apellido,
+    db.Users.findAll({where : {
         email: req.body.email,
-        password:bcryptjs.hashSync(req.body.password , 10),
-        category: req.body.catUsuario,
-        image: req.file.filename,
-    }
-    users.push(newUser);
-    fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "))
-    res.redirect('/user/sign-in')
-
+        deleted : '1'
+    }})
+            .then((user)=>{
+                let userDB = user;
+                if(userDB > 0){
+                    return res.render('registro',{
+                        errors:{ 
+                            email:{
+                                 msg:'Este mail ya esta registrado'
+                                }
+                            },
+                        oldData: req.body 
+                    })
+                }else{
+                    db.Users.create({
+                        firstName: req.body.nombre,
+                        lastName: req.body.apellido,
+                        email: req.body.email,
+                        password:bcryptjs.hashSync(req.body.password , 10),
+                        roleId: req.body.catUsuario,
+                        profileImage: req.file.filename,
+                    }).then(()=>{
+                        res.redirect('/user/sign-in')
+                    }).catch((error)=>{
+                        console.log(error);
+                    })
+                }
+            })
 },
 
 acceso:(req, res) => {
@@ -55,18 +60,26 @@ acceso:(req, res) => {
 },
 
 procesoAcceso: (req,res) =>{
-    let userToLog = User.findByMail(req.body.email)
-    
-    if(userToLog){  
-    let passOK = bcryptjs.compareSync(req.body.password, userToLog.password)
-        if(passOK){
-            delete userToLog.password
-            req.session.userLogged = userToLog;
-
-            return res.redirect('/user/profile')
-        }return res.render('acceso',{errors:{password:{ msg: 'Contraseña incorrecta.'}}});
-    }
-    return res.render('acceso',{errors:{email:{ msg: 'No exite el mail.'}}});
+    db.Users.findAll({where : {
+        email: req.body.email,
+        deleted : '0'}})
+        .then((userToLog)=>{
+            
+              if(userToLog){  
+                let userPass = userToLog[0].dataValues.password;
+                let passOK = bcryptjs.compareSync(req.body.password, userPass)
+                    if(passOK){
+                        delete userToLog.password
+                        req.session.userLogged = userToLog[0].dataValues;
+            
+                        return res.redirect('/user/profile')
+                    }else{
+                        return res.render('acceso',{errors:{password:{ msg: 'Contraseña incorrecta.'}}});
+                    }     
+                    }                 
+        }).catch(()=>{
+            return res.render('acceso',{errors:{email:{ msg: 'No exite el mail.'}}}); 
+        })
 },
 
 perfil: (req, res) => {
@@ -77,7 +90,11 @@ perfil: (req, res) => {
 cerrrarSesion:(req, res) => {
     req.session.destroy();
     return res.redirect('/')
-}
+},
+editarUsuario:(req, res) => {
+    
+   res.render('editarUsuario',{user:req.session.userLogged})
+},
 
 }
 

@@ -20,12 +20,12 @@
       <h3 class="titulo-destacado"> Mi Cuenta</h3>
       <div class="box-datosUsuario">
         <div class="imagen-usuario">
-            <img src="/img/img_users/<%= user.image%>" alt="">
+            <img src="/img/img_users/<%= user.profileImage%>" alt="">
         </div>
         <div class="caja-datos">
           <div class="perfil-editar">
             <div class="titulo">Mis datos</div>
-            <div><a href="#"></a><i class="fas fa-user-edit"></i></div>
+            <div><a href="/user/editUser"><i class="fas fa-user-edit"></i></a></div>
           </div>            
           <div><i class="fas fa-user"></i><%= user.firstName%> <%= user.lastName %> </div>
           <div><i class="fas fa-envelope"></i><%= user.email%></div>       

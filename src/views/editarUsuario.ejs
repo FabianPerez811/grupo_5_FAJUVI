@@ -22,27 +22,27 @@
                 <p>Editar cuenta</p>           
                 <label for="nombre">Nombre</label> 
                     <div>
-                        <input type="text" name="nombre" id="nombre" value="" />
+                        <input type="text" name="nombre" id="nombre" value="<%= user.firstName%>" />
                     </div>             
                 <label for="nombre">Apellido</label> 
                     <div>
-                        <input type="text" name="apellido" id="apellido"  value=""/>
+                        <input type="text" name="apellido" id="apellido"  value="<%= user.lastName%>"/>
                     </div> 
                 <label for="email">Email</label>
                     <div>
-                        <input type="email" name="email" id="email"  value=""/>
+                        <input type="email" name="email" id="email"  value="<%= user.email%>"/>
                     </div>
                 <div class="cajaFlexUsuario">
               <div class="inputIMG">
                 <label for="fotoPerfil">Foto de Perfil</label>         
                 <div class="imagenPerfil">
-                  <input class="inputImagen" type="file" name="fotoPerfil" id="fotoPerfil"  />
+                  <input class="inputImagen" type="file" name="fotoPerfil" id="fotoPerfil"  value="<%= user.profileImage%>"/>
                 </div>
               </div>
                 </div> 
             </div>
             <div class="boton-iniciar">
-                <button class="boton-crear" type="submit">Crear cuenta</button>
+                <button class="boton-crear" type="submit">Editar cuenta</button>
             </div>
             <div class="boton-cancelar">
                 <a href="">Cancelar</a>
