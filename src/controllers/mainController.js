@@ -10,7 +10,7 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const mainController = {
 
     indice: (req, res) => {
-        const promise = db.Products.findAll();
+        const promise = db.Products.findAll({where:{deleted: '0'}});
 
         promise.then(function (productos) {
                 const productosPopulares = productos.filter(function (producto) {

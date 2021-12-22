@@ -3,7 +3,7 @@ const db = require("../database/models");
 const productController = {
     //muestra al usuario el listado de todos los productos disponibles: 
     productos: function (req, res) {
-        db.Products.findAll().then(function (productos) {
+        db.Products.findAll({where:{deleted: '0'}}).then(function (productos) {
             return res.render("productos", { productos: productos });
         });
     },
@@ -53,7 +53,7 @@ const productController = {
     },
 
     abmListar: (req, res) => {
-        db.Products.findAll()
+        db.Products.findAll({where:{deleted: '0'}})
             .then(function (listProducts) {
                 return res.render('abmListar', { productos: listProducts })
             })
@@ -110,7 +110,9 @@ const productController = {
     },
 
     abmEliminar: function (req, res) {//hacer softDeleted
-        db.Products.destroy({
+        db.Products.update({
+            deleted:1
+        },{
             where: {
                 id: req.params.id
             }
