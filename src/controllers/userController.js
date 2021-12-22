@@ -6,6 +6,7 @@ const usersFilePath = path.join(__dirname, '../../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const {validationResult} = require('express-validator');
 const db = require('../database/models/index.js');
+const { localsName } = require('ejs');
 
 const userController = {
 
@@ -96,20 +97,12 @@ editarUsuario:(req, res) => {
    res.render('editarUsuario',{user:req.session.userLogged})
 },
 editadoUsuario:(req, res) => {
-
     let userEdited = {
         firstName: req.body.nombre,
         lastName: req.body.apellido,
         email: req.body.email,
         profileImage: req.file.filename ? req.file.filename : req.session.userLogged.profileImage 
     }
-   /* console.log(req.session.userLogged);
-    req.session.userToLog = userEdited
-
-    console.log(userEdited);
-    console.log(req.session.userLogged.profileImage);
-    console.log(req.session.userLogged);*/
-    
     db.Users.update(
         userEdited
     ,{
@@ -117,9 +110,14 @@ editadoUsuario:(req, res) => {
             id:req.session.userLogged.id
         }
     }).then(()=>{
-        
-        res.render('perfil',{user:userEdited})
-    })
+
+        db.Users.findByPk(req.session.userLogged.id)
+        .then((user)=>{
+            req.session.userLogged = user
+            res.render('perfil',{user})
+        })
+    }) 
+
  },
 
 }
