@@ -36,6 +36,12 @@ router.get('/profile', autenticacionMiddleware, userController.perfil);
 
 router.post('/profile', userController.cerrrarSesion);
 
+//Formulario de edicion usuario
 router.get('/editUser', autenticacionMiddleware, userController.editarUsuario);
+
+router.post('/editUser', userController.editadoUsuario);
+
+
+
 
 module.exports = router;

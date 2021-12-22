@@ -95,6 +95,10 @@ editarUsuario:(req, res) => {
     
    res.render('editarUsuario',{user:req.session.userLogged})
 },
+editadoUsuario:(req, res) => {
+    
+    res.render('editarUsuario',{user:req.session.userLogged})
+ },
 
 }
 
