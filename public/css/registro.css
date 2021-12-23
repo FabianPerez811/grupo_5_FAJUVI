@@ -154,6 +154,18 @@ a {
   cursor: pointer;
 }
 
+.imagenPerfil {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px 0px;
+}
+
+.imagenPerfil img{
+  margin-right: 10px;
+}
+
 @media (min-width: 768px) {
   .caja-registro {
     max-width: 60%;
@@ -171,11 +183,11 @@ a {
   }
 
   .boton-cancelar,
-  .boton-crear{
+  .boton-crear {
     width: 30%;
   }
 
-  .boton-sesion{
+  .boton-sesion {
     width: 30%;
   }
 }
@@ -187,11 +199,11 @@ a {
   }
 
   .boton-cancelar,
-  .boton-crear{
+  .boton-crear {
     width: 20%;
   }
 
-  .boton-sesion{
+  .boton-sesion {
     width: 20%;
   }
 }

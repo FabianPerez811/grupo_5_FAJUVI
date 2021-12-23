@@ -140,6 +140,21 @@ const productController = {
         })
 
         return res.redirect('/admin/products/')
+    },
+    searchProducts: (req, res) => {
+        console.log(req.query.search);
+        const Op = Sequelize.Op;
+        db.Products.findAll({
+            where: {
+                name: {
+                    [Op.like]: "%" + req.query.search + "%"
+                }
+            }
+
+        }).then(function (productos) {
+            res.render('busquedaProducto', { search: req.query.search, resultado: productos });
+        })
+
     }
 }
 

@@ -52,43 +52,38 @@
         </div>
       </div>
       <div class="panel-abm">
-        <form class="caja-busqueda" action="/admin/products/searchProducts"  method="GET">
-          <input type="text" placeholder="Buscar..." name="search" value=""/>
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </form>
         <div class="caja-crearProducto">
           <div class="titulo">
-            Productos
+            Productos encontrados para la busqueda de '<%= search %>'
            </div>
            <div class="icono-crear">
             <a href="/admin/products/create"><i class="fas fa-plus-circle"></i></a>
            </div>           
         </div> 
-         <% for(i = 0; i < productos.length; i++) { %>
+         <% for(i = 0; i < resultado.length; i++) { %>
           <div class="tarjeta-producto">
             <div class="check-producto">
               <i class="fas fa-check-square"></i>
             </div>
               <div class="caja-imagen">          
-                <a href="/admin/products/<%= productos[i].id%>">
-                  <img src="<%= productos[i].image %>" alt="<%= productos[i].name %>" />
+                <a href="/admin/products/<%= resultado[i].id%>">
+                  <img src="<%= resultado[i].image %>" alt="<%= resultado[i].name %>" />
                 </a>
               </div>
               <div class="caja-descripcion">
-                <h4 class="producto"><%= productos[i].name %></h4>
+                <h4 class="producto"><%= resultado[i].name %></h4>
                 <div class="stock">
                   <div class="total-stock">1</div>
                   <div>en stock</div>
                 </div>              
-                <p class="precio"><strong>Precio</strong> $ <%= productos[i].price %></p>
+                <p class="precio"><strong>Precio</strong> $ <%= resultado[i].price %></p>
               </div>
               <div class="caja-editar">
-                <a href="/admin/products/<%= productos[i].id%>/edit"><i class="fas fa-pen"></i></a>
+                <a href="/admin/products/<%= resultado[i].id%>/edit"><i class="fas fa-pen"></i></a>
                 
-                <form action="/admin/products/<%= productos[i].id%>?_method=DELETE" method="POST">
+                <form action="/admin/products/<%= resultado[i].id%>?_method=DELETE" method="POST">
                   <button type="submit" class="action-button delete"><i class="fas fa-trash-alt"></i></button>
-                </form>
-                
+                </form>                
               </div>
           </div> 
           <% } %>            
