@@ -1,9 +1,11 @@
 const db = require("../database/models");
+const Sequelize = require('sequelize');
+
 
 const productController = {
     //muestra al usuario el listado de todos los productos disponibles: 
     productos: function (req, res) {
-        db.Products.findAll({where:{deleted: '0'}}).then(function (productos) {
+        db.Products.findAll({ where: { deleted: '0' } }).then(function (productos) {
             return res.render("productos", { productos: productos });
         });
     },
@@ -25,6 +27,25 @@ const productController = {
     carrito: (req, res) => {
         res.render('carritoProductos')
     },
+
+    //permite al usuario buscar un producto:
+    search: (req, res) => {
+        console.log(req.query.search);
+        const Op = Sequelize.Op;
+        db.Products.findAll({
+            where: {
+                name: {
+                    [Op.like]: "%" + req.query.search + "%"
+                },
+                deleted: 0
+            }
+
+        }).then(function (productosEncontrados) {
+            res.render('resultadoBusqueda', { search: req.query.search, resultado: productosEncontrados });
+        })
+
+    },
+
 
     // CRUD:
     abmCrear: (req, res) => // muestra pantalla para crear
@@ -53,7 +74,7 @@ const productController = {
     },
 
     abmListar: (req, res) => {
-        db.Products.findAll({where:{deleted: '0'}})
+        db.Products.findAll({ where: { deleted: '0' } })
             .then(function (listProducts) {
                 return res.render('abmListar', { productos: listProducts })
             })
@@ -111,8 +132,8 @@ const productController = {
 
     abmEliminar: function (req, res) {//hacer softDeleted
         db.Products.update({
-            deleted:1
-        },{
+            deleted: 1
+        }, {
             where: {
                 id: req.params.id
             }

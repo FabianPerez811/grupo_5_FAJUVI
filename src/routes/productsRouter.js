@@ -7,6 +7,7 @@ const productsController = require('../controllers/productsController');
 
 router.get('/cart', productsController.carrito); // vista de carrito de producto
 router.get('/list', productsController.productos); // vista listado productos ecommerce
+router.get('/search', productsController.search);//vista de resultado búsqueda
 router.get('/:id', productsController.detalle); // vista detalle prod
 
 

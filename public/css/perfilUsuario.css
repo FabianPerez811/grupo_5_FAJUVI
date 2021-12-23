@@ -64,6 +64,16 @@
   background-color: #71a2ae;
 }
 
+.fas.fa-user-edit{
+  color:#6d6f74;
+  transition: background-color 0.5s;
+}
+
+.fas.fa-user-edit:hover{
+  color:#71a2ae;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .box-datosUsuario {
     display: flex;

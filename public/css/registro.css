@@ -174,11 +174,24 @@ a {
   .boton-crear{
     width: 30%;
   }
+
+  .boton-sesion{
+    width: 30%;
+  }
 }
 
 @media (min-width: 1280px) {
   .caja-registro {
     max-width: 50%;
     padding: 10px 20px;
+  }
+
+  .boton-cancelar,
+  .boton-crear{
+    width: 20%;
+  }
+
+  .boton-sesion{
+    width: 20%;
   }
 }

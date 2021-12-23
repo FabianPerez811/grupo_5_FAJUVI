@@ -22,7 +22,6 @@ const mainController = {
                 console.error(error)
             })
     }
-
 }
 
 module.exports = mainController;

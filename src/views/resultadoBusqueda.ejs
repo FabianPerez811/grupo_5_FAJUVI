@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <%- include('./partials/head')  %> 
+    <link rel="stylesheet" href="/css/indice.css" />
+  </head>
+
+  <body>
+     <%-  include('./partials/header')  %> 
+
+    <main>
+        <h3 class="titulo-destacado">Productos encontrados para la busqueda de '<%= search %>'</h3>
+        <section class="productos-destacados">
+            <% for(i = 0; i < resultado.length; i++) { %>
+            <article>
+            <div class="caja-imagen">
+              <a href="/products/<%= resultado[i].id %>">
+                <img src="<%= resultado[i].image %>" alt="imagen de collar" />
+              </a>
+            </div>
+            <h4 class="producto"><%= resultado[i].name %></h4>
+            <p class="precio">$<%= resultado[i].price %></p>
+            <p class="cuotas">6 Cuotas sin interés de $<%= (resultado[i].price / 6).toFixed(2) %></p>
+            </article> 
+            <% } %>       
+        </section>
+    </main>
+
+    <%-  include('./partials/footer')  %> 
+  </body>
+</html>
