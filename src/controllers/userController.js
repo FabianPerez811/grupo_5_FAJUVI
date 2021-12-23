@@ -115,6 +115,7 @@ editadoUsuario:(req, res) => {
         db.Users.findByPk(req.session.userLogged.id)
         .then((user)=>{
             req.session.userLogged = user
+            res.locals.userLogged = req.session.userLogged
             res.render('perfil',{user})
         })
     }) 
