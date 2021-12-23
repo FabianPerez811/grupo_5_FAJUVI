@@ -97,11 +97,12 @@ editarUsuario:(req, res) => {
    res.render('editarUsuario',{user:req.session.userLogged})
 },
 editadoUsuario:(req, res) => {
+    const file= req.file ? req.file.filename : req.session.profileImage
     let userEdited = {
         firstName: req.body.nombre,
         lastName: req.body.apellido,
         email: req.body.email,
-        profileImage: req.file.filename ? req.file.filename : req.session.userLogged.profileImage 
+        profileImage: file
     }
     db.Users.update(
         userEdited
