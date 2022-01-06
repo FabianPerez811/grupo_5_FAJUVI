@@ -1,3 +1,4 @@
+const { validationResult } = require('express-validator');
 const db = require("../database/models");
 const Sequelize = require('sequelize');
 
@@ -53,24 +54,33 @@ const productController = {
         res.render('abmCrear')
     },
 
-    abmCreado: function (req, res) {// accion de agregar prod   
-        db.Products.create({
-            name: req.body.nombre,
-            price: req.body.precio,
-            description: req.body.descripcion,
-            image: req.body.foto,
-            categoryId: req.body.categoria,
-            deleted: 0
-        }).then(function (producto) {
-            const talles = req.body.talle ? req.body.talle : [];
-            producto.setSizes(talles)
-                .then(function () {
-                    return res.redirect('/admin/products');
-                });
+    abmCreado: function (req, res) {// accion de agregar prod  
+        let errors = validationResult(req);
+        if (errors.isEmpty()) {
+            db.Products.create({
+                name: req.body.nombre,
+                price: req.body.precio,
+                description: req.body.descripcion,
+                image: req.body.foto,
+                categoryId: req.body.categoria,
+                deleted: 0
+            }).then(function (producto) {
+                const talles = req.body.talle ? req.body.talle : [];
+                producto.setSizes(talles)
+                    .then(function () {
+                        return res.redirect('/admin/products');
+                    });
 
-        }, function (error) {
-            console.log('error al crear el producto: ' + error)
-        });
+            }, function (error) {
+                console.log('error al crear el producto: ' + error)
+            });
+        } else {
+            res.render('abmCrear', { 
+                erroresCrear: errors.array(),
+                datoCargado:req.body
+             });
+        }
+
     },
 
     abmListar: (req, res) => {

@@ -58,7 +58,12 @@
       </div>
       <div class="panel-abm">
         <p class="titulo">Agregar un producto</p>
-       
+        <% if (locals.erroresCrear) {
+            erroresCrear.forEach(error => { %>
+            <p class="feedbackErrores"> <%= error.msg %></p>
+        <% })
+          } 
+        %>
         <form class="agregar-producto" action="/admin/products" method="post" enctype="multipart/form-data">
           <div class="tarjeta">
             <div>
@@ -70,14 +75,13 @@
               <input
                 type="text"
                 name="nombre"
-                placeholder="Ej: Aro mariposa"
-                required
-              />
+                id="nombre"
+                placeholder="Ej: Aro mariposa" value="<%= locals.datoCargado && datoCargado.nombre ? datoCargado.nombre : '' %>" />
             </div>
             <div class="caja-tarjeta">
               <label for="descripcion">Descripción</label>
               <br />
-              <textarea name="descripcion" id="descripcion" cols="30" rows="4" required></textarea>
+              <textarea name="descripcion" id="descripcion" cols="30" rows="4" ></textarea>
             </div>
           </div>
           <div class="tarjeta">
@@ -85,7 +89,7 @@
             <div class="caja-tarjeta">
               <label for="precio">Precio</label>
               <br />
-              <input class="precio" type="text" name="precio" required />
+              <input class="precio" type="text" name="precio"/>
             </div>
           </div>
           <div class="tarjeta">
@@ -98,7 +102,7 @@
           <div class="tarjeta">
             <p class="subtitulo">Categoría</p>
             <div class="caja-tarjeta">
-              <select name="categoria" id="categoria" required>
+              <select name="categoria" id="categoria" >
                 <option value="0" disabled>Seleccionar categoría</option>
                 <option value="1">Pulseras</option>
                 <option value="2">Aros</option>
