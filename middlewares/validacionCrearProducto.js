@@ -2,7 +2,7 @@ const {body} = require('express-validator')
 
 const validacionesCrearProducto = [
     body('nombre')
-        .notEmpty().withMessage('Debes escribir el nombre del producto')
+        .notEmpty().withMessage('Debes escribir el nombre del producto').bail()
         .isLength({min:5}).withMessage('El nombre del producto debe tener al menos 5 caracteres'),
     body('descripcion')
         .notEmpty().withMessage('Debes escribir la descripción del producto').bail()
@@ -13,8 +13,16 @@ const validacionesCrearProducto = [
     body('foto')//agregar que deberá ser un archivo válido(JPG,JPEG,PNG,GIF)
         .custom((value, {req}) =>{
             let file = req.file;
+            let acceptedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];            
+
             if(!file){
-                throw new Error(('Debes subir una imagen del producto'))
+                throw new Error('Debes subir una imagen del producto');
+            } else {
+                let fileExtension = path.extname(file.originalname); //ver el path!
+                if (!acceptedExtensions.includes(fileExtension)) {
+                    throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
+                }            
+
             }
             return true
         }),

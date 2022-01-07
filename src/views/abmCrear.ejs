@@ -58,12 +58,6 @@
       </div>
       <div class="panel-abm">
         <p class="titulo">Agregar un producto</p>
-        <% if (locals.erroresCrear) {
-            erroresCrear.forEach(error => { %>
-            <p class="feedbackErrores"> <%= error.msg %></p>
-        <% })
-          } 
-        %>
         <form class="agregar-producto" action="/admin/products" method="post" enctype="multipart/form-data">
           <div class="tarjeta">
             <div>
@@ -76,12 +70,23 @@
                 type="text"
                 name="nombre"
                 id="nombre"
+                class="<%= locals.erroresCrear && erroresCrear.nombre ? 'invalido' : null %>"
                 placeholder="Ej: Aro mariposa" value="<%= locals.datoCargado && datoCargado.nombre ? datoCargado.nombre : '' %>" />
+                <% if (locals.erroresCrear && erroresCrear.nombre){ %>
+                  <div class="error">
+                    <%= erroresCrear.nombre.msg %>
+                  </div>
+                <% } %>                
             </div>
             <div class="caja-tarjeta">
               <label for="descripcion">Descripción</label>
               <br />
-              <textarea name="descripcion" id="descripcion" cols="30" rows="4" ></textarea>
+              <textarea class="<%= locals.erroresCrear && erroresCrear.descripcion ? 'invalido' : null %>"name="descripcion" id="descripcion" cols="30" rows="4" ><%= locals.datoCargado && datoCargado.descripcion ? datoCargado.descripcion : '' %></textarea>
+              <% if (locals.erroresCrear && erroresCrear.descripcion){ %>
+                <div class="error">
+                  <%= erroresCrear.descripcion.msg %>
+                </div>
+              <% } %>  
             </div>
           </div>
           <div class="tarjeta">
@@ -89,26 +94,41 @@
             <div class="caja-tarjeta">
               <label for="precio">Precio</label>
               <br />
-              <input class="precio" type="text" name="precio"/>
+              <input class="precio <%= locals.erroresCrear && erroresCrear.precio ? 'invalido' : null %>" type="text" name="precio" value="<%= locals.datoCargado && datoCargado.precio ? datoCargado.precio : '' %>"/>
+              <% if (locals.erroresCrear && erroresCrear.precio){ %>
+                <div class="error">
+                  <%= erroresCrear.precio.msg %>
+                </div>
+              <% } %>  
             </div>
           </div>
           <div class="tarjeta">
             <p class="subtitulo">Fotos</p>
-            <input type="file" id="foto" name="foto" />
+            <input type="file" id="foto" name="foto" class="inputFoto"/>
+            <% if (locals.erroresCrear && erroresCrear.foto){ %>
+              <div class="error">
+                <%= erroresCrear.foto.msg %>
+              </div>
+            <% } %>  
             <div class="caja-informacion">
-              Tamaño mínimo recomendado: ancho y alto 1024px
+              Tamaño mínimo recomendado: ancho y alto 1024px 
             </div>
           </div>
           <div class="tarjeta">
             <p class="subtitulo">Categoría</p>
             <div class="caja-tarjeta">
-              <select name="categoria" id="categoria" >
-                <option value="0" disabled>Seleccionar categoría</option>
-                <option value="1">Pulseras</option>
-                <option value="2">Aros</option>
-                <option value="3">Cinturones</option>
-                <option value="4">Anillos</option>
+              <select name="categoria" id="categoria" class="<%= locals.erroresCrear && erroresCrear.categoria ? 'invalido' : null %>">
+                <option value="" disabled selected>Seleccionar categoría</option>
+                <option value="1" <%= locals.datoCargado && datoCargado.categoria === '1' ? 'selected' : '';%>>Pulseras</option>
+                <option value="2"<%= locals.datoCargado && datoCargado.categoria === '2' ? 'selected' : '';%>>Aros</option>
+                <option value="3" <%= locals.datoCargado && datoCargado.categoria === '3' ? 'selected' : '';%>>Cinturones</option>
+                <option value="4" <%= locals.datoCargado && datoCargado.categoria === '4' ? 'selected' : '';%>>Anillos</option>
               </select>
+              <% if (locals.erroresCrear && erroresCrear.categoria){ %>
+                <div class="error">
+                  <%= erroresCrear.categoria.msg %>
+                </div>
+              <% } %>  
             </div>
           </div>
           <div class="tarjeta checkbox">

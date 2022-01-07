@@ -68,7 +68,7 @@ main {
   border: 1px solid #6d6f74b2;
   border-radius: 8px;
   padding: 8px 12px;
-  margin: 5px 0px 20px;
+  margin: 5px 0px 10px;
   width: 100%;
 }
 
@@ -234,8 +234,8 @@ main {
   margin-top: 5px;
 }
 
-.busqueda-box button i{
-  color:#83aeb8;
+.busqueda-box button i {
+  color: #83aeb8;
 }
 
 .caja-busqueda input[type='text'],
@@ -249,6 +249,23 @@ main {
 .caja-busqueda input[type='text'] {
   border-right: none;
   outline-color: #83aeb8;
+}
+
+.error {
+  margin-bottom: 10px;
+  color: #e53030;
+}
+.inputFoto{
+  margin-bottom:10px;
+}
+
+.caja-tarjeta input.invalido,
+.caja-tarjeta textarea.invalido{
+  border-color: #e53030;
+}
+
+.caja-tarjeta select.invalido{
+  border:1px solid #e53030;
 }
 
 @media (min-width: 768px) {

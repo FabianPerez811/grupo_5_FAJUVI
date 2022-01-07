@@ -56,7 +56,7 @@ const productController = {
 
     abmCreado: function (req, res) {// accion de agregar prod  
         let errors = validationResult(req);
-        console.log(errors.array())
+        console.log(errors.mapped())
         if (errors.isEmpty()) {
             db.Products.create({
                 name: req.body.nombre,
@@ -77,7 +77,7 @@ const productController = {
             });
         } else {
             res.render('abmCrear', {
-                erroresCrear: errors.array(),
+                erroresCrear: errors.mapped(),
                 datoCargado: req.body
             });
         }
