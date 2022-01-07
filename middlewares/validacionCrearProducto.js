@@ -1,4 +1,5 @@
-const {body} = require('express-validator')
+const {body} = require('express-validator');
+const path = require('path');
 
 const validacionesCrearProducto = [
     body('nombre')
@@ -18,7 +19,7 @@ const validacionesCrearProducto = [
             if(!file){
                 throw new Error('Debes subir una imagen del producto');
             } else {
-                let fileExtension = path.extname(file.originalname); //ver el path!
+                let fileExtension = path.extname(file.originalname);
                 if (!acceptedExtensions.includes(fileExtension)) {
                     throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
                 }            
