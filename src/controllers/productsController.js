@@ -117,7 +117,7 @@ const productController = {
     },
 
     abmEditado: function (req, res) {
-        console.log(req.file);
+        console.log(req.file);   
 
         db.Products.findByPk(req.params.id).then(function (product) {
 

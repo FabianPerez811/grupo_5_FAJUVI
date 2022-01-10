@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const validacionesCrearProducto = require('../../middlewares/validacionCrearProducto');
+const validacionesEditarProducto = require('../../middlewares/validacionEditarProducto');
 const productsController = require('../controllers/productsController');
 const multer = require('multer');
 
@@ -26,7 +27,7 @@ router.get('/products/searchProducts', productsController.searchProducts);//vist
 router.get('/products/:id', productsController.abmDetalle) // vista detalle prodoctos
 router.post('/products', [upload.single('foto'), validacionesCrearProducto], productsController.abmCreado) // metodo de agregar productos
 router.get('/products/:id/edit', productsController.abmEditar) // vista de edicion de producto
-router.put('/products/:id', upload.single('foto'), productsController.abmEditado) // metodo de editar producto
+router.put('/products/:id', [upload.single('foto'),validacionesEditarProducto], productsController.abmEditado) // metodo de editar producto
 router.delete('/products/:id', productsController.abmEliminar) // metodo de borrado de producto
 
 module.exports = router;
