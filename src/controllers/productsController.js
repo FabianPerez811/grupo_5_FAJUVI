@@ -117,31 +117,49 @@ const productController = {
     },
 
     abmEditado: function (req, res) {
-        console.log(req.file);   
+        let errors = validationResult(req);
 
-        db.Products.findByPk(req.params.id).then(function (product) {
+        db.Products.findByPk(req.params.id, {
+            include: [{ association: "category" }, { association: "sizes" }]
+        }).then(function (product) {
+
+            const productSizes = product.sizes.map(function (size) {
+                return size.id;
+            });
 
             const talles = req.body.talle ? req.body.talle : [];
-            product.setSizes(talles).then(function () {
-                db.Products.update({
-                    name: req.body.nombre,
-                    price: req.body.precio,
-                    description: req.body.descripcion,
-                    image: "/img/" + req.file.filename,
-                    category: req.body.categoria,
-                    deleted: 0
-                }, {
-                    where: {
-                        id: req.params.id
-                    }
+
+            if (errors.isEmpty()) {
+                product.setSizes(talles).then(function () {
+                    db.Products.update({
+                        name: req.body.nombre,
+                        price: req.body.precio,
+                        description: req.body.descripcion,
+                        image: "/img/" + req.file.filename,
+                        category: req.body.categoria,
+                        deleted: 0
+                    }, {
+                        where: {
+                            id: req.params.id
+                        }
+                    }).then(function () {
+                        return res.redirect('/admin/products/' + req.params.id + '/edit');
+                    });
+                })
+            } else {
+                res.render('abmEditar', {
+                    erroresEditar: errors.mapped(),
+                    datoCargado: req.body,
+                    productoAEditar: product,
+                    sizes: productSizes
                 });
-            }).then(function () {
-                return res.redirect('/admin/products/' + req.params.id + '/edit');
-            });
+            }
         });
+
+
     },
 
-    abmEliminar: function (req, res) {//hacer softDeleted
+    abmEliminar: function (req, res) {
         db.Products.update({
             deleted: 1
         }, {

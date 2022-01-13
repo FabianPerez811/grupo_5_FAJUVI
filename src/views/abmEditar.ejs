@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="/css/abmProducto.css" /> 
 
 </head>
-
   <body>
     <header>
       <div class="boton-hamburguesa">
@@ -56,7 +55,9 @@
       </div>
       <div class="panel-abm">
         <p class="titulo">Editar producto: <strong> <%= productoAEditar.id%> </strong> </p>
-       
+        <div class="erroresFormulario">
+          <ul></ul>
+        </div>
         <form class="agregar-producto" action="/admin/products/<%= productoAEditar.id%>?_method=PUT" method="post" enctype="multipart/form-data">
           <div class="tarjeta">
             <div>
@@ -66,17 +67,28 @@
               <label for="nombre">Nombre</label>
               <br />
               <input
-                value="<%=productoAEditar.name%> "
+              class="<%= locals.erroresEditar && erroresEditar.nombre ? 'invalido' : null %>"
+              value="<%= locals.datoCargado && datoCargado.nombre ? datoCargado.nombre : productoAEditar.name %>" 
                 type="text"
                 name="nombre"
                 placeholder="Ej: Aro mariposa"
-                required
+                id="nombre"
               />
+              <% if (locals.erroresEditar && erroresEditar.nombre){ %>
+                <div class="error">
+                  <%= erroresEditar.nombre.msg %>
+                </div>
+              <% } %>
             </div>
             <div class="caja-tarjeta">
               <label for="descripcion">Descripción</label>
               <br />
-              <textarea name="descripcion" id="descripcion" cols="30" rows="4" required><%=productoAEditar.description%></textarea>
+              <textarea class="<%= locals.erroresEditar && erroresEditar.descripcion ? 'invalido' : null %>" name="descripcion" id="descripcion" cols="30" rows="4"><%= locals.datoCargado && (typeof datoCargado.descripcion != undefined) ? datoCargado.descripcion : productoAEditar.description %></textarea>
+              <% if (locals.erroresEditar && erroresEditar.descripcion){ %>
+                <div class="error">
+                  <%= erroresEditar.descripcion.msg %>
+                </div>
+              <% } %> 
             </div>
           </div>
           <div class="tarjeta">
@@ -84,13 +96,25 @@
             <div class="caja-tarjeta">
               <label for="precio">Precio</label>
               <br />
-              <input value=<%=productoAEditar.price%> class="precio" type="text" name="precio" required />
+              <input value="<%= locals.datoCargado && datoCargado.precio ? datoCargado.precio : productoAEditar.price %>" 
+              class="precio <%= locals.erroresEditar && erroresEditar.precio ? 'invalido' : null %>" 
+              type="text" name="precio" id="precio"/>
+              <% if (locals.erroresEditar && erroresEditar.precio){ %>
+                <div class="error">
+                  <%= erroresEditar.precio.msg %>
+                </div>
+              <% } %> 
             </div>
           </div>
           <div class="tarjeta">
             <p class="subtitulo">Fotos</p>
             <div><img src="<%=productoAEditar.image%>" alt="" width="200"></div>
             <input type="file" id="foto" name="foto" />
+            <% if (locals.erroresEditar && erroresEditar.foto){ %>
+              <div class="error">
+                <%= erroresEditar.foto.msg %>
+              </div>
+            <% } %>  
             <div class="caja-informacion">
               Tamaño mínimo recomendado: ancho y alto 1024px
             </div>
@@ -98,13 +122,18 @@
           <div class="tarjeta">
             <p class="subtitulo">Categoría</p>
             <div class="caja-tarjeta">
-              <select name="categoria" id="categoria" required>
-                <option value="seleccionar">Seleccionar categoría</option>
-                <option value="pulsera" <%= productoAEditar.category.id == 1 ? "selected" : "" %> >Pulseras</option>
-                <option value="aro" <%= productoAEditar.category.id == 2 ? "selected" : "" %> >Aros</option>
-                <option value="cinturon" <%= productoAEditar.category.id == 3 ? "selected" : "" %> >Cinturones</option>
-                <option value="anillo" <%= productoAEditar.category.id == 4 ? "selected" : "" %> >Anillos</option>
+              <select name="categoria" id="categoria" class="<%= locals.erroresEditar && erroresEditar.categoria ? 'invalido' : null %>">
+                <option value="" disabled selected>Seleccionar categoría</option>
+                <option value="1" <%= locals.datoCargado && datoCargado.categoria === '1' ? 'selected' : (productoAEditar.category.id == 1 ? "selected" : "") %> >Pulseras</option>
+                <option value="2" <%= locals.datoCargado && datoCargado.categoria === '2' ? 'selected' : (productoAEditar.category.id == 2 ? "selected" : "") %> >Aros</option>
+                <option value="3" <%= locals.datoCargado && datoCargado.categoria === '3' ? 'selected' : (productoAEditar.category.id == 3 ? "selected" : "") %> >Cinturones</option>
+                <option value="4" <%= locals.datoCargado && datoCargado.categoria === '4' ? 'selected' : (productoAEditar.category.id == 4 ? "selected" : "") %> >Anillos</option>
               </select>
+              <% if (locals.erroresEditar && erroresEditar.categoria){ %>
+                <div class="error">
+                  <%= erroresEditar.categoria.msg %>
+                </div>
+              <% } %> 
             </div>
           </div>
           <div class="tarjeta checkbox">
@@ -130,5 +159,6 @@
       </div>
     </main>
     <%-  include('./partials/footer')  %> 
+    <!-- <script src="/js/validacionCrearEditarP.js"></script> -->
   </body>
 </html>

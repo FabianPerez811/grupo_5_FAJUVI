@@ -5,10 +5,7 @@
   <%- include('./partials/head')  %> 
   <link rel="stylesheet" href="/css/abmProducto.css" /> 
 
-</head>
-  
-  
-
+</head>  
   <body>
     <header>
       <div class="boton-hamburguesa">
@@ -58,6 +55,9 @@
       </div>
       <div class="panel-abm">
         <p class="titulo">Agregar un producto</p>
+        <div class="erroresFormulario">
+          <ul></ul>
+        </div>
         <form class="agregar-producto" action="/admin/products" method="post" enctype="multipart/form-data">
           <div class="tarjeta">
             <div>
@@ -81,7 +81,7 @@
             <div class="caja-tarjeta">
               <label for="descripcion">Descripción</label>
               <br />
-              <textarea class="<%= locals.erroresCrear && erroresCrear.descripcion ? 'invalido' : null %>"name="descripcion" id="descripcion" cols="30" rows="4" ><%= locals.datoCargado && datoCargado.descripcion ? datoCargado.descripcion : '' %></textarea>
+              <textarea id="descripcion" class="<%= locals.erroresCrear && erroresCrear.descripcion ? 'invalido' : null %>" name="descripcion" id="descripcion" cols="30" rows="4" ><%= locals.datoCargado && datoCargado.descripcion ? datoCargado.descripcion : '' %></textarea>
               <% if (locals.erroresCrear && erroresCrear.descripcion){ %>
                 <div class="error">
                   <%= erroresCrear.descripcion.msg %>
@@ -94,7 +94,7 @@
             <div class="caja-tarjeta">
               <label for="precio">Precio</label>
               <br />
-              <input class="precio <%= locals.erroresCrear && erroresCrear.precio ? 'invalido' : null %>" type="text" name="precio" value="<%= locals.datoCargado && datoCargado.precio ? datoCargado.precio : '' %>"/>
+              <input class="precio <%= locals.erroresCrear && erroresCrear.precio ? 'invalido' : null %>" type="text" id="precio" name="precio" value="<%= locals.datoCargado && datoCargado.precio ? datoCargado.precio : '' %>"/>
               <% if (locals.erroresCrear && erroresCrear.precio){ %>
                 <div class="error">
                   <%= erroresCrear.precio.msg %>
@@ -154,6 +154,6 @@
       </div>
     </main>
     <%-  include('./partials/footer')  %> 
-    <script src=""></script>
+    <script src="/js/validacionCrearEditarP.js"></script>
   </body>
 </html>
