@@ -281,7 +281,7 @@ main {
   color:#e53030;
 }
 
-input#foto.inputFoto.error-validacion{
+input#foto.error-validacion{
   color:#e53030; 
 }
 

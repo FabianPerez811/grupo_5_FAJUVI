@@ -35,12 +35,12 @@ window.addEventListener("load", function() {
         }
 
         let foto = document.querySelector('#foto');
-        let acceptedExtensions = ['.jpg', '.jpeg', '.png', '.gif']; 
-        let filePath = foto.value;
+        let acceptedExtensions = ['jpg', 'jpeg', 'png', 'gif']; 
+        let fileExtension = foto.value.split('.').pop();//split()parte un string de acuerdo al parametro que le pase y devuelve un array con cada parte. pop devuelve el ultimo elemento del array
         if(foto.value == ''){
             errores.push("Debes agregar una foto del producto");
             foto.classList.add('error-validacion');
-        }else if(!acceptedExtensions.exec(filePath)){
+        }else if(!acceptedExtensions.includes(fileExtension)){
             errores.push("Las extensiones de archivo permitidas son '.jpg', '.jpeg', '.png', '.gif'");
         }  
          
