@@ -20,9 +20,13 @@
       <section class="acceso">     
         <form action="/user/sign-in" method="POST" class="formulario-sesion">
           <div class="caja-sesion">
+            <div class="errores">
+              <ul >
+              </ul>
+            </div>
             <p>Iniciar Sesión</p>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
+            <input type="email" name="email" id="email" />
 
             <% if (locals.errors && errors.email) { %>
               <div id="msj_error"> <%= errors.email.msg %> </div>
@@ -59,6 +63,7 @@
       </div>
     </main>
     <%-  include('./partials/footer')  %> 
+    <script src="/js/validacionAccesoUsuario.js"></script>
   </body>
 </html>
 

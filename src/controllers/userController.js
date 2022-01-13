@@ -74,7 +74,7 @@ procesoAcceso: (req,res) =>{
                     }     
                     }                 
         }).catch(()=>{
-            return res.render('acceso',{errors:{email:{ msg: 'No exite el mail.'}}}); 
+            return res.render('acceso',{errors:{email:{ msg: 'No existe el mail.'}}}); 
         })
 },
 
