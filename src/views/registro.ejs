@@ -17,8 +17,18 @@
         </ul>
       </section>
       <section class="registro">
+
+       
+
         <form action="/user/sign-up" method="POST" class="formulario-registro" enctype="multipart/form-data">
+          
           <div class="caja-registro">
+
+            <div class="errores">
+              <ul >
+              </ul>
+            </div>
+
             <p>Creá tu cuenta</p>
             <div >
             </div> 
@@ -125,6 +135,8 @@
         <button class="boton-sesion" type="submit">Iniciá Sesión</button>
       </div>
     </main>     
+     
     <%-  include('./partials/footer')  %> 
   </body>
+  <script src="/js/validacionRegistroUsuario.js"></script>
 </html>

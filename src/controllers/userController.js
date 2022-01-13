@@ -1,12 +1,7 @@
 const path = require ('path');
-const fs = require('fs')
-const User = require('../../Models/Users.js')
 const bcryptjs = require('bcryptjs')
-const usersFilePath = path.join(__dirname, '../../data/users.json');
-const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const {validationResult} = require('express-validator');
 const db = require('../database/models/index.js');
-const { localsName } = require('ejs');
 
 const userController = {
 
@@ -29,8 +24,8 @@ procesoRegistro: (req, res) => { //crear usuario
         deleted : '1'
     }})
             .then((user)=>{
-                let userDB = user;
-                if(userDB > 0){
+                let userDB = user[0].dataValues
+                if(userDB != undefined){
                     return res.render('registro',{
                         errors:{ 
                             email:{

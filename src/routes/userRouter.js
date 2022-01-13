@@ -29,7 +29,7 @@ router.post('/sign-in', upload.single('fotoPerfil'), userController.procesoAcces
 //Formulario de registro:
 router.get ('/sign-up', usuarioMiddleware, userController.registro);
 //Procesar el registro
-router.post ('/sign-up', upload.single('fotoPerfil') ,validacionRegistro, userController.procesoRegistro);
+router.post('/sign-up', upload.single('fotoPerfil') ,validacionRegistro, userController.procesoRegistro);
 
 //Perfil de Usuario:
 router.get('/profile', autenticacionMiddleware, userController.perfil);
