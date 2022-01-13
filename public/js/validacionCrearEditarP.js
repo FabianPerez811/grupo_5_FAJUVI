@@ -34,8 +34,16 @@ window.addEventListener("load", function() {
             errores.push("El precio debe ser numérico");
         }
 
-        //AGREGAR VALIDACIÓN DE LA FOTO
-
+        let foto = document.querySelector('#foto');
+        let acceptedExtensions = ['.jpg', '.jpeg', '.png', '.gif']; 
+        let filePath = foto.value;
+        if(foto.value == ''){
+            errores.push("Debes agregar una foto del producto");
+            foto.classList.add('error-validacion');
+        }else if(!acceptedExtensions.exec(filePath)){
+            errores.push("Las extensiones de archivo permitidas son '.jpg', '.jpeg', '.png', '.gif'");
+        }  
+         
         let categoria = document.querySelector('#categoria');
         if(categoria.value == ''){
             errores.push("Debes seleccionar la categoría del producto");
