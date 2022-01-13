@@ -67,3 +67,22 @@ Podrán encontrar:
 
 En esta retrospectiva concluimos que fortalecimos el aprendizaje de ciertos temas abordados en clase por el hecho de asignarnos algunas tareas en conjunto. Pese a que cada uno tenia asignada una tarea específica, podíamos optar por otra para colaborar en la misma.
 Creemos necesario seguir fortaleciendo la comunicación en el grupo. Para esto comenzamos a incorporar "dailies" puntuales cuando aparecía un problema que impedía continuar con el desarrollo del proyecto. Es por esto que devemos considerar seguir incorporando estas pequeñas reuniones comunicando además el estado en el que se encuentra cada tarea.
+
+# Retrospectiva Sprint 6:
+Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/app/board/o9J_lk9od6w=/)
+
+Continuamos con la dinámica sugerida "Estrella de mar", analizando las 5 variables con las que venimos trabajado. 
+
+Podrán encontrar:
+ - Start doing: lo que creemos que deberíamos incorporar para afianzar el trabajo.
+ - More of: lo que debemos realizar en mayor medida, idealmente estará nutrido de "Start doing"
+ - Keep doing: lo que ya realizamos y debemos sostener.
+ - Less of: lo que no nos beneficia y deberíamos dejar de lado.
+ - Stop doing: lo que nos dificulta el cumplimiento de los objetivos propuestos.
+
+En esta retrospectiva logramos concluir lo siguiente:
+ - Start doing: darnos feedback más seguido de cómo venimos resolviendo las tareas asignadas del product backlog. Continuar validando el tablero de trello.
+ - More of: mayor comunicación mejor resolución de tareas y de esta forma optimizamos el tiempo de trabajo.
+ - Keep doing: continuar con la colaboración de tareas de otro compañero trabajando de manera conjunta. De esta forma fortalecemos aún más los conceptos abordados en clase.
+ - Less of: en sprint con muchos requerimientos no podemos dividirnos las tareas sin antes hacer un análisis más profundo de las tareas que vamos a tener que desarrollar.
+ - Stop doing: se desprende del punto anterior, asignarnos tareas sin tener en cuenta el desarrollo lineas de las mismas. Algunas requieren estar terminadas antes que otras.
