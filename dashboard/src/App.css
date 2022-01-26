@@ -1,0 +1,469 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.barraNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 30px;
+  background-color: #9fbfc8;
+}
+
+.barraNav i {
+  margin: 5px;
+  color: white;
+}
+
+.barraNav img {
+  width: 10%;
+  margin-left: 5px;
+}
+
+.usuarioBarraNav {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.cajaContenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.barraLateral {
+  display: none;
+}
+
+.panelAdministrador {
+  margin: 0px 20px;
+}
+
+.contenidoInicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titulo {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #6d6f74;
+  margin: 20px 30px;
+}
+
+.panelTotales,
+.panelCategorias,
+.panelListado {
+  background-color: #d6d6d642;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.imgPanelTotales img {
+  display: none;
+}
+
+.tarjetasTotales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarjetaTotal {
+  margin: 15px 20px;
+  border: 1px solid #d6d6d6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  background-color: rgb(251, 249, 249);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.tarjetaTotal i {
+  padding: 15px;
+  font-size: 32px;
+  border-radius: 5px;
+  color: whitesmoke;
+  margin-right: 10px;
+}
+
+.tarjetaTotal i.celeste {
+  background-color: #83aeb8;
+}
+
+.tarjetaTotal i.verde {
+  background-color: #83b8a2;
+}
+
+.tarjetaTotal i.violeta {
+  background-color: #a783b8;
+}
+
+.contenidoTarjeta {
+  text-align: center;
+  padding: 15px;
+}
+
+.tituloTarjeta {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.subtituloTarjeta {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.panelCategorias {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+.panelCategorias table {
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  background-color: rgb(251, 249, 249);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  text-align: center;
+}
+
+.panelCategorias td,
+.panelCategorias th {
+  padding: 10px 25px;
+  transition: background-color 0.5s, color 0.5s;
+  cursor: pointer;
+}
+
+.panelCategorias td:hover {
+  background-color: #d6d6d6;
+  color: #71a2ae;
+}
+
+.panelCategorias th {
+  color: #71a2ae;
+}
+
+.contenidoMedio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.panelDetalle {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+.panelDetalle img {
+  width: 86%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.imgContenidoMedio {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imgContenidoMedio img {
+  width: 80%;
+}
+
+.contenidoInferior {
+  display: flex;
+  flex-direction: column;
+}
+.panelListado {
+  margin-top: 20px;
+}
+
+.itemProducto {
+  display: flex;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  background-color: rgb(251, 249, 249);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  align-items: center;
+  margin-top: 10px;
+}
+
+.imgPanelListado {
+  width: 20%;
+  padding: 5px;
+}
+
+.imgPanelListado img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cajaInfoProducto {
+  display: flex;
+  margin: 0px 5px;
+  align-items: center;
+}
+
+.tituloProducto {
+  margin: 0px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.descripcion,
+.precio {
+  display: none;
+}
+
+.cajaStock {
+  padding: 5px 20px 5px 0px;
+}
+
+.cajaStock {
+  text-align: center;
+}
+
+.cajaEditar i,
+.cajaBorrar i {
+  padding: 5px;
+  color: #71a2ae;
+  transition: color 0.5;
+}
+
+.cajaEditar i:hover,
+.cajaBorrar i:hover {
+  color: #6d6f74;
+}
+
+@media (min-width: 768px) {
+  ul {
+    padding: 0px;
+    text-align: center;
+  }
+  .barraLateral {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding: 5px;
+    border: 1px solid #d6d6d6;
+    border-top: none;
+    border-bottom: none;
+    color: #2a2c25;
+  }
+
+  .barraLateral nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .barraNav img {
+    width: 4%;
+  }
+
+  .logo {
+    margin-bottom: 50px;
+  }
+
+  .logo img {
+    width: 95%;
+  }
+
+  .itemPanel {
+    list-style-type: none;
+    margin-bottom: 40px;
+    padding: 0px 20px;
+    font-size: 14px;
+  }
+
+  .itemPanel a {
+    text-decoration: none;
+    color: #2a2c25;
+    transition: color 0.5s;
+  }
+
+  .itemPanel a:hover {
+    color: #9fbfc8;
+    cursor: pointer;
+  }
+
+  .itemPanel i {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .cajaContenido {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .contenidoInicial {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .panelTotales {
+    margin-left: 30px;
+    width: 100%;
+    margin: 0px 15px;
+    padding-bottom: 36px;
+  }
+
+  .contenidoTarjeta {
+    padding: 5px;
+  }
+
+  .tituloTarjeta {
+    font-size: 12px;
+  }
+
+  .subtituloTarjeta {
+    padding: 5px;
+    font-size: 18px;
+  }
+
+  .tarjetasTotales {
+    justify-content: flex-start;
+  }
+
+  .tarjetaTotal {
+    width: 23%;
+    margin-right: 15px;
+    margin: 5px;
+  }
+
+  .tarjetaTotal i {
+    padding: 8px;
+    font-size: 25px;
+  }
+
+  .contenidoMedio {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .panelDetalle {
+    width: 50%;
+    margin-right: 15px;
+  }
+  .panelDetalle img {
+    width: 100%;
+  }
+
+  .tarjetasTotales {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .imgContenidoMedio img {
+    width: 60%;
+  }
+
+  .imgContenidoMedio {
+    margin: 76px 0px;
+  }
+
+  .contenidoInferior {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .panelListado,
+  .panelCategorias {
+    margin-top: 0;
+    padding-bottom: 36px;
+  }
+
+  .panelCategorias {
+    margin: 0px 15px;
+    padding-bottom: 36px;
+  }
+
+  .itemProducto {
+    margin-bottom: 15px;
+  }
+
+  .imgPanelListado {
+    width: 10%;
+  }
+
+  .tituloProducto {
+    padding: 5px 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .barraNav img {
+    width: 3%;
+  }
+
+  .barraLateral {
+    width: 10%;
+  }
+
+  .panelDetalle {
+    width: 20%;
+    margin-right: 60px;
+  }
+
+  .imgPanelTotales img {
+    display: block;
+    width: 45%;
+    margin: auto;
+  }
+
+  .contenidoMedio {
+    justify-content: space-between;
+  }
+
+  .imgContenidoMedio {
+    text-align: center;
+    margin: 40px 0px;
+  }
+
+  .imgContenidoMedio img {
+    width: 50%;
+  }
+
+  .panelCategorias {
+    margin-right: 50px;
+  }
+
+  .descripcion,
+  .precio {
+    display: block;
+  }
+
+  .panelListado {
+    width: 63%;
+  }
+
+  .descripcion {
+    padding-right: 10px;
+  }
+
+  .precio {
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .barraNav img {
+    width: 2%;
+  }
+  .tarjetaTotal {
+    width: 23%;
+  }
+}
