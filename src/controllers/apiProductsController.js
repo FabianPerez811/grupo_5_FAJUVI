@@ -23,5 +23,17 @@ module.exports = {
                     })
                 })
             })
+    },
+    details: (req, res) => {
+        db.Products.findByPk(req.params.id, {
+            include: [{ association: "category" }, { association: "sizes" }]
+        })
+        .then(product => {
+            return res.status(200).json({
+                product: product
+                
+            })
+        })
+            
     }
 }
