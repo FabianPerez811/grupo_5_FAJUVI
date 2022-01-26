@@ -30,11 +30,14 @@ const productsRouter = require ('./src/routes/productsRouter')
 const userRouter = require ('./src/routes/userRouter')
 const adminRouter = require ('./src/routes/adminRouter')
 
+const apiProductsRouter = require('./src/routes/apiProductsRouter');
+
 
 app.use('/', mainRouter);
 app.use('/user', userRouter);
 app.use('/products', productsRouter);
 app.use('/admin', adminRouter);
+app.use('/api',apiProductsRouter);
 
 // ************ Set the server to listen - (don't touch) ************
 app.listen(3030, () => {
