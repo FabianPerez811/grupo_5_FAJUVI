@@ -38,7 +38,8 @@ module.exports = {
                             detail: "http://localhost:3030/products/" + product.id
 
                         };
-                    })
+                    }),
+                    lastProduct: products[products.length-1]
                 })
             })
     },
