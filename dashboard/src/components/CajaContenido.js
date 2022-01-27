@@ -5,7 +5,7 @@ import PanelAdministrador from './PanelAdministrador';
 
 function CajaContenido() {
   return (
-    <div class="cajaContenido">
+    <div className="cajaContenido">
         <BarraLateral />
         <PanelAdministrador />
     </div>

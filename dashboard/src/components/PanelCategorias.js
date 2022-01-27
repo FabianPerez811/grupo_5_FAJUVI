@@ -1,27 +1,38 @@
-import react from "react";
+import react, { useEffect, useState } from "react";
 import Categoria from "./Categoria";
 
 function PanelCategorias(props) {
 
-    /*CONSULTA CON LA API {{pulseras,2},{anillos,3} */ 
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    console.log('did mount');
+    fetch('http://localhost:3030/api/products')
+      .then((res) => {
+        return res.json();
+      })
+      .then((d) => {
+        console.log(d.countByCategory);
+        setData(d);
+      });
+  }, []);
+
+  /*CONSULTA CON LA API {{pulseras,2},{anillos,3} */
 
   return (
     <div className="panelCategorias">
       <p>Productos</p>
       <table>
-        <tr>
-          <th>Categoría</th>
-          <th>Stock</th>
-        </tr>
-        <Categoria cat="Pulseras" total="3"/>
-        <Categoria cat="Aros" total="5"/>
-        <Categoria cat="Anillos" total="2"/>
-        <Categoria cat="Cintos" total="5"/>
+        <tbody>
+          <tr>
+            <th>Categoría</th>
+            <th>Stock</th>
+          </tr>
 
-        {/*categotrias.map((cat)=>{
-            <Categoria cat="cat.nombre" total="cat.total"/>
-        })*/}
-        
+          {data && data.countByCategory.map((c, i) => {
+            return <Categoria key={i} cat={c.category} total={c.count} />
+          })}
+        </tbody>
       </table>
     </div>
   );

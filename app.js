@@ -29,9 +29,10 @@ const mainRouter = require ('./src/routes/mainRouter')
 const productsRouter = require ('./src/routes/productsRouter')
 const userRouter = require ('./src/routes/userRouter')
 const adminRouter = require ('./src/routes/adminRouter')
+const cors = require('cors');
 
 const apiProductsRouter = require('./src/routes/apiProductsRouter');
-
+app.use(cors());
 
 app.use('/', mainRouter);
 app.use('/user', userRouter);
