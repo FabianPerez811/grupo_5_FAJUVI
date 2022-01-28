@@ -1,6 +1,5 @@
 import react, { useEffect, useState } from "react";
-import ItemProducto from "./ItemProducto"
-
+import ItemProducto from "./ItemProducto";
 import Cinto from '../img/cinto.jpg';
 
 function PanelListado(props) {
@@ -24,10 +23,6 @@ function PanelListado(props) {
         return <ItemProducto key={i} 
         img={Cinto} titulo={p.name} description={p.description} />
       })}
-
-
-
-
     </div>
   );
 }

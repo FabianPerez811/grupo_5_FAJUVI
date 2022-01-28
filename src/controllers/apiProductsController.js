@@ -23,7 +23,8 @@ module.exports = {
 
                     countsByCategory[categoryId].count++;
                 });
-                console.log(countsByCategory);
+                console.log(countsByCategory)
+                console.log(Object.values(countsByCategory))
 
                 return res.status(200).json({
                     count: products.length,
@@ -35,10 +36,10 @@ module.exports = {
                             description: product.description,
                             sizes: product.sizes,
                             category: product.category,
-                            detail: "http://localhost:3030/products/" + product.id
-
+                            detail: "http://localhost:3030/products/" + product.id,
+                            
                         };
-                    }),
+                    }),                   
                     lastProduct: products[products.length-1]                    
                 })
             })

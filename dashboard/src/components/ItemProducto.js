@@ -5,7 +5,7 @@ function ItemProducto(props) {
   return (
     <div className="itemProducto">
       <div className="imgPanelListado">
-        <img src={props.img} alt="" />
+        <img src={props.img} alt="foto" />
       </div>
       <div className="cajaInfoProducto">
         <div className="tituloProducto">{props.titulo}</div>
