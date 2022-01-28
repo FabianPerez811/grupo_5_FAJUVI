@@ -39,7 +39,7 @@ module.exports = {
 
                         };
                     }),
-                    lastProduct: products[products.length-1]
+                    lastProduct: products[products.length-1]                    
                 })
             })
     },

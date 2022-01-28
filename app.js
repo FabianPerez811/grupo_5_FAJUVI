@@ -31,14 +31,14 @@ const userRouter = require ('./src/routes/userRouter')
 const adminRouter = require ('./src/routes/adminRouter')
 const cors = require('cors');
 
-const apiProductsRouter = require('./src/routes/apiProductsRouter');
+const apiRouter = require('./src/routes/apiRouter');
 app.use(cors());
 
 app.use('/', mainRouter);
 app.use('/user', userRouter);
 app.use('/products', productsRouter);
 app.use('/admin', adminRouter);
-app.use('/api',apiProductsRouter);
+app.use('/api', apiRouter);
 
 // ************ Set the server to listen - (don't touch) ************
 app.listen(3030, () => {

@@ -6,13 +6,11 @@ function PanelCategorias(props) {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    console.log('did mount');
     fetch('http://localhost:3030/api/products')
       .then((res) => {
         return res.json();
       })
       .then((d) => {
-        console.log(d.countByCategory);
         setData(d);
       });
   }, []);

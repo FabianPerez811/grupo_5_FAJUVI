@@ -1,19 +1,32 @@
-import react from "react";
+import react, { useEffect, useState } from "react";
 import ItemProducto from "./ItemProducto"
 
 import Cinto from '../img/cinto.jpg';
-import Collar from '../img/collar3.jpg';
-import Pulsera from '../img/pulsera.jpg';
 
 function PanelListado(props) {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch('http://localhost:3030/api/products')
+      .then((res) => {
+        return res.json();
+      })
+      .then((d) => {
+        setData(d);
+      });
+  }, []);
+
   return (
     <div className="panelListado">
       <p>Listado de Productos</p>
 
-      <ItemProducto img={Cinto} titulo="Cinto Black" stock="stock: 2" description="Cinto de cuero" precio="Precio: $2500" IconoEditar="fa-pen" Borrar="fa-trash-alt"/>
-      <ItemProducto img={Collar} titulo="Collar perlas" stock="stock: 4" description="Collar fantasia de perlas" precio="Precio: $2000" IconoEditar="fa-pen" Borrar="fa-trash-alt"/>
-      <ItemProducto img={Pulsera} titulo="Pulsera Florencia" stock="stock: 9" description="Realizada con perlas y piedras de fantasia" precio="Precio: $500" IconoEditar="fa-pen" Borrar="fa-trash-alt"/>
-      
+      {data && data.products.map((p, i) => {
+        return <ItemProducto key={i} 
+        img={Cinto} titulo={p.name} description={p.description} />
+      })}
+
+
+
 
     </div>
   );

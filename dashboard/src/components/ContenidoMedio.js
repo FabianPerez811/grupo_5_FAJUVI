@@ -1,20 +1,37 @@
-import react from 'react';
+import react, { useEffect, useState } from "react";
 import Grafico2 from '../img/grafico2.png';
-import Foto from '../img/foto.jpg';
-import Profile from '../img/profile.png';
 import PanelDetalle from './PanelDetalle';
 
 function ContenidoMedio() {
+  const [product, setProduct] = useState(null);
+  const [user, setUser] = useState(null);
 
+  useEffect(() => {
+    fetch('http://localhost:3030/api/products')
+      .then((res) => {
+        return res.json();
+      })
+      .then((d) => {
+        setProduct(d);
+      });
+
+    fetch('http://localhost:3030/api/users')
+      .then((res) => {
+        return res.json();
+      })
+      .then((d) => {
+        setUser(d);
+      });
+  }, []);
 
   return (
     <div className="contenidoMedio">
-        <div className="imgContenidoMedio">
-            <img src={Grafico2} alt="" />
-        </div>
+      <div className="imgContenidoMedio">
+        <img src={Grafico2} alt="" />
+      </div>
 
-        <PanelDetalle img={Foto} titulo="Último producto Cargado" subtitulo="Collar Rosario" />
-        <PanelDetalle img={Profile} titulo="Último usuario Cargado" subtitulo="María Sanz"  />
+      <PanelDetalle titulo="Último producto Cargado" subtitulo={product?.lastProduct.name} description={product?.lastProduct.description}/>
+      <PanelDetalle titulo="Último usuario Cargado" subtitulo={user?.lastUser.firstName} description={user?.lastUser.lastName}/>
 
     </div>
   );
