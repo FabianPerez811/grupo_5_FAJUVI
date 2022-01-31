@@ -1,4 +1,4 @@
-# Retrospectiva Sprint 1:
+# Retrospectiva Sprint 2:
 
 Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/app/board/o9J_lxDECC0=/)
 
@@ -13,7 +13,7 @@ Del primer punto se desprende el segundo, no debemos dejar pasar mucho tiempo pa
 Por último, en lo que respecta al punto 3, consideramos seguir trabajando de una manera focalizada con una clara división de tareas, apoyándonos en nuestro tablero de Trello. Continuar organizando reuniones semanales para clarificar dudas y charlar sobre aspectos claves del Sprint. Respetar los tiempos de cada miembro de los equipos y colaborar cuando surjan dudas en el desarrollo de las tareas.
 
 
-# Retrospectiva Sprint 2:
+# Retrospectiva Sprint 3:
 Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/welcomeonboard/SFlYZjNtMDBnQkZqMmxTZDY3aEZ5YlBiUWVzdHdTWkV2VEJMVGFmM1RHTUJzUlhiVVFxc05pY1NtVVBjSDV2MHwzMDc0NDU3MzYzODI5Mjk0MzMw?invite_link_id=988292318190)
 
 Para nuestro tercer sprint decidimos aplicar la dinámica sugerida "Estrella de mar". 
@@ -30,7 +30,7 @@ Asimismo, creemos que nos puede ayudar a optimizar los resultados tener una comu
 Por otro lado, notamos un muy bien clima de trabajo y comunicación, por lo que nos gustaría generar espacios y momentos de encuentro más alla de lo estrictamente referido al proyecto.
 
 
-# Retrospectiva Sprint 3:
+# Retrospectiva Sprint 4:
 Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/app/board/o9J_lk9od6w=/)
 
 En esta oportunidad, decidimos sostener la dinámica sugerida "Estrella de mar" analizando las mismas 5 variables con las que habiamos trabajado anteriormente. 
@@ -46,14 +46,14 @@ En esta tercera retrospectiva concluimos que si bien es una fortaleza la organiz
 Asimismo, creemos necesario empezar a chequear y revisar todas las tareas asignadas a cada uno de los integrantes para lograr asi abordar los temas de manera consistente. 
 Por otro lado, hemos logrado fortalecer la comunicación en el grupo compartiendo los procesos de trabajo de cada uno. Sin embargo, consideramos que es necesario continuar trabajando en este punto.
 
-# Retrospectiva Sprint 4:
+# Retrospectiva Sprint 5:
 Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/app/board/o9J_lk9od6w=/)
 
 En nuestro quinto Sprint nos encontramos con algunas dificultades vinculadas con los temas teóricos a resolver. Previendo esta situación, la división de tareas se realizó en equipo. Creemos que esta nueva modalidad representa una fortaleza y un avance en el grupo. Confiamos en que esto nos ayudará a abordar los pedidos de mejor manera.
 Asimismo, seguimos trabajando de manera organizada y responsable para poder responder a todos los requerimientos del Sprint en tiempo y forma.
 Continuaremos buscando fortalecer la comunicación diaria y fluida en el equipo para poder acompañar los diferentes procesos de producción. 
 
-# Retrospectiva Sprint 5:
+# Retrospectiva Sprint 6:
 Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/app/board/o9J_lk9od6w=/)
 
 En esta oportunidad, decidimos sostener la dinámica sugerida "Estrella de mar" analizando las mismas 5 variables con las que habiamos trabajado anteriormente. 
@@ -68,7 +68,7 @@ Podrán encontrar:
 En esta retrospectiva concluimos que fortalecimos el aprendizaje de ciertos temas abordados en clase por el hecho de asignarnos algunas tareas en conjunto. Pese a que cada uno tenia asignada una tarea específica, podíamos optar por otra para colaborar en la misma.
 Creemos necesario seguir fortaleciendo la comunicación en el grupo. Para esto comenzamos a incorporar "dailies" puntuales cuando aparecía un problema que impedía continuar con el desarrollo del proyecto. Es por esto que devemos considerar seguir incorporando estas pequeñas reuniones comunicando además el estado en el que se encuentra cada tarea.
 
-# Retrospectiva Sprint 6:
+# Retrospectiva Sprint 7:
 Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/app/board/o9J_lk9od6w=/)
 
 Continuamos con la dinámica sugerida "Estrella de mar", analizando las 5 variables con las que venimos trabajado. 
@@ -86,3 +86,21 @@ En esta retrospectiva logramos concluir lo siguiente:
  - Keep doing: continuar con la colaboración de tareas de otro compañero trabajando de manera conjunta. De esta forma fortalecemos aún más los conceptos abordados en clase.
  - Less of: en sprint con muchos requerimientos no podemos dividirnos las tareas sin antes hacer un análisis más profundo de las tareas que vamos a tener que desarrollar.
  - Stop doing: se desprende del punto anterior, asignarnos tareas sin tener en cuenta el desarrollo lineas de las mismas. Algunas requieren estar terminadas antes que otras.
+
+
+# Retrospectiva Sprint 8:
+Compartimos el siguiente tablero de Miro: - [Nuestro Tablero de Miro](https://miro.com/app/board/o9J_lk9od6w=/)
+
+Continuamos con la dinámica sugerida "Estrella de mar", analizando las 5 variables con las que venimos trabajado. 
+
+Podrán encontrar:
+ - Start doing: lo que creemos que deberíamos incorporar para afianzar el trabajo.
+ - More of: lo que debemos realizar en mayor medida, idealmente estará nutrido de "Start doing"
+ - Keep doing: lo que ya realizamos y debemos sostener.
+ - Less of: lo que no nos beneficia y deberíamos dejar de lado.
+ - Stop doing: lo que nos dificulta el cumplimiento de los objetivos propuestos.
+
+Asímismo, en esta última retrospectiva realizamos la dinámica de la línea del tiempo donde ubicamos los 8 sprint transitados y luego compartimos los aspectos postivos y los aspectos a mejorar que estuvieron presentes dentro de este proyecto. 
+ Destacamos haber logrado un buen clima de trabajo pudiendo cumplir en tiempo y forma con los distintos requerimientos. Tambíen fue importante lograr una buena división de trabajo durante cada sprint. Esto fue cambiando a lo largo del tiempo, ya que a medida que la dificultad fue creciendo debimos realizar análisis más profundos de las tareas para poder asignarlas de la mejor manera posible. Del mismo modo, aprendimos a dejar de trabajar de manera fragmentada e individual consultando sólo las dificultades, pudiendo compartir los procesos de las tareas y obtener así mejores resultados. En esta línea, finalizamos el proyecto asignándonos tareas grupales con el fin de abordarlas de una manera más completa.
+ 
+
