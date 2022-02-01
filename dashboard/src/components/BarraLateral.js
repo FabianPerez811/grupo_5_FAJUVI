@@ -3,7 +3,8 @@ import Logo from '../img/Logo-Fajuvi.png'
 import PanelListado from './PanelListado';
 import ContenidoMedio from './ContenidoMedio';
 import ContenidoInicial from './ContenidoInicial';
-import { Link, Route } from 'react-router-dom';
+import PanelCategorias from './PanelCategorias';
+import {Routes, Route, Link} from 'react-router-dom';
 
 function BarraLateral() {
   return (
@@ -14,47 +15,60 @@ function BarraLateral() {
                 <div className="logo"><img src={Logo} alt="logo" /></div>
               </li>
               <li className="itemPanel">
-                <a href="#">
+                <Link to="/PanelListado">
                   <i className="fas fa-clipboard-list"></i>
                   <div>Listado de Productos</div>
-                </a>
+                </Link>
               </li>
               <li className="itemPanel">
-                <a href="/">
+                <Link to="/ContenidoInicial">
                   <i className="fas fa-filter"></i>
                   <div>Totales</div>
-                </a>
+                </Link>
               </li>
               <li className="itemPanel">
-                <a href="/">
+                <Link to="/ContenidoMedio">
                   <i className="fas fa-chart-pie"></i>
                   <div>Ultimas cargas</div>
-                </a>
+                </Link>
               </li>
               <li className="itemPanel">
-                <a href="/">
+                <Link to="/PanelCategorias">
                   <i className="fas fa-users"></i>
                   <div>Stock de Categoría</div>
-                </a>
+                </Link>
               </li>
             </ul>
             <ul>
               <li className="itemPanel">
-                <a href="/">
+                <Link to="#">
                   <i className="fas fa-question-circle"></i>
                   <div>Ayuda</div>
-                </a>
+                </Link>
               </li>
               <li className="itemPanel">
-                <a href="/">
+                <Link to="#">
                   <i className="fas fa-cogs"></i>
                   <div>Configuración</div>
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
+              <Routes>
+                <Route path="/PanelListado">
+                    <PanelListado />
+                </Route>
+                <Route path="/ContenidoInicial">
+                    <ContenidoInicial />
+                </Route>
+                <Route path="/ContenidoMedio">
+                    <ContenidoMedio />
+                </Route>
+                <Route path="/PanelCategorias">
+                    <PanelCategorias />
+                </Route>
+              </Routes>
         </div>
-   
   );
 }
 
