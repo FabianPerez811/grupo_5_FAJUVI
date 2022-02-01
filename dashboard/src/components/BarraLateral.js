@@ -1,5 +1,9 @@
 import react from 'react';
 import Logo from '../img/Logo-Fajuvi.png'
+import PanelListado from './PanelListado';
+import ContenidoMedio from './ContenidoMedio';
+import ContenidoInicial from './ContenidoInicial';
+import { Link, Route } from 'react-router-dom';
 
 function BarraLateral() {
   return (
@@ -10,27 +14,27 @@ function BarraLateral() {
                 <div className="logo"><img src={Logo} alt="logo" /></div>
               </li>
               <li className="itemPanel">
-                <a href="/">
+                <a href="#">
                   <i className="fas fa-clipboard-list"></i>
-                  <div>Productos</div>
+                  <div>Listado de Productos</div>
                 </a>
               </li>
               <li className="itemPanel">
                 <a href="/">
                   <i className="fas fa-filter"></i>
-                  <div>Categorías</div>
+                  <div>Totales</div>
                 </a>
               </li>
               <li className="itemPanel">
                 <a href="/">
                   <i className="fas fa-chart-pie"></i>
-                  <div>Estadística</div>
+                  <div>Ultimas cargas</div>
                 </a>
               </li>
               <li className="itemPanel">
                 <a href="/">
                   <i className="fas fa-users"></i>
-                  <div>Clientes</div>
+                  <div>Stock de Categoría</div>
                 </a>
               </li>
             </ul>
