@@ -25,10 +25,12 @@ module.exports = {
                 });
                 console.log(countsByCategory)
                 console.log(Object.values(countsByCategory))
+                
 
                 return res.status(200).json({
                     count: products.length,
                     countByCategory: Object.values(countsByCategory),
+                    totalCategory: (Object.values(countsByCategory)).length,
                     products: products.map(product => {
                         return {
                             id: product.id,
@@ -37,10 +39,11 @@ module.exports = {
                             sizes: product.sizes,
                             category: product.category,
                             detail: "http://localhost:3030/products/" + product.id,
-                            
+                            price: "$" + product.price,
+                            image: product.image
                         };
                     }),                   
-                    lastProduct: products[products.length-1]                    
+                    lastProduct: products[products.length-1]                            
                 })
             })
     },

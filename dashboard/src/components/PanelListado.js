@@ -21,7 +21,7 @@ function PanelListado(props) {
 
       {data && data.products.map((p, i) => {
         return <ItemProducto key={i} 
-        img={Cinto} titulo={p.name} description={p.description} />
+        img={p.image} titulo={p.name} description={p.description} precio={p.price}/>
       })}
     </div>
   );

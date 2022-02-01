@@ -10,7 +10,7 @@ function ItemProducto(props) {
       <div className="cajaInfoProducto">
         <div className="tituloProducto">{props.titulo}</div>
         <div className="descripcion">{props.description}</div>
-        <div className="precio">{props.precio}</div>
+        <div className="precio"><b>{props.precio}</b></div>
       </div>
     </div>
   );

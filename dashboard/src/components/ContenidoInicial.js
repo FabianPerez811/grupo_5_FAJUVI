@@ -31,7 +31,7 @@ function ContenidoInicial() {
         <div className="tarjetasTotales">
           
           <TarjetaTotal colors="verde" icono="fa-cubes" titulo="Productos" total={product?.count}/>
-          <TarjetaTotal colors="celeste" icono="fa-list" titulo="Categorías" total={product?.count}/>
+          <TarjetaTotal colors="celeste" icono="fa-list" titulo="Categorías" total={product?.totalCategory}/>
           <TarjetaTotal colors="violeta" icono="fa-user-friends" titulo="Usuarios" total={user?.count}/>
          
         </div>
