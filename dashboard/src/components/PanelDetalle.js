@@ -9,6 +9,7 @@ function PanelDetalle(props) {
               <p>{props.titulo}</p>
               <p><b>{props.subtitulo}</b></p>
               <p>{props.description}</p>
+              <div>{props.image}</div>
             </div>
         </div>
 

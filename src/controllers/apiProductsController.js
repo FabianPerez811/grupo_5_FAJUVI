@@ -12,6 +12,7 @@ module.exports = {
                 const countsByCategory = {};
 
                 products.forEach(product => {
+                    
                     const categoryId = product.category.id;
                     //voy a acceder a las propiedades de un objeto a traves de la variable categoryId
                     if (!countsByCategory[categoryId]) {
@@ -25,6 +26,7 @@ module.exports = {
                 });
                 console.log(countsByCategory)
                 console.log(Object.values(countsByCategory))
+                
                 
 
                 return res.status(200).json({
@@ -40,7 +42,7 @@ module.exports = {
                             category: product.category,
                             detail: "http://localhost:3030/products/" + product.id,
                             price: "$" + product.price,
-                            image: product.image
+                            image: "http://localhost:3030" + product.image
                         };
                     }),                   
                     lastProduct: products[products.length-1]                            

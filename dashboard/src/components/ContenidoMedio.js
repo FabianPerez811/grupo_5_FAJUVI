@@ -20,6 +20,7 @@ function ContenidoMedio() {
         return res.json();
       })
       .then((d) => {
+        console.log(d)
         setUser(d);
       });
   }, []);
@@ -30,8 +31,8 @@ function ContenidoMedio() {
         <img src={Grafico2} alt="" />
       </div>
 
-      <PanelDetalle titulo="Último producto Cargado" subtitulo={product?.lastProduct.name} description={product?.lastProduct.description}/>
-      <PanelDetalle titulo="Último usuario Cargado" subtitulo={user?.lastUser.firstName} description={user?.lastUser.lastName}/>
+      <PanelDetalle titulo="Último producto Cargado" subtitulo={product?.lastProduct.name} description={product?.lastProduct.description} image={product?.lastProduct.image}/>
+      <PanelDetalle titulo="Último usuario Cargado" subtitulo={user?.lastUser.firstName} description={user?.lastUser.lastName} image={user?.lastUser.profileImage}/>
 
     </div>
   );

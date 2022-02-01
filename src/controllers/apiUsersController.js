@@ -14,8 +14,8 @@ module.exports = {
                             name: user.firstName,
                             lastname: user.lastName,
                             email: user.email,
-                            detail: "http://localhost:3030/user/" + user.id
-
+                            detail: "http://localhost:3030/user/" + user.id,
+                            image: "http://localhost:3030" + user.profileImage
                         };
                     }),
                     lastUser: users[users.length - 1]
