@@ -31,8 +31,8 @@ function ContenidoMedio() {
         <img src={Grafico2} alt="" />
       </div>
 
-      <PanelDetalle titulo="Último producto Cargado" subtitulo={product?.lastProduct.name} description={product?.lastProduct.description} image={product?.lastProduct.image}/>
-      <PanelDetalle titulo="Último usuario Cargado" subtitulo={user?.lastUser.firstName} description={user?.lastUser.lastName} image={user?.lastUser.profileImage}/>
+      <PanelDetalle isUser={false} titulo="Último producto Cargado" subtitulo={product?.lastProduct.name}  image={product?.lastProduct.image}/>
+      <PanelDetalle isUser={true} titulo="Último usuario Cargado" subtitulo={user?.lastUser.lastName}  image={user?.lastUser.profileImage}/>
 
     </div>
   );

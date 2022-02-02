@@ -124,6 +124,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-self: flex-start;
   margin-top: 15px;
 }
 .panelCategorias table {
@@ -165,7 +166,7 @@ body {
 
 .panelDetalle img {
   width: 86%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
 }
 
 .imgContenidoMedio {
@@ -307,12 +308,12 @@ body {
   .contenidoInicial {
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items:flex-start;
   }
   .panelTotales {
     margin-left: 30px;
     width: 100%;
-    margin: 0px 15px;
+    margin: 10px 15px;
     padding-bottom: 36px;
   }
 
@@ -346,7 +347,7 @@ body {
 
   .contenidoMedio {
     flex-direction: row;
-    align-items: stretch;
+    align-items: flex-start;
     justify-content: flex-start;
     margin-left: 15px;
     margin-right: 15px;
@@ -357,7 +358,7 @@ body {
     margin-right: 15px;
   }
   .panelDetalle img {
-    width: 100%;
+    width: 40%;
   }
 
   .tarjetasTotales {
@@ -372,7 +373,7 @@ body {
   }
 
   .imgContenidoMedio {
-    margin: 76px 0px;
+    margin: 50px 0px;
   }
 
   .contenidoInferior {
@@ -380,14 +381,9 @@ body {
     align-items: flex-start;
   }
 
-  .panelListado,
-  .panelCategorias {
-    margin-top: 0;
-    padding-bottom: 36px;
-  }
-
-  .panelCategorias {
-    margin: 0px 15px;
+  .panelCategorias,
+  .panelListado {
+    margin: 10px 15px;
     padding-bottom: 36px;
   }
 
