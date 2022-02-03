@@ -40,16 +40,16 @@ function BarraLateral() {
         </ul>
         <ul>
           <li className="itemPanel">
-            <a href="#">
+            <Link to="/">
               <i className="fas fa-question-circle"></i>
               <div>Ayuda</div>
-            </a>
+            </Link>
           </li>
           <li className="itemPanel">
-            <a href="#">
+            <Link to="/">
               <i className="fas fa-cogs"></i>
               <div>Configuración</div>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

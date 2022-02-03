@@ -5,6 +5,7 @@ import CajaContenido from './components/CajaContenido';
 
 function App() {
   return (
+    
     <div className="cajaContenedora">
       <BarraNav />
       <CajaContenido />

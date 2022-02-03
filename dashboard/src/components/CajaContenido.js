@@ -19,7 +19,7 @@ function CajaContenido() {
         <Route path="/totales" element={<ContenidoInicial />} />
         <Route path="/ultimas-cargas" element={<ContenidoMedio />} />
         <Route path="/stock-categorias" element={< PanelCategorias />} />
-        <Route element={<NotFound/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

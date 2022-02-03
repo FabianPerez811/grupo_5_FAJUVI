@@ -308,7 +308,7 @@ body {
   .contenidoInicial {
     flex-direction: row;
     justify-content: flex-start;
-    align-items:flex-start;
+    align-items: flex-start;
   }
   .panelTotales {
     margin-left: 30px;
@@ -418,10 +418,11 @@ body {
     display: block;
     width: 45%;
     margin: auto;
+    padding-top: 40px;
   }
 
   .contenidoMedio {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .imgContenidoMedio {
