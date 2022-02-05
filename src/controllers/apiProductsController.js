@@ -5,14 +5,15 @@ module.exports = {
     list: (req, res) => {
         db.Products
             .findAll({
-                include: [{ association: "category" }, { association: "sizes" }]
+                include: [{ association: "category" }, { association: "sizes" }],
+                where: { deleted: '0' }
             })
             .then(products => {
 
                 const countsByCategory = {};
 
                 products.forEach(product => {
-                    
+
                     const categoryId = product.category.id;
                     //voy a acceder a las propiedades de un objeto a traves de la variable categoryId
                     if (!countsByCategory[categoryId]) {
@@ -26,8 +27,8 @@ module.exports = {
                 });
                 console.log(countsByCategory)
                 console.log(Object.values(countsByCategory))
-                
-                
+
+
 
                 return res.status(200).json({
                     count: products.length,
@@ -44,14 +45,15 @@ module.exports = {
                             price: "$" + product.price,
                             image: "http://localhost:3030" + product.image
                         };
-                    }),                   
-                    lastProduct: products[products.length-1]                            
+                    }),
+                    lastProduct: products[products.length - 1]
                 })
             })
     },
     details: (req, res) => {
         db.Products.findByPk(req.params.id, {
-            include: [{ association: "category" }, { association: "sizes" }]
+            include: [{ association: "category" }, { association: "sizes" }],
+            where: { deleted: '0' }
         })
             .then(product => {
                 return res.status(200).json({

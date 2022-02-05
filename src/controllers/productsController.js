@@ -56,13 +56,13 @@ const productController = {
 
     abmCreado: function (req, res) {// accion de agregar prod  
         let errors = validationResult(req);
-        console.log(errors.mapped())
+        console.log(errors.mapped());
         if (errors.isEmpty()) {
             db.Products.create({
                 name: req.body.nombre,
                 price: req.body.precio,
                 description: req.body.descripcion,
-                image: req.body.foto,
+                image: '/img/' + req.file.filename,
                 categoryId: req.body.categoria,
                 deleted: 0
             }).then(function (producto) {

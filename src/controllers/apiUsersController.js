@@ -4,7 +4,9 @@ const Op = db.Sequelize.Op;
 module.exports = {
     list: (req, res) => {
         db.Users
-            .findAll()
+            .findAll({
+                where: { deleted: '0' }
+            })
             .then(users => {
                 return res.status(200).json({
                     count: users.length,
@@ -23,7 +25,7 @@ module.exports = {
             })
     },
     details: (req, res) => {
-        db.Users.findByPk(req.params.id)
+        db.Users.findByPk(req.params.id, {where: { deleted: '0' }})
             .then(user => {
                 const u = {
                     name: user.firstName,

@@ -26,7 +26,7 @@ router.get('/products/searchProducts', productsController.searchProducts);//vist
 router.get('/products/:id', productsController.abmDetalle) // vista detalle prodoctos
 router.post('/products', [upload.single('foto'), validacionesCrearEditarProducto], productsController.abmCreado) // metodo de agregar productos
 router.get('/products/:id/edit', productsController.abmEditar) // vista de edicion de producto
-router.put('/products/:id', [upload.single('foto'),validacionesCrearEditarProducto], productsController.abmEditado) // metodo de editar producto
+router.put('/products/:id', [upload.single('foto'), validacionesCrearEditarProducto], productsController.abmEditado) // metodo de editar producto
 router.delete('/products/:id', productsController.abmEliminar) // metodo de borrado de producto
 
 module.exports = router;
