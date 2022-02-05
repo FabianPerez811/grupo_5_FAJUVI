@@ -9,9 +9,9 @@ function BarraLateral() {
       <nav>
         <ul>
           <li className="itemPanel">
-            <Link to="/">
+            <a href="http://localhost:3030/admin/products">
               <div className="logo"><img src={Logo} alt="logo" /></div>
-            </Link>
+            </a>
           </li>
           <li className="itemPanel">
             <Link to="/lista-productos">
