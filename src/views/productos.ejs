@@ -31,9 +31,9 @@
           </div>
           <h4 class="producto"><%= productos[i].name %></h4>
           <p class="precio">$<%= productos[i].price %></p>
-          <p class="cuotas">6 Cuotas sin interés de $<%= productos[i].price / 6 %></p>
+          <p class="cuotas">6 Cuotas sin interés de $<%= (productos[i].price / 6).toFixed(2) %></p>
         </article>
-
+        
         <% } %>
       </section>
     </main>
